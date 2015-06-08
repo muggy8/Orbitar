@@ -1,0 +1,277 @@
+/*
+ *  Default styling for the style guide. The media queries are included in here as well, rather
+ *  than in a separate file, due to issues with the order of where the css is executed.
+ */
+body {
+    font-family: franklin_gothic_fsbook, sans-serif;
+    padding: 2rem;
+    font-size: 16px;
+}
+
+section:not([id]) {
+    margin: 1em 0;
+    padding: 0.5em 0;
+    border-top: 1px solid #333;
+}
+
+section h3 {
+    margin-bottom: 0;
+}
+
+section p {
+    margin-top: 0;
+}
+
+section code {
+    background-color: #EEE;
+    padding: 0.5em 0.75em;
+    display: block;
+}
+
+/*
+ *  Indents one line of the code block. I'm using a span instead of a div to indent an entire block
+ *  because a div isn't allowed in a code block.
+ */
+section code span.single-indent {
+    padding-left: 1.5em;
+}
+
+/* Style links in this document to be consistent with the style guide format */
+a {
+    color: #FF282E;
+    text-decoration: none;
+}
+
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+    font-family: franklin_gothic_fsdemi, sans-serif;
+    display: inline-block;      /* make the button inline, but preserve block properties such as margins */
+    padding: 0.5em 1.5em;
+    color: #FFFFFF;
+    background-color: #FF282E;
+    font-size: 1.25rem;
+    text-decoration: none;      /* no underline */
+}
+
+/* Reduce horizontal button padding */
+@media (max-width: 65rem) {
+    .button-nav {
+        padding: 0.5em 0.5em;
+    }
+}
+
+/* Reduce to thinner weight of font */
+@media (max-width: 40rem) {
+    .button-nav {
+        font-family: franklin_gothic_fsbook, sans-serif;
+    }
+}
+
+/* For button hover stste */
+.button-nav:hover {
+    background-color: #B01E22;  /* a darker shade of red as the background colour of the button */
+}
+
+
+
+/* Styling for in-text link. By default, it has no underline. */
+.in-text-link, .in-text-link:visited, .in-text-link:active {
+    color: #FF282E;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* Styling for in-text link, hover selector. Creates an underline effect that is positioned
+ * slightly further down than with a normal underline. */
+.in-text-link:hover {
+    border-bottom: 1px solid #FF282E;
+    margin-bottom: -0.25rem;
+    text-decoration: none;
+}
+
+
+/*
+ *  Styling for submit button.
+ *  The :active selector is here so that the button will remain the lighter shade of red even
+ *  after it is clicked.
+ *  Assume that this <a> button will replace the <input> tag, and that JavaScript will be used to
+ *  enable form submit functionality in the future.
+ */
+.button-submit, .button-submit:visited, .button-submit:active {
+    display: inline-block;
+    background-color: #FF282E;
+    color: #FFFFFF;
+    padding: 0.5em 4em;
+    text-decoration: none;
+    font-size: 1.45rem;
+    border-radius: 0.25em;
+}
+
+.button-submit:hover {
+    background-color: #B01E22;  /* a darker shade of red as the background colour of the button */
+}
+
+
+/*
+ *  Styling for reset button.
+ *  The :active selector is here so that the button will remain the lighter shade of red even after
+ *  it is clicked.
+ */
+.button-reset, .button-reset:visited, .button-reset:active {
+    display: inline-block;      /* make the button inline, but preserve block properties such as margins */
+    background-color: #FF282E;
+    color: #FFFFFF;
+    padding: 0.5em 2em;
+    text-decoration: none;      /* no underline */
+    font-size: 1.45rem;
+    border-radius: 0.25em;
+}
+
+.button-reset:hover {
+    background-color: #B01E22;  /* a darker shade of red as the background colour of the button */
+}
+
+
+.input-field label {
+    font-family: franklin_gothic_fsdemi, sans-serif;
+    font-size: 1.25rem;
+    margin-right: 0.75em;
+}
+
+.input-field input {
+    font-size: 1.25rem;
+    width: 15em;
+    height: 1em;
+    padding: 0.5em 0.5em;
+}
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+/* Styling for h1 headers */
+.main-header {
+    font-family: franklin_gothic_fsdemi, sans-serif;
+    color: #FF282E;
+    font-size: 2.25rem;
+    margin-bottom: 0.25em;
+}
+
+/* Styling for h2 headers */
+.section-header {
+    font-family: franklin_gothic_fsdemi, sans-serif;
+    color: #FF282E;
+    font-size: 1.75rem;
+}
+
+/* Styling h3 headers */
+.subsection-header {
+    font-family: franklin_gothic_fsdemi, sans-serif;
+    color: #FF282E;
+    font-size: 1.45rem;
+}
+
+/* Styling for paragraph text */
+.body-text {
+    /*font-family: franklin_gothic_fsbook, sans-serif;*/
+    font-size: 1.2rem;
+    line-height: 120%;
+}
+
+/* Styling for bulleted and ordered lists - not for all unordered lists or ordered lists,
+ * respectively */
+.bulleted-list, .numbered-list {
+    /*font-family: franklin_gothic_fsbook, sans-serif;*/
+    font-size: 1.25rem;
+}
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+/* Part 1: Main navigation */
+
+/* Container for header navigation menu, which is centered and has padding on both sides for
+   whitespace */
+#centered-nav-container {
+    padding-left: 12%;
+    padding-right: 12%;
+    background-color: #FF282E;
+}
+
+/* Reduce the padding */
+@media (max-width: 80rem) {
+    #centered-nav-container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+/* Finally, eliminate the padding */
+@media (max-width: 50rem) {
+    #centered-nav-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* Lower-nav-bar indicates it is the lower section of the header bar, where the main navigation
+   links are */
+#lower-nav-bar {
+    clear: both;
+    background-color: #FF282E;
+    max-width: 100%;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove the bullets and margin/padding from the nav list */
+#lower-nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* For the left side of the navigation (Browse/About Us/Contact Us) */
+#lower-nav-bar-left ul li {
+    float: left;
+}
+
+/* Float the right side of the navigation (log in/register and cart) to the right */
+#lower-nav-bar-right {
+    float: right;
+ }
+
+/* Collapse the right-hand menu options into a second row */
+@media (max-width: 35rem) {
+    #lower-nav-bar-right {
+        clear: both;
+        float: left;
+    }
+}
+
+/* After floating to the right, this sets the order of the menu items in the correct order */
+#lower-nav-bar-right ul li {
+    float: left;
+}
+
+/* Part 2: product listing page */
+
+/* h2 subheading for album product page */
+#artist-title-subheading {
+    font-family: franklin_gothic_fsdemi, sans-serif;
+    font-size: 1.9rem;
+    margin-top: 0;
+    padding-top: 0;
+}
