@@ -1,0 +1,356 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>Project 01 Style Guide</title>
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/font-embeds.css">
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+
+    <body>
+
+        <h1>Project 01 Style Guide</h1>
+
+        <p>Style guide for my Project 01 deliverable.</p>
+
+        <nav>
+          
+            <p>
+                Go to:
+                <a href="#interactive_elements">Interactive Elements</a>,
+                <a href="#text_elements">Text Elements</a>,
+                <a href="#combined_elements">Combined Elements</a>
+            </p>
+
+        </nav>
+
+
+        <!-- // INTERACTIVE ELEMENTS SECTION -->
+        <section id="interactive_elements">
+
+            <!-- Navigation button styling section -->
+            <section>
+                <h2>Navigation button</h2>
+
+                <p>
+                    This button is one of many parts that make up the navigation menu. See the <a href="#combined_elements">Main Navigation</a> example for more details.
+                </p>
+                
+                <h3>CSS selector:</h3>
+                <p>.button-nav</p>
+
+                <h3>Sample code:</h3>
+                <code>
+                &lt;a class="button-nav" href="#"&gt;About Us&lt;/a&gt;
+                </code>
+
+                <h3>Rendered element:</h3>
+                <a class="button-nav" href="#">About Us</a>
+
+            </section> <!-- // NAVIGATION BUTTON STYLING SECTION -->
+
+
+            <!-- In-text paragraph link styling section -->
+            <section>
+                <h2>In-text link</h2>
+                <h3>CSS selector:</h3>
+                <p>.in-text-link</p>
+
+                <h3>Sample code:</h3>
+                <code>&lt;a class="in-text-link" href="#"&gt;this is my in-text link&lt;/a&gt;</code>
+
+                <h3>Rendered element:</h3>
+                <a class="in-text-link" href="#">this is my in-text link</a>
+            </section> <!-- // IN-TEXT LINK STYLING SECTION -->
+
+            <!-- Submit/Reset button styling section -->
+            <section>
+                <h2>Submit/Reset Buttons</h2>
+
+                <h3>CSS selector:</h3>
+                <p>.button-reset, .button-submit</p>
+
+                <h3>Sample code:</h3>
+                <code>
+                    &lt;a class="button-reset" href="#"&gt;Reset&lt;/a&gt;<br>
+                    &lt;a class="button-submit" href="#"&gt;Submit&lt;/a&gt;
+                </code>
+
+                <h3>Rendered element:</h3>
+                <a class="button-reset" href="#">Reset</a>
+                <a class="button-submit" href="#">Submit</a>
+            </section> <!-- // SUBMIT/RESET BUTTONS STYLING SECTION -->
+
+            <!-- Text input field styling section -->
+            <section>
+                <h2>Text Input Field &amp; Label</h2>
+
+                <h3>CSS selector:</h3>
+                <p>.input-field</p>
+
+                <h3>Sample code:</h3>
+                <code>
+                    &lt;form class="input-field"&gt;<br>
+                        <span class="single-indent">&lt;label for="form-username"&gt;Username:&lt;/label&gt;</span><br>
+                        <span class="single-indent">&lt;input type="text" id="form-username"&gt;</span><br>
+                    &lt;/form&gt;
+                </code>
+
+                <h3>Rendered element:</h3>
+                <form class="input-field"> 
+                    <label for="form-username">Username:</label>
+                    <input type="text" id="form-username">
+                </form>
+            </section> <!-- // TEXT INPUT FIELDS STYLING SECTION -->
+
+        </section>
+        <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+        <!-- TEXT ELEMENTS SECTION // -->
+        <section id="text_elements">
+
+            <!-- Main header (h1) styling section -->
+            <section>
+                <h2>Main Header</h2>
+                <h3>CSS selector:</h3>
+                <p>.main-header</p>
+
+                <h3>Sample code:</h3>
+                <code>&lt;h1 class="main-header"&gt;My Level 1 Header&lt;/h1&gt;</code>
+
+                <h3>Rendered element:</h3>
+                <!-- Using this h1 tag his will throw a validator warning, since h1 was already due to the usage of h1 already being used on this page. -->
+                <h1 class="main-header">My Level 1 Header</h1>
+            </section> <!-- // MAIN HEADER STYLING SECTION -->
+
+
+            <!-- Section header (h2) styling section -->
+            <section>
+                <h2>Section Header</h2>
+                <h3>CSS selector:</h3>
+                <p>.section-header</p>
+
+                <h3>Sample code:</h3>
+                <code>&lt;h2 class="section-header"&gt;My Level 2 Header&lt;/h2&gt;</code>
+
+                <h3>Rendered element:</h3>
+                <h2 class="section-header">My Level 2 Header</h2>
+            </section> <!-- // SECTION HEADER STYLING SECTION -->
+
+
+            <!-- Subsection header (h3) styling section -->
+            <section>
+                <h2>Subsection Header</h2>
+                <h3>CSS selector:</h3>
+                <p>.subsection-header</p>
+
+                <h3>Sample code:</h3>
+                <code>&lt;h3 class="subsection-header"&gt;My Level 3 Header&lt;/h3&gt;</code>
+
+                <h3>Rendered element:</h3>
+                <h3 class="subsection-header">My Level 3 Header</h3>
+            </section> <!-- // SUBSECTION HEADER STYLING SECTION -->
+
+
+            <!-- Body paragraph styling section -->
+            <section>
+                <h2>Paragraphs</h2>
+                <h3>CSS selector:</h3>
+                <p>.body-text</p>
+
+                <h3>Sample code:</h3>
+                <code>&lt;p class="body-text"&gt;Est erant eligendi tacimates no, cu quo tollit postulant. At fastidii scaevola cum, at hinc docendi splendide sea. Vix an hendrerit referren tur, graeci posidonium percipitur usu te. Ex natum harum saperet vel, ne duo omnis possit aliquando. Usu ne audiam oblique, ne exerci graece disputationi per, omnis essent ne eum. Eos ne fugit omnium graecis, vix no nulla comprehensam. No sit hendrerit assueverit, id nec eleifend tincidunt voluptatibus. Et rebum placerat pri, nam ne liberavisse conclusion emque. At has alii partem ornatus. Cu melius deseruisse pro.&lt;/p&gt;</code>
+
+                <h3>Rendered element:</h3>
+                <p class="body-text">
+                    Est erant eligendi tacimates no, cu quo tollit postulant. At fastidii scaevola cum, at hinc docendi splendide sea. Vix an hendrerit referren tur, graeci posidonium percipitur usu te. Ex natum harum saperet vel, ne duo omnis possit aliquando. Usu ne audiam oblique, ne exerci graece disputationi per, omnis essent ne eum. Eos ne fugit omnium graecis, vix no nulla comprehensam. No sit hendrerit assueverit, id nec eleifend tincidunt voluptatibus. Et rebum placerat pri, nam ne liberavisse conclusion emque. At has alii partem ornatus. Cu melius deseruisse pro.
+                </p>
+            </section> <!-- // PARAGRAPH STYLING SECTION -->
+
+
+            <!-- Bulleted (unordered) lists styling section -->
+            <section>
+                <h2>Bulleted Lists</h2>
+                <h3>CSS selector:</h3>
+                <p>.bulleted-list</p>
+
+                <h3>Sample code:</h3>
+                <code>
+                    &lt;ul class="bulleted-list"&gt;<br>
+                        <span class="single-indent">&lt;li>Est erant eligendi tacimates no, cu quo tollit postulant.&lt;/li&gt;<br></span>
+                        <span class="single-indent">&lt;li>At fastidii scaevola cum, at hinc docendi splendide sea.&lt;/li&gt;<br></span>
+                        <span class="single-indent">&lt;li>Vix an hendrerit referren tur, graeci posidonium percipitur usu te.&lt;/li&gt;<br></span>
+                    &lt;/ul&gt;
+                </code>
+
+                <h3>Rendered element:</h3>
+                <ul class="bulleted-list">
+                    <li>Est erant eligendi tacimates no, cu quo tollit postulant.</li>
+                    <li>At fastidii scaevola cum, at hinc docendi splendide sea.</li>
+                    <li>Vix an hendrerit referren tur, graeci posidonium percipitur usu te.</li>
+                </ul>
+            </section> <!-- // BULLETED LISTS STYLING SECTION -->
+
+
+            <!-- Numbered (ordered) lists styling section -->
+            <section>
+                <h2>Numbered Lists</h2>
+
+                <h3>CSS selector:</h3>
+                <p>.numbered-list</p>
+
+                <h3>Sample code:</h3>
+                <code>
+                    &lt;ol class="numbered-list"&gt;<br>
+                        <span class="single-indent">&lt;li>Soft Offering (For the Oft Suffering)&lt;/li&gt;<br></span>
+                        <span class="single-indent">&lt;li>Gold Teeth&lt;/li&gt;<br></span>
+                        <span class="single-indent">&lt;li>What Arrows&lt;/li&gt;<br></span>
+                        <span class="single-indent">&lt;li>Promise&lt;/li&gt;<br></span>
+                    &lt;/ol&gt;
+                </code>
+
+                <h3>Rendered element:</h3>
+                <ol class="numbered-list">
+                    <li>Soft Offering (For the Oft Suffering)</li>
+                    <li>Gold Teeth</li>
+                    <li>What Arrows</li>
+                    <li>Promise</li> 
+                </ol>
+            </section> <!-- // NUMBERED LISTS STYLING SECTION -->
+
+        </section>
+        <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+        <!-- COMBINED ELEMENTS SECTION // -->
+        <section id="combined_elements">
+
+            <!-- Main navigation styling section -->
+            <section>
+                <h2>Main Navigation</h2>
+
+                <h3>CSS selector:</h3>
+                <p>#nav-header</p>
+
+                <h3>Sample code:</h3>
+                <code> <!-- Unfortunately, this is as readable as I could get this source code snippet to display. The code here is exactly the same as the code in the rendered element, of course.-->
+                    &lt;nav id="nav-header"&gt;<br>
+                        <span class="single-indent">&lt;div id="centered-nav-container"&gt;<br></span>
+                            <span class="single-indent"><span class="single-indent">&lt;div id="lower-nav-bar"&gt;<br></span></span>
+                                <span class="single-indent"><span class="single-indent"><span class="single-indent">&lt;div id="lower-nav-bar-left"&gt;<br></span></span></span>
+                                    <span class="single-indent"><span class="single-indent"><span class="single-indent"><span class="single-indent">&lt;ul&gt;<br></span></span></span></span>
+                                        <span class="single-indent"><span class="single-indent"><span class="single-indent"><span class="single-indent"><span class="single-indent">
+                                            &lt;li&gt;&lt;a class="button-nav" href="#"&gt;Browse&lt;/a&gt;&lt;/li&gt;<br></span></span></span></span></span>
+                                        <span class="single-indent"><span class="single-indent"><span class="single-indent"><span class="single-indent"><span class="single-indent">&lt;li&gt;&lt;a class="button-nav" href="#"&gt;About Us&lt;/a&gt;&lt;/li&gt;<br></span></span></span></span></span>
+                                        <span class="single-indent"><span class="single-indent"><span class="single-indent"><span class="single-indent"><span class="single-indent">&lt;li&gt;&lt;a class="button-nav" href="#"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;<br></span></span></span></span></span>
+                                    <span class="single-indent"><span class="single-indent"><span class="single-indent"><span class="single-indent">&lt;/ul&gt;<br></span></span></span></span>
+                                <span class="single-indent"><span class="single-indent"><span class="single-indent">&lt;/div&gt; &lt;!-- ./lower-nav-bar-left --&gt;<br></span></span></span>
+                                <span class="single-indent"><span class="single-indent"><span class="single-indent">&lt;div id="lower-nav-bar-right"&gt;<br></span></span></span>
+                                    <span class="single-indent"><span class="single-indent"><span class="single-indent"><span class="single-indent">&lt;ul&gt;<br></span></span></span></span>
+                                        <span class="single-indent"><span class="single-indent"><span class="single-indent"><span class="single-indent"><span class="single-indent">&lt;li&gt;&lt;a class="button-nav" href="#"&gt;Log In&lt;/a&gt;&lt;/li&gt;<br></span></span></span></span></span>
+                                        <span class="single-indent"><span class="single-indent"><span class="single-indent"><span class="single-indent"><span class="single-indent">&lt;li&gt;&lt;a class="button-nav" href="#"&gt;Cart (0)&lt;/a&gt;&lt;/li&gt;<br></span></span></span></span></span>
+                                    <span class="single-indent"><span class="single-indent"><span class="single-indent"><span class="single-indent">&lt;/ul&gt;<br></span></span></span></span>
+                                <span class="single-indent"><span class="single-indent"><span class="single-indent">&lt;/div&gt; &lt;!-- ./lower-nav-bar-right --&gt;<br></span></span></span>
+                            <span class="single-indent"><span class="single-indent">&lt;/div&gt; &lt;!-- ./lower-nav-bar --&gt;<br></span></span>
+                        <span class="single-indent">&lt;/div&gt; &lt;!-- ./centered-nav-container --&gt;<br></span>
+                    &lt;/nav&gt;
+                </code>
+
+                <h3>Rendered element:</h3>
+                    <nav id="nav-header">
+                        <div id="centered-nav-container">
+                            <div id="lower-nav-bar">
+                                <div id="lower-nav-bar-left">
+                                    <ul>
+                                        <li><a class="button-nav" href="#">Browse</a></li>
+                                        <li><a class="button-nav" href="#">About Us</a></li>
+                                        <li><a class="button-nav" href="#">Contact Us</a></li>
+                                    </ul>
+                                </div> <!-- ./lower-nav-bar-left -->
+                                <div id="lower-nav-bar-right">
+                                    <ul>
+                                        <li><a class="button-nav" href="#">Log In</a></li>
+                                        <li><a class="button-nav" href="#">Cart (0)</a></li>
+                                    </ul>
+                                </div> <!-- ./lower-nav-bar-right -->
+                            </div> <!-- ./lower-nav-bar -->
+                        </div> <!-- ./centered-nav-container -->
+                    </nav>
+
+            </section> <!-- // MAIN NAVIGATION STYLING SECTION -->
+
+
+            <!-- Product listing styling section -->
+            <section>
+                <h2>Product Listing</h2>
+                <h3>CSS selector:</h3>
+                <p></p>
+
+                <h3>Sample code:</h3>
+                <code>
+                    &lt;h1 class="main-header"&gt;Second Sight&lt;/h1&gt;<br>
+                    &lt;h2 id="artist-title-subheading"&gt;by Hey Rosetta!&lt;/h2&gt;<br>
+
+                    &lt;p class="body-text"&gt;<br>
+                        <span class="single-indent">&lt;strong&gt;<br></span>
+                            <span class="single-indent"><span class="single-indent">Release date: October 21, 2014&lt;br&gt;<br></span></span>
+                            <span class="single-indent"><span class="single-indent">Label: Sonic Records&lt;br&gt;<br></span></span>
+                            <span class="single-indent"><span class="single-indent">Catalogue #: 2-00599&lt;br&gt;<br></span></span>
+                            <span class="single-indent"><span class="single-indent">Format: Vinyl, 2 x 12" Discs<br></span></span>
+                        <span class="single-indent">&lt;/strong&gt;<br></span>
+                    &lt;/p&gt;<br>
+                    
+                    &lt;p class="body-text"&gt;<br>
+                        <span class="single-indent">&lt;strong&gt;Genres: Indie Rock, Alternative Rock, Folk Rock, Pop Rock&lt;/strong&gt;<br></span>
+                    &lt;/p&gt;<br>
+
+                    &lt;h3 class="subsection-header"&gt;Description&lt;/h3&gt;<br>
+                    &lt;p class="body-text"&gt;<br>
+                        <span class="single-indent">&lt;em&gt;Second Sight&lt;/em&gt;, Hey Rosetta!’s first album in nearly four years represents the longest musical gestation in the band’s history. In part, the delay was due to the lengthy touring cycle following the success of their last album &lt;em&gt;Seeds&lt;/em&gt;, which was short-listed for the Polaris Music Prize, and resulted in the band’s first JUNO nomination and a performance on the JUNO telecast. There was also the band’s determination to expand their sonic horizons and, as songwriter Tim Baker puts it, “let each song come on its own terms and become what it will, unencumbered by some predetermined structure or symbolism or thesis. (Source: &lt;a class="in-text-link" href="http://heyrosetta.com/bio/" target="_blank"&gt;Hey Rosetta! &ndash; Bio&lt;/a&gt;)<br></span>
+                    &lt;/p&gt;
+                </code>
+
+                <h3>Rendered element:</h3>
+
+                <h1 class="main-header">Second Sight</h1>
+                <h2 id="artist-title-subheading">by Hey Rosetta!</h2>
+
+                <p class="body-text">
+                    <strong>
+                        Release date: October 21, 2014<br>
+                        Label: Sonic Records<br>
+                        Catalogue #: 2-00599<br>
+                        Format: Vinyl, 2 x 12" Discs
+                    </strong>
+                </p>
+                
+                <p class="body-text">
+                    <strong>
+                        Genres: Indie Rock, Alternative Rock, Folk Rock, Pop Rock
+                    </strong>
+                </p>
+
+                <h3 class="subsection-header">Description</h3>
+                <p class="body-text">
+                    <em>Second Sight</em>, Hey Rosetta!’s first album in nearly four years represents the longest musical gestation in the band’s history. In part, the delay was due to the lengthy touring cycle following the success of their last album <em>Seeds</em>, which was short-listed for the Polaris Music Prize, and resulted in the band’s first JUNO nomination and a performance on the JUNO telecast. There was also the band’s determination to expand their sonic horizons and, as songwriter Tim Baker puts it, “let each song come on its own terms and become what it will, unencumbered by some predetermined structure or symbolism or thesis. (Source: <a class="in-text-link" href="http://heyrosetta.com/bio/" target="_blank">Hey Rosetta! &ndash; Bio</a>)
+                </p>
+
+            </section> <!-- // PRODUCT STYLING SECTION -->
+
+        </section>
+        <!-- // COMBINED ELEMENTS SECTION -->
+
+
+    </body>
+
+
+</html>
