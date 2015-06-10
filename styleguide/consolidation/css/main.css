@@ -35,6 +35,37 @@ section code {
 */
 
 /* Styling for the navigation button */
+.buttonNav {
+    font-family: franklin_gothic_fsdemi, sans-serif;
+    display: inline-block;      /* make the button inline, but preserve block properties such as margins */
+    padding: 0.5em 1.5em;
+    color: rgb(255, 255, 255);
+    background-color: rgb(29, 29, 153);
+    font-size: 1.25rem;
+    text-decoration: none;      /* no underline */
+}
+
+/* Reduce horizontal button padding */
+@media (max-width: 65rem) {
+    .buttonNav {
+        padding: 0.5em 0.5em;
+    }
+}
+
+/* Reduce to thinner weight of font */
+@media (max-width: 40rem) {
+    .buttonNav {
+        font-family: franklin_gothic_fsbook, sans-serif;
+    }
+}
+
+/* For button hover stste */
+.buttonNav:hover {
+    background-color: rgb(44, 44, 230);  /* a darker shade of red as the background colour of the button */
+}
+
+
+/* Styling for the navigation button */
 .buttonNavM {
   display: inline-block;
   padding: 0.5em 0.75em;
@@ -196,6 +227,73 @@ ol li{
 /* 
   COMBINED ELEMENTS -------------------
 */
+/* Part 1: Main navigation */
+
+/* Container for header navigation menu, which is centered and has padding on both sides for
+   whitespace */
+#centeredNavContainer {
+    padding-left: 12%;
+    padding-right: 12%;
+    background-color: rgb(29, 29, 153);
+}
+
+/* Reduce the padding */
+@media (max-width: 80rem) {
+    #centeredNavContainer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+/* Finally, eliminate the padding */
+@media (max-width: 50rem) {
+    #centeredNavContainer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* The actual centered navigation bar itself */
+#navBar {
+    clear: both;
+    background-color: rgb(29, 29, 153);
+    max-width: 100%;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove the bullets and margin/padding from the nav list */
+#navBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* For the left side of the navigation (Browse/About Us/Contact Us) */
+#navBarLeft ul li {
+    float: left;
+}
+
+/* Float the right side of the navigation (log in/register and cart) to the right */
+#navBarRight {
+    float: right;
+ }
+
+/* Collapse the right-hand menu options into a second row */
+@media (max-width: 35rem) {
+    #navBarRight {
+        clear: both;
+        float: left;
+    }
+}
+
+/* After floating to the right, this sets the order of the menu items in the correct order */
+#navBarRight ul li {
+    float: left;
+}
+
 
 
 #listingContainer{

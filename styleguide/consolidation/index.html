@@ -13,7 +13,7 @@
 
   <body>
 
-    <h1>Orbitar Style Guide</h1>
+    <h1 id="styleGuideHeader">Orbitar Style Guide</h1>
 
 	<p>Orbitar Style Guide for referencing when a button or something is needed</p>
 	
@@ -45,6 +45,10 @@
         <code>&lt;a href="#" class="buttonNavM"&gt;Default Button&lt;/a&gt;</code>
 
         <h3>Rendered element for buttonNavM:</h3>
+
+        <a class="buttonNav" href="#">About Us</a>
+
+        <!--
         <a class="buttonNavM" href="#">Middle Buttons</a>
 		
 		<h3>Rendered element for buttonNavL:</h3>
@@ -55,6 +59,8 @@
 		
 		<h3>In a row:</h3>
 		<a class="buttonNavL" href="#">Left Button</a><a class="buttonNavM" href="#">Middle Button</a><a class="buttonNavR" href="#">Right Button</a>
+		-->
+
 		
 		<h3>Additional Info:</h3>
 		
@@ -364,6 +370,28 @@
 		<p>The main navigation for this website is always in the banner and can be accessed easily from there (see navigation button). There aren't other navigation buttons on the site as the site will react and change in shape in accordance to user clicks. There will be windows on the site which will expand and collaps when another window is clicked. this means that the user has access to all other parts of the site at any time</p>
       </section>
 
+        <nav id="nav-header">
+	        <div id="centeredNavContainer">
+	            <div id="navBar">
+	                <div id="navBarLeft">
+	                    <ul>
+	                        <li><a class="buttonNav" href="#">Browse</a></li>
+	                        <li><a class="buttonNav" href="#">About Us</a></li>
+	                        <li><a class="buttonNav" href="#">Contact Us</a></li>
+	                    </ul>
+	                </div> <!-- ./navBarLeft -->
+	                <div id="navBarRight">
+	                    <ul>
+	                        <li><a class="buttonNav" href="#">Log In</a></li>
+	                        <li><a class="buttonNav" href="#">Cart (0)</a></li>
+	                    </ul>
+	                </div> <!-- ./navBarRight -->
+	            </div> <!-- ./navBar -->
+	        </div> <!-- ./centered-nav-container -->
+	    </nav>
+
+
+
       <section>
         <h2>Product Listing</h2>
 		
@@ -411,6 +439,8 @@
 		</code>
 			
 		<h2>Rendered element:</h2>
+
+
 		
 		<div id="listingContainer">
 			<div id="listing1" class="listing">
