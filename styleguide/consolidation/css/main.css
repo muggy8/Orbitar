@@ -81,7 +81,12 @@ p a {
 	font-style:italic;
 }
 
-.buttonGenaric{
+/*
+ *  Styling for submit button on a lighter background.
+ *  The :active selector is here so that the button will remain the lighter shade of blue even
+ *  after it is clicked.
+ */
+.buttonGeneric, .buttonGeneric:visited, .buttonGeneric:active {
 	background-color: rgb(29, 29, 153);
 	color:rgb(255, 255, 255);
 	padding: 0.5em 1em;
@@ -91,7 +96,8 @@ p a {
 	cursor: pointer; cursor: hand;
 }
 
-.buttonGenaricOnDark{
+/* Styling for submit button on a dark background. */
+.buttonGenericOnDark, .buttonGenericOnDark:visited, .buttonGeneric:active {
 	background-color:rgb(29, 29, 153);
 	color:#ffffff;
 	padding: 0.5em 1em;
@@ -99,6 +105,11 @@ p a {
 	border-radius:0.4rem;
 	border: 0.125em solid #ffffff;
 	cursor: pointer; cursor: hand;
+}
+
+/* Display a lighter shade of blue for both versions of the button */
+.buttonGeneric:hover, .buttonGenericOnDark:hover {
+  background-color: rgb(44, 44, 230);
 }
 
 #newAccount{
