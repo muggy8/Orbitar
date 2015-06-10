@@ -95,8 +95,8 @@ p a {
 }
 
 .buttonGenaric{
-	background-color:#242A67;
-	color:#ffffff;
+	background-color: rgb(29, 29, 153);
+	color:rgb(255, 255, 255);
 	padding: 0.5em 1em;
 	font-size:1.125rem;
 	border-radius:0.4rem;
