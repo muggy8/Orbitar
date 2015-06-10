@@ -1,0 +1,21 @@
+.color-block{
+	width:2rem; 
+	height:2rem;
+	display:block;
+}
+
+.dark-blue{
+	background-color:#1D1D99
+}
+
+.light-blue{
+	background-color:#2C2CE6
+}
+
+.dark-gray{
+	background-color:#EFEFEF
+}
+
+.light-gray{
+	background-color:#cfcfcf
+}
