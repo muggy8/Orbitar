@@ -235,6 +235,7 @@ ol li{
     padding-left: 12%;
     padding-right: 12%;
     background-color: rgb(29, 29, 153);
+    clear: both;
 }
 
 /* Reduce the padding */
@@ -269,6 +270,16 @@ ol li{
     margin: 0;
     padding: 0;
 
+}
+
+#navBarLeft {
+    float: left;
+    clear: both;
+}
+
+#navBarLeft ul {
+    float: left;
+    clear: both;
 }
 
 /* For the left side of the navigation (Browse/About Us/Contact Us) */
