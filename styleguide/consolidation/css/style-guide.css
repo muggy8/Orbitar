@@ -1,0 +1,40 @@
+.color-block{
+	width:2rem; 
+	height:2rem;
+	display:block;
+}
+
+.dark-blue{
+	background-color:#1D1D99
+}
+
+.light-blue{
+	background-color:#2C2CE6
+}
+
+.dark-gray{
+	background-color:#EFEFEF
+}
+
+.light-gray{
+	background-color:#cfcfcf
+}
+
+.blackBG{
+	background-color: black;
+	padding: 1rem 1rem;
+	margin-top: 1.5rem;
+	color: white;
+	display:block;
+}
+
+.banner{
+	  background-color: rgb(29, 29, 153);
+	  display: block;
+	  height: 4rem;
+	  padding: 0.5rem 1.5rem;
+}
+
+h1#styleGuideHeader {
+	color: black;
+}

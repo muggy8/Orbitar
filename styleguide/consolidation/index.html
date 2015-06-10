@@ -7,22 +7,21 @@
     <title>Orbitar Style Guide</title>
 
     <link href="css/main.css" rel="stylesheet">
-
+    <link href="css/style-guide.css" rel="stylesheet">
+    <link href="css/font-embeds.css" rel="stylesheet">
   </head>
 
   <body>
 
-    <h1 style="color:black;">Orbitar Style Guide</h1>
+    <h1 id="styleGuideHeader">Orbitar Style Guide</h1>
 
-    <!-- <p>This is what an h1 title is supposed to look like. An H1 element is supposed to be used in the banner and should alaways be on the blue background which is part of the banner. Other titles are supposed to H2 or lower</p>
-	-->
 	<p>Orbitar Style Guide for referencing when a button or something is needed</p>
 	
     <nav>
       
       <p>
         Go to: <br>
-        <a href="#interactive_elements" class="buttonNavL">Interactive Elements</a><a href="#text_elements" class="buttonNavM">Text Elements</a><a href="#combined_elements" class="buttonNavR">Combined Elements</a>
+        <a href="#interactive_elements" class="buttonNavL">Interactive Elements</a><a href="#text_elements" class="buttonNavM">Text Elements</a><a href="#other_stuff" class="buttonNavM">Other stuff</a><a href="#combined_elements" class="buttonNavR">Combined Elements</a>
       </p>
 
     </nav>
@@ -46,6 +45,10 @@
         <code>&lt;a href="#" class="buttonNavM"&gt;Default Button&lt;/a&gt;</code>
 
         <h3>Rendered element for buttonNavM:</h3>
+
+        <a class="buttonNav" href="#">About Us</a>
+
+        <!--
         <a class="buttonNavM" href="#">Middle Buttons</a>
 		
 		<h3>Rendered element for buttonNavL:</h3>
@@ -56,6 +59,8 @@
 		
 		<h3>In a row:</h3>
 		<a class="buttonNavL" href="#">Left Button</a><a class="buttonNavM" href="#">Middle Button</a><a class="buttonNavR" href="#">Right Button</a>
+		-->
+
 		
 		<h3>Additional Info:</h3>
 		
@@ -87,30 +92,30 @@
 		
 		<h3>CSS selector</h3>
 		
-		<p>.buttonGenaric</p>
+		<p>.buttonGeneric</p>
 		
 		<h3>Sample code:</h3>
 		
-        <code>&lt;button onclick="validateForm(this)" class="buttonGenaric"&gt;Genaric Button&lt;/button&gt;</code>
+        <code>&lt;button onclick="validateForm(this)" class="buttonGeneric"&gt;Generic Button&lt;/button&gt;</code>
 		
 		<h3>Rendered Element:</h3>
 		
-		<button onclick="alert('you have clicked the button')" class="buttonGenaric">Genaric Button</button>
+		<button onclick="alert('you have clicked the button')" class="buttonGeneric">Generic Button</button>
 		
 		<div class="blackBG">
 			<h3>Buttons on darker background</h3>
 			
 			<h3>CSS selector</h3>
 		
-			<p>.buttonGenaricOnDark</p>
+			<p>.buttonGenericOnDark</p>
 			
 			<h3>Sample code:</h3>
 		
-			<code>&lt;button onclick="validateForm(this)" class="buttonGenaricOnDark"&gt;Genaric Button&lt;/button&gt;</code>
+			<code>&lt;button onclick="validateForm(this)" class="buttonGenericOnDark"&gt;Generic Button&lt;/button&gt;</code>
 			
 			<h3>Rendered Element:</h3>
 			
-			<button onclick="validateForm(this)" class="buttonGenaricOnDark">Genaric Button</button>
+			<button onclick="validateForm(this)" class="buttonGenericOnDark">Generic Button</button>
 		</div>
       </section>
 
@@ -155,7 +160,7 @@
 		<p>H4</p>
 		
 		<H3>About headings:</h3>
-		<p>There are 4 lairs of headings are used: h1, h2, h3, h4. H1 is exclusively used in the banner and can be a link to the home menu on smaller devices, H2 generally highlights the major sections of the site and major subsections. H3 is used to highlight devisions in the subs sections such as what's a form what's a picture and so on. H4 is for other miscellaneous sections that would require bitter titles. for sections smaller than h4, use the em or strong tag to bold elements</p>
+		<p>There are 4 lairs of headings are used: h1, h2, h3, h4. H1 will lable different modules of the main site, H2 generally highlights the major sections of the site and major subsections of modules. H3 is used to highlight divisions in the subs sections such as what's a form what's a picture and so on. H4 is for other miscellaneous sections that would require bitter titles. For sections smaller than h4, use the em or strong tag to bold elements</p>
 		
 		<H3>Sample code for h1:</h3>
 		<code>&lt;div class=banner&gt;&lt;h1&gt;Orbitar&lt;/h1&gt;&lt;/div&gt;</code>
@@ -325,9 +330,35 @@
 
     </section>
     <!-- // TEXT ELEMENTS SECTION -->
-
-
-
+	<section id="other_stuff">
+	  <section>
+		<h2>color scheme</h2>
+		
+		<h3>Dark Blue</h3>
+		<p>#1D1D99 or rgb(29,29,153)</p>
+		
+		<h3>Rendered Color</h3>
+		<div class="dark-blue color-block"></div>
+		
+		<h3>Light Blue</h3>
+		<p>#2C2CE6 or rgb(44,44,230)</p>
+		
+		<h3>Rendered Color</h3>
+		<div class="light-blue color-block"></div>
+		
+		<h3>Lighter Gray</h3>
+		<p>#EFEFEF or rgb(239,239,239)</p>
+		
+		<h3>Rendered Color</h3>
+		<div class="dark-gray color-block"></div>
+		
+		<h3>Darker Gray</h3>
+		<p>#cfcfcf or rgb(207,207,207)</p>
+		
+		<h3>Rendered Color</h3>
+		<div class="light-gray color-block"></div>
+	  </section>
+	</section>
     <!-- COMBINED ELEMENTS SECTION // -->
     <section id="combined_elements">
 
@@ -338,6 +369,48 @@
 		
 		<p>The main navigation for this website is always in the banner and can be accessed easily from there (see navigation button). There aren't other navigation buttons on the site as the site will react and change in shape in accordance to user clicks. There will be windows on the site which will expand and collaps when another window is clicked. this means that the user has access to all other parts of the site at any time</p>
       </section>
+	  
+	  <H3>Sample Code:</h3>
+	  
+	  <textarea rows="18" cols="100">
+<nav id="nav-header">
+	<div id="centeredNavContainer">
+		<div id="navBar">
+			<div id="navBarLeft">
+				<span id="siteName">Orbitar</span>
+			</div> <!-- ./navBarLeft -->
+			<div id="navBarRight">
+				<ul>
+					<li><a class="buttonNav" href="#">Account</a></li>
+					<li><a class="buttonNav" href="#">Community</a></li>
+					<li><a class="buttonNav" href="#">Feedback</a></li>
+				</ul>
+			</div> <!-- ./navBarRight -->
+		</div> <!-- ./navBar -->
+	</div> <!-- ./centered-nav-container -->
+</nav>
+	  </textarea>
+		
+		<h3>Rendered Element</h3>
+		
+        <nav id="nav-header">
+	        <div id="centeredNavContainer">
+	            <div id="navBar">
+	                <div id="navBarLeft">
+	                    <span id="siteName">Orbitar</span>
+	                </div> <!-- ./navBarLeft -->
+	                <div id="navBarRight">
+	                    <ul>
+	                        <li><a class="buttonNav" href="#">Account</a></li>
+	                        <li><a class="buttonNav" href="#">Community</a></li>
+							<li><a class="buttonNav" href="#">Feedback</a></li>
+	                    </ul>
+	                </div> <!-- ./navBarRight -->
+	            </div> <!-- ./navBar -->
+	        </div> <!-- ./centered-nav-container -->
+	    </nav>
+
+
 
       <section>
         <h2>Product Listing</h2>
@@ -352,10 +425,10 @@
 			&lt;div id="listingContainer"&gt;<br />
 			&lt;div id="listing1" class="listing"&gt;<br />
 				&lt;h3&gt;Particle Accelerator&lt;/h3&gt;<br />
-				&lt;img src="img/placeholder.png" width="368" height="258"&gt;<br />
+				&lt;img src="img/placeholder.png" width="368" height="258" alt="(╯°□°)╯︵ ┻━┻"&gt;<br />
 				&lt;div class="listingButtonHolder"&gt;<br />
-					&lt;button onclick="biggify(this.parentElement.parentElement)" class="buttonGenaric"&gt;view details&lt;/button&gt;<br />
-					&lt;button onclick="validateForm(this)" class="buttonGenaric"&gt;book&lt;/button&gt;<br />
+					&lt;button onclick="biggify(this.parentElement.parentElement)" class="buttonGeneric"&gt;view details&lt;/button&gt;<br />
+					&lt;button onclick="validateForm(this)" class="buttonGeneric"&gt;book&lt;/button&gt;<br />
 				&lt;/div&gt;<br />
 				&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at auctor lectus. In gravida bibendum posuere. Vivamus placerat nibh in nisl lacinia, sed eleifend urna dictum. Nunc iaculis mollis sagittis. Proin vel ultrices est. Duis posuere elementum sapien. Morbi euismod vehicula rutrum. Donec vitae arcu quis risus lacinia tristique vel at elit. Suspendisse euismod vitae dui ac molestie. Donec ac tortor felis. Nunc maximus libero ut elit dapibus, at tristique erat convallis.&lt;/p&gt;<br />
 				<br />
@@ -363,10 +436,10 @@
 			<br />
 			&lt;div id="listing2" class="listing"&gt;<br />
 				&lt;h3&gt;Chemistry Lab&lt;/h3&gt;<br />
-				&lt;img src="img/placeholder.png" width="368" height="258"&gt;<br />
+				&lt;img src="img/placeholder.png" width="368" height="258" alt="(╯°□°)╯︵ ┻━┻"&gt;<br />
 				&lt;div class="listingButtonHolder"&gt;<br />
-					&lt;button onclick="biggify(this.parentElement.parentElement)" class="buttonGenaric"&gt;view details&lt;/button&gt;<br />
-					&lt;button onclick="validateForm(this)" class="buttonGenaric"&gt;book&lt;/button&gt;<br />
+					&lt;button onclick="biggify(this.parentElement.parentElement)" class="buttonGeneric"&gt;view details&lt;/button&gt;<br />
+					&lt;button onclick="validateForm(this)" class="buttonGeneric"&gt;book&lt;/button&gt;<br />
 				&lt;/div&gt;<br />
 				&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at auctor lectus. In gravida bibendum posuere. Vivamus placerat nibh in nisl lacinia, sed eleifend urna dictum. Nunc iaculis mollis sagittis. Proin vel ultrices est. Duis posuere elementum sapien. Morbi euismod vehicula rutrum. Donec vitae arcu quis risus lacinia tristique vel at elit. Suspendisse euismod vitae dui ac molestie. Donec ac tortor felis. Nunc maximus libero ut elit dapibus, at tristique erat convallis.&lt;/p&gt;<br />
 				<br />
@@ -374,10 +447,10 @@
 			<br />
 			&lt;div id="listing3" class="listing"&gt;<br />
 				&lt;h3&gt;Engine Room&lt;/h3&gt;<br />
-				&lt;img src="img/placeholder.png" width="368" height="258"&gt;<br />
+				&lt;img src="img/placeholder.png" width="368" height="258" alt="(╯°□°)╯︵ ┻━┻"&gt;<br />
 				&lt;div class="listingButtonHolder"&gt;<br />
-					&lt;button onclick="biggify(this.parentElement.parentElement)" class="buttonGenaric"&gt;view details&lt;/button&gt;<br />
-					&lt;button onclick="validateForm(this)" class="buttonGenaric"&gt;book&lt;/button&gt;<br />
+					&lt;button onclick="biggify(this.parentElement.parentElement)" class="buttonGeneric"&gt;view details&lt;/button&gt;<br />
+					&lt;button onclick="validateForm(this)" class="buttonGeneric"&gt;book&lt;/button&gt;<br />
 				&lt;/div&gt;<br />
 				&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at auctor lectus. In gravida bibendum posuere. Vivamus placerat nibh in nisl lacinia, sed eleifend urna dictum. Nunc iaculis mollis sagittis. Proin vel ultrices est. Duis posuere elementum sapien. Morbi euismod vehicula rutrum. Donec vitae arcu quis risus lacinia tristique vel at elit. Suspendisse euismod vitae dui ac molestie. Donec ac tortor felis. Nunc maximus libero ut elit dapibus, at tristique erat convallis.&lt;/p&gt;<br />
 				<br />
@@ -386,14 +459,16 @@
 		</code>
 			
 		<h2>Rendered element:</h2>
+
+
 		
 		<div id="listingContainer">
 			<div id="listing1" class="listing">
 				<h3>Particle Accelerator</h3>
-				<img src="img/placeholder.png" width="368" height="258">
+				<img src="img/placeholder.png" width="368" height="258" alt="(╯°□°)╯︵ ┻━┻">
 				<div class="listingButtonHolder">
-					<button onclick="biggify(this.parentElement.parentElement)" class="buttonGenaric">view details</button>
-					<button onclick="validateForm(this)" class="buttonGenaric">book</button>
+					<button onclick="biggify(this.parentElement.parentElement)" class="buttonGeneric">view details</button>
+					<button onclick="validateForm(this)" class="buttonGeneric">book</button>
 				</div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at auctor lectus. In gravida bibendum posuere. Vivamus placerat nibh in nisl lacinia, sed eleifend urna dictum. Nunc iaculis mollis sagittis. Proin vel ultrices est. Duis posuere elementum sapien. Morbi euismod vehicula rutrum. Donec vitae arcu quis risus lacinia tristique vel at elit. Suspendisse euismod vitae dui ac molestie. Donec ac tortor felis. Nunc maximus libero ut elit dapibus, at tristique erat convallis.</p>
 				
@@ -401,10 +476,10 @@
 			
 			<div id="listing2" class="listing">
 				<h3>Chemistry Lab</h3>
-				<img src="img/placeholder.png" width="368" height="258">
+				<img src="img/placeholder.png" width="368" height="258" alt="(╯°□°)╯︵ ┻━┻">
 				<div class="listingButtonHolder">
-					<button onclick="biggify(this.parentElement.parentElement)" class="buttonGenaric">view details</button>
-					<button onclick="validateForm(this)" class="buttonGenaric">book</button>
+					<button onclick="biggify(this.parentElement.parentElement)" class="buttonGeneric">view details</button>
+					<button onclick="validateForm(this)" class="buttonGeneric">book</button>
 				</div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at auctor lectus. In gravida bibendum posuere. Vivamus placerat nibh in nisl lacinia, sed eleifend urna dictum. Nunc iaculis mollis sagittis. Proin vel ultrices est. Duis posuere elementum sapien. Morbi euismod vehicula rutrum. Donec vitae arcu quis risus lacinia tristique vel at elit. Suspendisse euismod vitae dui ac molestie. Donec ac tortor felis. Nunc maximus libero ut elit dapibus, at tristique erat convallis.</p>
 				
@@ -412,10 +487,10 @@
 			
 			<div id="listing3" class="listing">
 				<h3>Engine Room</h3>
-				<img src="img/placeholder.png" width="368" height="258">
+				<img src="img/placeholder.png" width="368" height="258" alt="(╯°□°)╯︵ ┻━┻">
 				<div class="listingButtonHolder">
-					<button onclick="biggify(this.parentElement.parentElement)" class="buttonGenaric">view details</button>
-					<button onclick="validateForm(this)" class="buttonGenaric">book</button>
+					<button onclick="biggify(this.parentElement.parentElement)" class="buttonGeneric">view details</button>
+					<button onclick="validateForm(this)" class="buttonGeneric">book</button>
 				</div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at auctor lectus. In gravida bibendum posuere. Vivamus placerat nibh in nisl lacinia, sed eleifend urna dictum. Nunc iaculis mollis sagittis. Proin vel ultrices est. Duis posuere elementum sapien. Morbi euismod vehicula rutrum. Donec vitae arcu quis risus lacinia tristique vel at elit. Suspendisse euismod vitae dui ac molestie. Donec ac tortor felis. Nunc maximus libero ut elit dapibus, at tristique erat convallis.</p>
 				

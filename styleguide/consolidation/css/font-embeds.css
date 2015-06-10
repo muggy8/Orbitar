@@ -1,0 +1,68 @@
+/*
+ *  This css file contains code related to font embedding. As a summary, the four font declarations are:
+ *  - franklin_gothic_fsbook
+ *  - franklin_gothic_fsbook_italic
+ *  - franklin_gothic_fsdemi
+ *  - franklin_gothic_fsdemi_italic
+ *  
+ *  Franklin Gothic FS font freely downloaded from Fontspring.
+ *  They provided "bulletproof syntax" for using their fonts to be forward compatible with
+ *  as many browsers as possible; the @font-face declarations below were provided by Fontspring.
+ *  
+ *  Supporting documentation:
+ *  http://www.fontspring.com/support/installing_webfonts
+ *  http://blog.fontspring.com/2011/02/further-hardening-of-the-bulletproof-syntax/ (although a little outdated)
+ */
+
+
+/* Franklin Gothic FS Book */
+@font-face {
+    font-family: 'franklin_gothic_fsbook';
+    src: url('fonts/franklingothicfs_book_macroman/FranklinGothic-Book-webfont.eot');
+    src: url('fonts/franklingothicfs_book_macroman/FranklinGothic-Book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/franklingothicfs_book_macroman/FranklinGothic-Book-webfont.woff2') format('woff2'),
+         url('fonts/franklingothicfs_book_macroman/FranklinGothic-Book-webfont.woff') format('woff'),
+         url('fonts/franklingothicfs_book_macroman/FranklinGothic-Book-webfont.ttf') format('truetype'),
+         url('fonts/franklingothicfs_book_macroman/FranklinGothic-Book-webfont.svg#franklin_gothic_fsbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Franklin Gothic FS Book Italic */
+@font-face {
+    font-family: 'franklin_gothic_fsbook_italic';
+    src: url('fonts/franklingothicfs_bookitalic_macroman/franklingothic-bookit-webfont.eot');
+    src: url('fonts/franklingothicfs_bookitalic_macroman/franklingothic-bookit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/franklingothicfs_bookitalic_macroman/franklingothic-bookit-webfont.woff2') format('woff2'),
+         url('fonts/franklingothicfs_bookitalic_macroman/franklingothic-bookit-webfont.woff') format('woff'),
+         url('fonts/franklingothicfs_bookitalic_macroman/franklingothic-bookit-webfont.ttf') format('truetype'),
+         url('fonts/franklingothicfs_bookitalic_macroman/franklingothic-bookit-webfont.svg#franklin_gothic_fsbook_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Franklin Gothic FS Demi */
+@font-face {
+    font-family: 'franklin_gothic_fsdemi';
+    src: url('fonts/franklingothicfs_demi_macroman/FranklinGothic-Demi-webfont.eot');
+    src: url('fonts/franklingothicfs_demi_macroman/FranklinGothic-Demi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/franklingothicfs_demi_macroman/FranklinGothic-Demi-webfont.woff2') format('woff2'),
+         url('fonts/franklingothicfs_demi_macroman/FranklinGothic-Demi-webfont.woff') format('woff'),
+         url('fonts/franklingothicfs_demi_macroman/FranklinGothic-Demi-webfont.ttf') format('truetype'),
+         url('fonts/franklingothicfs_demi_macroman/FranklinGothic-Demi-webfont.svg#franklin_gothic_fsdemi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Franklin Gothic FS Demi Italic */
+@font-face {
+    font-family: 'franklin_gothic_fsdemi_italic';
+    src: url('fonts/franklingothicfs_demiitalic_macroman/FranklinGothic-DemiIt-webfont.eot');
+    src: url('fonts/franklingothicfs_demiitalic_macroman/FranklinGothic-DemiIt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/franklingothicfs_demiitalic_macroman/FranklinGothic-DemiIt-webfont.woff2') format('woff2'),
+         url('fonts/franklingothicfs_demiitalic_macroman/FranklinGothic-DemiIt-webfont.woff') format('woff'),
+         url('fonts/franklingothicfs_demiitalic_macroman/FranklinGothic-DemiIt-webfont.ttf') format('truetype'),
+         url('fonts/franklingothicfs_demiitalic_macroman/FranklinGothic-DemiIt-webfont.svg#franklin_gothic_fsdemi_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
