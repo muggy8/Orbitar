@@ -19,3 +19,11 @@
 .light-gray{
 	background-color:#cfcfcf
 }
+
+.blackBG{
+	background-color: black;
+	padding: 1rem 1rem;
+	margin-top: 1.5rem;
+	color: white;
+	display:block;
+}
