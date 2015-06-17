@@ -234,6 +234,15 @@ ol li{
 	margin:0.125em 0;
 }
 
+.dialogueBox{
+	background-color:rgba(239,239,239,0.7);
+	display:block;
+	position:absolute;
+	border-radius: 0.75rem;
+	padding: 0.5rem;
+	width: 20rem;	
+}
+
 /* 
   COMBINED ELEMENTS -------------------
 */
