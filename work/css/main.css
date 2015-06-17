@@ -30,6 +30,10 @@ section code {
   color:black;
 }
 
+.floatClear{
+	clear:both;
+}
+
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
@@ -246,6 +250,7 @@ ol li{
 	left: 0;
 	right: 0;
 	top: 0;
+	z-index:+1;
 }
 
 /* Reduce the padding */
@@ -348,3 +353,18 @@ ol li{
 }
 
 /* css for the site structure */
+#bodyContainer{
+  background-color: green; /*temprary for seeing where it is*/
+  height:50rem; /*temprary for seeing where it is*/
+  width: 70rem;
+  position: relative;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:3rem;
+}
+@media(max-width: 70rem){
+	#bodyContainer{
+		width: 100%;
+	}
+}
