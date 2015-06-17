@@ -249,6 +249,18 @@ ol li{
 	left:5%;
 }
 
+#youMidCool{
+	top:35%;
+	right:5%;
+}
+
+@media(max-width: 59rem){
+	#youMidCool{
+		right:auto;
+		left:5%;
+	}
+}
+
 /* 
   COMBINED ELEMENTS -------------------
 */
