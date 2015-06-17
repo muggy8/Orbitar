@@ -363,8 +363,19 @@ ol li{
   margin-right:auto;
   margin-top:3rem;
 }
-@media(max-width: 70rem){
+
+@media(max-width: 70rem){ /*media query for if the page width became too smaller than the max possible width of the content*/
 	#bodyContainer{
 		width: 100%;
 	}
+}
+
+#elevatorCable{
+	height:inherit;
+	width:0.5rem;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:-1;
+	background-color:black;
 }
