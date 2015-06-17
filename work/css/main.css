@@ -6,7 +6,7 @@
 
 body {
   font-family: franklin_gothic_fsbook, sans-serif;
-  padding: 2rem;
+  margin:0;
 }
 
 section:not([id]) {
@@ -238,10 +238,14 @@ ol li{
 /* Container for header navigation menu, which is centered and has padding on both sides for
    whitespace */
 #centeredNavContainer {
-    padding-left: 12%;
+    padding-left: 3%;
     padding-right: 12%;
     background-color: rgb(29, 29, 153);
     clear: both;
+	position:fixed;
+	left: 0;
+	right: 0;
+	top: 0;
 }
 
 /* Reduce the padding */
