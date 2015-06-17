@@ -255,6 +255,11 @@ ol li{
 	right:5%;
 }
 
+#youCool{
+	top:75rem;
+	left:5%;
+}
+
 @media(max-width: 59rem){
 	#youMidCool{
 		right:auto;
@@ -262,9 +267,9 @@ ol li{
 	}
 }
 
-@media(max-width: 22.5rem){
+@media(max-width: 23.5rem){
 	.dialogueBox{
-		width:90%;
+		width:92%;
 	}
 	
 	#youLame{
@@ -275,6 +280,11 @@ ol li{
 	#youMidCool{
 		top:45rem;
 		right:auto;
+		left:0;
+	}
+	
+	#youCool{
+		top:78rem;
 		left:0;
 	}
 }
