@@ -416,6 +416,22 @@ ol li{
 	z-index:-1;
 }
 
+#basePad{
+z-index:+1;
+display:block;
+position:absolute;
+top:19rem;
+left:41%;
+/* Firefox */
+left: -moz-calc(50% - 100px);
+/* WebKit */
+left: -webkit-calc(50% - 100px);
+/* Opera */
+left: -o-calc(50% - 100px);
+/* Standard */
+left: calc(50% - 100px);
+}
+
 @media(max-width: 59rem){
 	#elevatorCable{
 		margin-left:29.28125rem;
