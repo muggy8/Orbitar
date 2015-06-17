@@ -240,7 +240,13 @@ ol li{
 	position:absolute;
 	border-radius: 0.75rem;
 	padding: 0.5rem;
-	width: 20rem;	
+	width: 20rem;
+	border: 0.125rem solid black;
+}
+
+#youLame{
+	top:3%;
+	left:5%;
 }
 
 /* 
@@ -364,7 +370,7 @@ ol li{
 /* css for the site structure */
 #bodyContainer{
   background-color: green; /*temprary for seeing where it is*/
-  height:50rem; /*temprary for seeing where it is*/
+  /*height:50rem; temprary for seeing where it is*/
   width: 70rem;
   position: relative;
   display: block;
@@ -380,11 +386,20 @@ ol li{
 }
 
 #elevatorCable{
-	height:inherit;
+	height:80rem;
 	width:0.5rem;
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
 	z-index:-1;
 	background-color:black;
+}
+
+#cablePusher{
+	height:25rem;
+	width:0.5rem;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:-1;
 }
