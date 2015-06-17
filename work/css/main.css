@@ -403,3 +403,12 @@ ol li{
 	margin-right:auto;
 	z-index:-1;
 }
+
+@media(max-width: 59rem){
+	#elevatorCable{
+		margin-left:29.28125rem;
+	}
+	#cablePusher{
+		margin-left:29.28125rem;
+	}
+}
