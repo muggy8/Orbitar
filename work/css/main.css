@@ -536,3 +536,9 @@ ol li{
 		right:-39.7rem;
 	}
 }
+
+.featureContainer {
+    background-color: green;
+    width: 70rem;
+    margin: 0 auto;
+}
