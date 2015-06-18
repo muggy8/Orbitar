@@ -484,6 +484,11 @@ ol li{
 	position:absolute;
 	top: 90rem;
 	left: -10.75rem;
+	
+	left: -moz-calc(50% - 732px);
+	left: -webkit-calc(50% - 732px);
+	left: -o-calc(50% - 732px);
+	left: calc(50% - 732px);
 }
 
 @media(max-width: 59rem){
