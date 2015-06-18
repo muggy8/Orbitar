@@ -60,6 +60,33 @@
 }
 
 
+.mainPageFormGridCol-1of2 {
+    float: left;
+    width: 48.5%;
+    margin-right: 1.5%;
+}
+
+.mainPageFormGridCol-2of2 {
+    float: left;
+    width: 48.5%;
+    margin-left: 1.5%;
+}
+
+@media (max-width: 48rem) {
+    .mainPageFormGridCol-1of2 {
+        width: 100%;
+        clear: both;
+        margin-right: 0;
+    }
+
+    .mainPageFormGridCol-2of2 {
+        width: 100%;
+        clear: both;
+        margin-left: 0;
+    }
+}
+
+
 /*.col-5of10 {
     width: 50%;
 }

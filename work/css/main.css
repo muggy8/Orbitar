@@ -179,6 +179,11 @@ p a {
 	padding: 0.25em 0;
 }
 
+.fieldHalf {
+	width: 100%;
+	margin: 0.25rem 0;
+}
+
 /* 
   TEXT ELEMENTS -------------------
 */
