@@ -7,6 +7,7 @@
 body {
   font-family: franklin_gothic_fsbook, sans-serif;
   margin:0;
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/9b/59/c1/9b59c13b57aa0c6c2cae03675bc9bc95.jpg");
 }
 
 section:not([id]) {
