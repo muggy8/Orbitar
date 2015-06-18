@@ -508,6 +508,9 @@ ol li{
 	#cableCart{
 		left: 28.5rem;
 	}
+	#spacePad{
+		left:-16.2rem;
+	}
 }
 
 @media(max-width: 35.75rem){
@@ -526,5 +529,9 @@ ol li{
 	#cableCart{
 		left: auto;
 		right: 5.2rem;
+	}
+	#spacePad{
+		left:auto;
+		right:-39.7rem;
 	}
 }
