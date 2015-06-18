@@ -444,6 +444,15 @@ ol li{
 	z-index:-1;
 }
 
+#cableStreacher{
+	height:20rem;
+	width:0.5rem;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:-1;
+}
+
 #basePad{
 	z-index:+1;
 	display:block;
@@ -468,6 +477,12 @@ ol li{
 	left: -webkit-calc(50% - 1rem);
 	left: -o-calc(50% - 1rem);
 	left: calc(50% - 1rem);
+}
+
+#spacePad{
+	position:absolute;
+	top: 90rem;
+	left: -10.75rem;
 }
 
 @media(max-width: 59rem){
