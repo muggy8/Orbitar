@@ -539,9 +539,23 @@ ol li{
 	}
 }
 
+/*
+ *  This is for the container that contains each section that describes the hotel facilities,
+ *  the trip experience, and so on.
+ */
 .featureContainer {
-    background-color: white;
+    background-color: black;    
     width: 70rem;
     margin: 0 auto;
     clear: both;
+}
+
+@media(max-width: 71rem) {
+    .featureContainer {
+        width: 100%;
+    }
+}
+
+.col-1of3 figcaption {
+    margin-top: 0.5em;
 }
