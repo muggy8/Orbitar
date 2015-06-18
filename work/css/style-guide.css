@@ -1,3 +1,19 @@
+/*
+ *  CSS specifically for the style guide.
+ */
+
+/* override the body CSS from the actual site */
+#styleguideBody {
+	background-image: none;
+	margin: 1rem;
+	padding: 1rem;
+}
+
+#centeredNavContainer {
+	/* position is fixed in the actual site; we don't want it fixed at the top in the style guide */
+	position: static;
+}
+
 .color-block{
 	width:2rem; 
 	height:2rem;
