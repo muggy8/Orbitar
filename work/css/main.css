@@ -548,6 +548,8 @@ ol li{
     width: 70rem;
     margin: 0 auto;
     clear: both;
+    border-top: 0.25em solid rgb(100, 100, 100);
+    border-bottom: 0.25em solid rgb(100, 100, 100);
 }
 
 @media(max-width: 71rem) {
