@@ -7,8 +7,8 @@
 /* class attribute that begins with the name 'col-' */
 [class^='col-'] {
     float: left;
-    padding: 0;
-    text-align: center;
+    padding: 1.5em 2.5em;
+
 
 }
 
@@ -26,6 +26,11 @@
 .col-1of3 {
     width: 33.3333%;
 }
+
+.col-1of3 figure {
+    margin: 0;
+}
+
 
 .col-1of3 figure img {
     width: 100%;
