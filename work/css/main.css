@@ -484,6 +484,9 @@ ol li{
 	position:absolute;
 	top: 90rem;
 	left: -10.75rem;
+	background-image: url('img/SpacePad.png');
+	height:491px;
+	width: 1464px;
 }
 
 @media(max-width: 59rem){
