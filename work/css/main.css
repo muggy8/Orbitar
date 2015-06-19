@@ -548,15 +548,6 @@ ol li{
 	#spacePad{
 		left:-16.2rem;
 	}
-	#scheduler{
-		bottom:0rem;
-	}
-}
-
-@media(max-width: 47.25rem){
-	#scheduler{
-		bottom:-15rem;
-	}
 }
 
 @media(max-width: 35.75rem){
