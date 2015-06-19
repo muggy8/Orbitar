@@ -395,6 +395,10 @@ ol li{
     float: right;
  }
 
+#fullscreenMenuContainer {
+    display: none;
+}
+
 /* Collapse the right-hand menu options into a second row */
 @media (max-width: 35rem) {
     #navBarRight {
@@ -425,6 +429,20 @@ ol li{
     #menuButton:hover {
       background-color: rgb(44, 44, 230);
     }
+
+    #fullscreenMenuContainer {
+        display: block;
+        position: fixed;
+        z-index: 9100;
+        background-color: rgb(29, 29, 153);
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+    }
+
+/*    #fullscreenMenuContainer {
+        visibility: visible;
+    }*/
 }
 
 /* After floating to the right, this sets the order of the menu items in the correct order */
