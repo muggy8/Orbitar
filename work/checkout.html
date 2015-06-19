@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Orbitar: The Orbital Space Elevator</title>
+
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/grid.css" rel="stylesheet">
+        <link href="css/style-guide.css" rel="stylesheet">
+        <link href="css/font-embeds.css" rel="stylesheet">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="js/homepage.js"></script>
+    </head>
+	
+	<body>
+		<div id="bodyContainer">
+			<h2>Complete Bookings</h2>
+			<p>Your booking information: Pellentesque accumsan efficitur facilisis. Cras ex ligula, dictum sagittis condimentum vitae, dignissim ut lacus. Aenean id turpis tortor. Curabitur ut velit volutpat, tempus odio sit amet, varius lectus. Etiam eu mollis orci. Nullam justo risus, feugiat ac nibh eget, mollis pharetra lectus. In semper orci quis enim semper, nec lacinia massa elementum. Pellentesque vel vehicula elit. Curabitur placerat orci id massa finibus, eget commodo urna tristique.</p>
+			<form action="action-page.php" method="post" id="startBooking" onsubmit="return submitForm(this)">
+				<div class="grid">
+					<div class="mainPageFormGridCol-1of2">
+						<input class="fieldHalf" type="text" name="departureDate" placeholder="First Name">
+					</div>
+					<div class="mainPageFormGridCol-2of2">
+						<input class="fieldHalf" type="text" name="returnDate" placeholder="Last Name">
+					</div>
+					<input class="fieldHalf" type="text" name="returnDate" placeholder="Credit Card Number">
+				</div>
+				<button onclick="submitForm(this)" class="buttonGeneric hugRight">Complete Bookings</button>
+			</form>
+		</div>
+	</body>
+	
+</html>

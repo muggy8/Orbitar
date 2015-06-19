@@ -49,7 +49,7 @@
 }
 
 /* collapse to single-column */
-@media (max-width: 48rem) {
+@media (max-width: 50.75rem) {
     .col-2of3 {
         width: 100%;
     }
