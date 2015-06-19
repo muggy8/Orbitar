@@ -59,13 +59,14 @@
     }
 }
 
-
+/* left column */
 .mainPageFormGridCol-1of2 {
     float: left;
     width: 48.5%;
     margin-right: 1.5%;
 }
 
+/* right column */
 .mainPageFormGridCol-2of2 {
     float: left;
     width: 48.5%;
@@ -73,15 +74,20 @@
 }
 
 @media (max-width: 48rem) {
-    .mainPageFormGridCol-1of2 {
+    /* query code for both columns; collapse to single-column */
+    .mainPageFormGridCol-1of2, .mainPageFormGridCol-2of2 {
         width: 100%;
         clear: both;
+        margin-bottom: 0.9em;
+    }
+
+    /* left column */
+    .mainPageFormGridCol-1of2 {
         margin-right: 0;
     }
 
+    /* right column */
     .mainPageFormGridCol-2of2 {
-        width: 100%;
-        clear: both;
         margin-left: 0;
     }
 }
