@@ -8,3 +8,8 @@ function elevatorChecker(){
 		$("#cableCart").css("display", "block")
 	}
 }
+
+function submitForm(form){
+	alert("sorry this is just a dummy website for a web design class therefore nothing actually works. sorry if you were actually expectin a real thing...");
+	return false;
+}
