@@ -197,6 +197,11 @@ p a {
   margin-top: 1rem;
 }
 
+#siteName a, #siteName a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
 h1 {
   color: #ffffff;
   font-weight: normal;
@@ -309,8 +314,8 @@ ol li{
 /* Container for header navigation menu, which is centered and has padding on both sides for
    whitespace */
 #centeredNavContainer {
-    padding-left: 3%;
-    padding-right: 12%;
+/*    padding-left: 15%;
+    padding-right: 15%;*/
     background-color: rgb(29, 29, 153);
     clear: both;
 	position:fixed;
@@ -340,10 +345,16 @@ ol li{
 #navBar {
     clear: both;
     background-color: rgb(29, 29, 153);
-    max-width: 100%;
+    width: 70rem;
     overflow: auto;
-    margin: 0;
-    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 75rem) {
+	#navBar {
+		width: 100%;
+	}	
 }
 
 /* Remove the bullets and margin/padding from the nav list */
