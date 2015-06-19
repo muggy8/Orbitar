@@ -427,7 +427,7 @@ ol li{
   display: block;
   margin-left:auto;
   margin-right:auto;
-  margin-top:3rem;
+  /*margin-top:3rem;*/
   /*overflow: hidden;*/ /* breaks the edges of the satellite image */
 }
 
