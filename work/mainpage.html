@@ -94,6 +94,8 @@
                                 <input class="fieldHalf" type="text" name="returnDate" placeholder="Return Date">
                             </div>
                         </div>
+                        <label for="numBookings" class="ondark">Number of bookings selected: <span id="numBookingsValue">1</span></label>
+                        <input id="numBookings" class="numBookingsSlider" type="range" min="1" max="16" value="1" onchange="setNumBookingsValue(this.value)" onload="setNumBookingsValue(this.value)">
                     </form>
                 </div>
 
