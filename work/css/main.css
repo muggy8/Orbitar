@@ -502,6 +502,20 @@ ol li{
 	left: calc(50% - 732px);
 }
 
+#scheduler{
+  width: 15rem;
+  height: 20rem;
+  background-color: rgba(239,239,239,0.7);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  border: 0.125rem solid black;
+  border-radius: 0.25rem;
+  padding: 0.7rem;
+  margin: 0.5rem;
+  z-index:+10;
+}
+
 @media(max-width: 59rem){
 	#elevatorCable{
 		margin-left:29.28125rem;
