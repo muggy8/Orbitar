@@ -276,6 +276,7 @@ ol li{
 		right:auto;
 		left:5%;
 	}
+	
 }
 
 @media(max-width: 23.5rem){
@@ -516,6 +517,12 @@ ol li{
   z-index:+10;
 }
 
+@media(max-width: 95rem){
+	#scheduler{
+		bottom:-15rem;
+	}
+}
+
 @media(max-width: 59rem){
 	#elevatorCable{
 		margin-left:29.28125rem;
@@ -536,9 +543,19 @@ ol li{
 	#spacePad{
 		left:-16.2rem;
 	}
+	#scheduler{
+		bottom:0rem;
+	}
+}
+
+@media(max-width: 47.25rem){
+	#scheduler{
+		bottom:-15rem;
+	}
 }
 
 @media(max-width: 35.75rem){
+	
 	#elevatorCable{
 		margin-left:auto;
 		margin-right:5.96875rem;
@@ -558,6 +575,9 @@ ol li{
 	#spacePad{
 		left:auto;
 		right:-39.7rem;
+	}
+	#scheduler{
+		display:none;
 	}
 }
 
