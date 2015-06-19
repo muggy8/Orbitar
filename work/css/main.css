@@ -142,6 +142,7 @@ p a {
     border-radius:0.4rem;
     border: 0.125em solid #000000;
     cursor: pointer; cursor: hand;
+    font-family: franklin_gothic_fsbook, sans-serif;
 }
 
 /* Styling for submit button on a dark background. */
@@ -153,6 +154,7 @@ p a {
     border-radius:0.4rem;
     border: 0.125em solid #ffffff;
     cursor: pointer; cursor: hand;
+    font-family: franklin_gothic_fsbook, sans-serif;
 }
 
 /* Display a lighter shade of blue for both versions of the button */
