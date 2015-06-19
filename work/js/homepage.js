@@ -8,7 +8,3 @@ function elevatorChecker(){
 		$("#cableCart").css("display", "block")
 	}
 }
-
-function setNumBookingsValue(inputValue) {
-	document.getElementById("numBookingsValue").innerHTML = inputValue;
-}

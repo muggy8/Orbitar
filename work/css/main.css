@@ -569,15 +569,3 @@ ol li{
 .col-1of3 figcaption {
     margin-top: 0.5em;
 }
-
-label [for=numBookings] {
-	
-}
-
-.numBookingsSlider {
-	width: 100%;
-	float: left;
-	clear: both;
-	margin-top: 0.4em;
-}
-
