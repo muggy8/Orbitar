@@ -592,36 +592,6 @@ ol li{
 }
 
 @media(max-width: 59rem){
-<<<<<<< HEAD
-    #elevatorCable{
-        margin-left:29.28125rem;
-    }
-    #cablePusher{
-        margin-left:29.28125rem;
-    }
-    #basePad{
-        left:23.3rem;
-        left: -moz-calc(29.5rem - 100px);
-        left: -webkit-calc(29.5rem - 100px);
-        left: -o-calc(29.5rem - 100px);
-        left: calc(29.5rem - 100px);
-    }
-    #cableCart{
-        left: 28.5rem;
-    }
-    #spacePad{
-        left:-16.2rem;
-    }
-    #scheduler{
-        bottom:0rem;
-    }
-}
-
-@media(max-width: 47.25rem){
-    #scheduler{
-        bottom:-15rem;
-    }
-=======
 	#elevatorCable{
 		margin-left:29.28125rem;
 	}
@@ -641,7 +611,6 @@ ol li{
 	#spacePad{
 		left:-16.2rem;
 	}
->>>>>>> main-body-content
 }
 
 @media(max-width: 35.75rem){
