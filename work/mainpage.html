@@ -81,7 +81,7 @@
                         <img src="http://placehold.it/600x400" alt="Feature image">
 						<div class="listingButtonHolder">
 							<button class="buttonGeneric">calender</button>
-							<button class="buttonGeneric">add to Planner</button>
+							<button class="buttonGeneric" onclick="addEvent(this)">add to Planner</button>
 						</div>
                         <figcaption class="ondark">Feature image</figcaption>
                     </figure>
@@ -108,7 +108,7 @@
                         <img src="http://placehold.it/600x400" alt="Feature image">
 						<div class="listingButtonHolder">
 							<button class="buttonGeneric">calender</button>
-							<button class="buttonGeneric">add to Schedule</button>
+							<button class="buttonGeneric" onclick="addEvent(this)">add to Schedule</button>
 						</div>
                         <figcaption class="ondark">Feature image</figcaption>
                     </figure>
@@ -135,7 +135,7 @@
                         <img src="http://placehold.it/600x400" alt="Feature image">
 						<div class="listingButtonHolder">
 							<button class="buttonGeneric">calender</button>
-							<button class="buttonGeneric">add to Planner</button>
+							<button class="buttonGeneric" onclick="addEvent(this)">add to Planner</button>
 						</div>
                         <figcaption class="ondark">Feature image</figcaption>
                     </figure>
@@ -163,7 +163,7 @@
                         <img src="http://placehold.it/600x400" alt="Feature image">
 						<div class="listingButtonHolder">
 							<button class="buttonGeneric">calender</button>
-							<button class="buttonGeneric">add to Planner</button>
+							<button class="buttonGeneric" onclick="addEvent(this)">add to Planner</button>
 						</div>
                         <figcaption class="ondark">Feature image</figcaption>
                     </figure>
@@ -190,7 +190,7 @@
                         <img src="http://placehold.it/600x400" alt="Feature image">
 						<div class="listingButtonHolder">
 							<button class="buttonGeneric">calender</button>
-							<button class="buttonGeneric">add to Planner</button>
+							<button class="buttonGeneric" onclick="addEvent(this)">add to Planner</button>
 						</div>
                         <figcaption class="ondark">Feature image</figcaption>
                     </figure>
@@ -217,7 +217,7 @@
                         <img src="http://placehold.it/600x400" alt="Feature image">
 						<div class="listingButtonHolder">
 							<button class="buttonGeneric">calender</button>
-							<button class="buttonGeneric">add to Planner</button>
+							<button class="buttonGeneric" onclick="addEvent(this)">add to Planner</button>
 						</div>
                         <figcaption class="ondark">Feature image</figcaption>
                     </figure>
@@ -244,7 +244,7 @@
                         <img src="http://placehold.it/600x400" alt="Feature image">
 						<div class="listingButtonHolder">
 							<button class="buttonGeneric">calender</button>
-							<button class="buttonGeneric">add to Planner</button>
+							<button class="buttonGeneric" onclick="addEvent(this)">add to Planner</button>
 						</div>
                         <figcaption class="ondark">Feature image</figcaption>
                     </figure>
@@ -257,7 +257,7 @@
                 <div class="col-2of3">
                     <h2 class="ondark">Generate Optimal Ride</h2>
                     
-                    <button class="buttonGenericOnDark">Ride Generater</button>
+                    <button class="buttonGenericOnDark" onclick="generateRides();">Ride Generater</button>
 					
                     <h2 class="ManualFindTitle ondark">Manually Find my Rides</h2>
                     
@@ -270,7 +270,7 @@
                                 <input class="fieldHalf" type="text" name="returnDate" placeholder="Return Date">
                             </div>
                         </div>
-                        <button class="buttonGenericOnDark">Find Manually</button>
+                        <button class="buttonGenericOnDark" onclick="findRides(this)">Find Manually</button>
                     </form>
                 </div>
 
