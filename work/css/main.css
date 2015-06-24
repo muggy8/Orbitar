@@ -150,6 +150,11 @@ p a {
   background-color: rgb(44, 44, 230);
 }
 
+.hugBottom{
+	position:absolute;
+	bottom:0.65rem;
+}
+
 .hugRight{
 	margin-left: auto;
 	margin-right: 0;
