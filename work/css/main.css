@@ -249,6 +249,10 @@ h4 {
     margin:0;
 }
 
+.ManualFindTitle{
+	margin-top:1rem;
+}
+
 .ondark{
     color:#ffffff;
 }
@@ -371,6 +375,13 @@ ol li{
     overflow: auto;
     margin-left: auto;
     margin-right: auto;
+}
+
+#navHeader{
+  position: fixed;
+  z-index: 11;
+  right: 0;
+  left: 0;
 }
 
 @media (max-width: 75rem) {
@@ -509,6 +520,7 @@ ol li{
   margin-left:auto;
   margin-right:auto;
   padding:0.75rem;
+  margin-top: 3rem;
 }
 
 #bodyContainerCheckout{
@@ -518,6 +530,7 @@ ol li{
   margin-left:auto;
   margin-right:auto;
   padding:0.75rem;
+  margin-top: 3rem;
 }
 
 @media(max-width: 71rem){ /*media query for if the page width became too smaller than the max possible width of the content*/
