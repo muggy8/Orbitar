@@ -9,7 +9,6 @@ body {
   margin:0;
   padding: 0;
   background-image: url("https://s-media-cache-ak0.pinimg.com/originals/9b/59/c1/9b59c13b57aa0c6c2cae03675bc9bc95.jpg");
-  overflow-x:hidden;
 }
 
 section:not([id]) {
@@ -398,7 +397,10 @@ ol li{
     float: left;
 }
 
-
+.everythingContainer{
+	width:100%;
+	overflow-x:hidden;
+}
 
 #listingContainer{
   overflow: hidden;
