@@ -513,7 +513,7 @@ ol li{
 	left: calc(50% - 732px);
 }
 
-#scheduler{
+.scheduler{
   width: 15rem;
   height: 20rem;
   background-color: rgba(239,239,239,0.7);
@@ -527,9 +527,17 @@ ol li{
   z-index:+10;
 }
 
+.schedulerShow{
+	bottom:0;
+}
+
 @media(max-width: 95rem){
-	#scheduler{
+	.scheduler{
 		bottom:-15rem;
+	}
+	
+	.schedulerShow{
+		bottom:0;
 	}
 }
 
