@@ -511,6 +511,15 @@ ol li{
   padding:0.75rem;
 }
 
+#bodyContainerCheckout{
+  width: 70rem;
+  position: relative;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0.75rem;
+}
+
 @media(max-width: 71rem){ /*media query for if the page width became too smaller than the max possible width of the content*/
     #bodyContainer{
         width: 100%;
