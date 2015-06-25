@@ -53,7 +53,6 @@ function addEvent(ele){
 }
 
 function generateRides(){
-<<<<<<< HEAD
 	//find planner 
 	var planner = document.getElementById("scheduler");
 	var list;
