@@ -464,7 +464,7 @@ ol li{
     }
 
     .expand {
-      display: block !important;
+      visibility: visible;
     }
 
 }
