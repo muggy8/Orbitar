@@ -31,7 +31,7 @@ var elementCounter = 0;
 function addEvent(ele){
 	//console.log(ele.parentElement.parentElement.parentElement.parentElement);
 	var selected = ele.parentElement.parentElement.parentElement.parentElement; //get which overall box the button is in
-	temp = selected.childNodes;
+	//temp = selected.childNodes;
 	var attractionSelected = selected.childNodes[1].childNodes[1].innerHTML;
 	
 	var planner = document.getElementById("scheduler");
@@ -51,7 +51,6 @@ function addEvent(ele){
 	list.appendChild(entry);
 	elementCounter ++;
 }
-var temp;
 
 function generateRides(){
 	var planner = document.getElementById("scheduler");
@@ -89,6 +88,57 @@ function nuke(ele, event){
 		list.removeChild(li);
 	}
 }
+
+function findRides(ele){
+	//temp = ele;
+	var depart = ele.parentElement.childNodes[1].childNodes[1].childNodes[1];
+	var back = ele.parentElement.childNodes[1].childNodes[3].childNodes[1];
+	console.log(depart.parentElement);
+	if (depart.value == ""){
+		alert("You need to fill in a depart date");
+		return;
+	}
+	if (back.value == ""){
+		alert("you need to fill in a return date");
+		return;
+	}
+	makeTimetable(depart);
+	makeTimetable(back);
+}
+
+function makeTimetable(ele){
+	var faketimes = generateFakeTimes();
+	//console.log(faketimes);
+	
+	ele.style.display="none";
+	var container = ele.parentElement;
+	for (var i = 0; i < faketimes.length; i++){
+		
+	}
+}
+
+function generateFakeTimes(){
+	var times = [];
+	var numberAvalable = randomBetween(1, 5)
+	for (var i = 0; i < numberAvalable; i++){
+		var AMorPM = "AM";
+		if (randomBetween(1,2) == 2){
+			AMorPM = "PM";
+		}
+		var minutes = randomBetween(0, 59).toString();
+		if (minutes.length == 1){
+			minutes = "0" + minutes;
+		}
+		times.push(randomBetween(1,12) + ":" + minutes + AMorPM)
+	}
+	return times;
+}
+
+function randomBetween(min, max){
+	return Math.floor((Math.random() * max) + min);
+}
+
+var temp;
 
 function submitForm(form){
 	alert("sorry this is just a dummy website for a web design class therefore nothing actually works. sorry if you were actually expectin a real thing...");
