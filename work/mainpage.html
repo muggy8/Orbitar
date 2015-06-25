@@ -10,6 +10,7 @@
         <link href="css/grid.css" rel="stylesheet">
         <link href="css/style-guide.css" rel="stylesheet">
         <link href="css/font-embeds.css" rel="stylesheet">
+        <link href="css/transitions.css" rel="stylesheet">
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="js/homepage.js"></script>
@@ -23,10 +24,19 @@
 	                    <span id="siteName"><a href="">Orbitar</a></span>
 	                </div> <!-- ./navBarLeft -->
 	                <div id="navBarRight">
-	                    <ul>
-	                        <li><a class="buttonNav" href="#">Account</a></li>
-	                        <li><a class="buttonNav" href="#bookingStart">Bookings</a></li>
-							<li><a class="buttonNav" href="#">Feedback</a></li>
+	                    <ul class="dropDownContainer">
+                            <li class="buttonListElement">
+                                <a class="buttonNav dropDownButton" href="#">Account</a>
+                                <ul class="dropDownList">
+                                    <li><a href="#">Item #1</a></li>
+                                    <li><a href="#">Items are cool</a></li>
+                                    <li><a href="#">Funzors</a></li>
+                                    <li><a href="#">I'm out of ideas</a></li>
+                                </ul>
+                            </li>
+                            
+	                        <li><a class="buttonNav dropDownButton" href="#bookingStart">Bookings</a></li>
+							<li><a class="buttonNav dropDownButton" href="#">Feedback</a></li>
 	                    </ul>
                         <a id="menuButton">Menu</a>
 	                </div> <!-- ./navBarRight -->
