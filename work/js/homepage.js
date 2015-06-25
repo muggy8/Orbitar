@@ -53,21 +53,31 @@ function addEvent(ele){
 }
 
 function generateRides(){
+	//find planner 
 	var planner = document.getElementById("scheduler");
 	var list;
-	if (planner.childNodes.length <= 5 ){ // nothing was added so go add the UL tag
+	if (planner.childNodes.length <= 5 ){ // nothing was added tell the user to add other elements
 		alert("You have not added any events that you want to attend to yet. Please add other events first.");
 	}
-	else{
+	else{//other elements added so go add dates for the rides
 		list = document.getElementById("plannedSchedule");
 		
+		// creating the first entry
 		var entry =  document.createElement("li");
 		entry. id="rideUp";
 		entry.innerHTML = "Ascend: Feb/14/2088 <br> &nbsp;&nbsp;&nbsp;&nbsp;@4:45PM CST <a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
+		// the inner html here tells the user when to ascend and give an option to remove this element form the list
 		
-		var first = document.getElementById("item0");
+		// insert at the top of list
+		var counter = 0;
+		var first;
+		while (first == undefined || first == null){
+			first = document.getElementById("item" + counter);
+			counter ++;
+		}
 		list.insertBefore(entry, first);
 		
+		// insert at bottom of list
 		var entry2 =  document.createElement("li");
 		entry2. id="rideUp";
 		entry2.innerHTML = "Decent: Feb/18/2088 <br> &nbsp;&nbsp;&nbsp;&nbsp;@9:05AM CST <a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
@@ -75,25 +85,27 @@ function generateRides(){
 	}
 }
 
-function nuke(ele, event){
+function nuke(ele, event){//remove the element from the UL in the planner
 	var li = ele.parentElement;
 	var list = ele.parentElement.parentElement;
 	
 	event.preventDefault();
 	
-	if (list.childNodes.length == 1){
+	if (list.childNodes.length == 1){ // there are no other items in the list then remove the list element
 		list.parentElement.removeChild(list);
 	}
-	else{
-		list.removeChild(li);
+	else{ // or else just remove this element
+		list.removeChild(li); 
 	}
 }
 
 function findRides(ele){
 	//temp = ele;
-	var depart = ele.parentElement.childNodes[1].childNodes[1].childNodes[1];
-	var back = ele.parentElement.childNodes[1].childNodes[3].childNodes[1];
+	var depart = ele.parentElement.childNodes[1].childNodes[1].childNodes[1]; //traverse the DOM tree to find the input for departureDate
+	var back = ele.parentElement.childNodes[1].childNodes[3].childNodes[1]; //traverse the DOM tree to find the input for return
+	
 	//console.log(depart.parentElement);
+	//error checking to see if any values are blank
 	if (depart.value == ""){
 		alert("You need to fill in a depart date");
 		return;
@@ -102,6 +114,8 @@ function findRides(ele){
 		alert("you need to fill in a return date");
 		return;
 	}
+	
+	//if no places are blank, proceed to make the time tables.
 	makeTimetable(depart);
 	makeTimetable(back);
 }
@@ -118,13 +132,15 @@ function makeTimetable(ele){
 	//console.log(faketimes);
 	// end code segment
 	
-	ele.style.display="none";
-	var container = ele.parentElement;
+	ele.style.display="none"; //hide input fields
+	var container = ele.parentElement; // get the div everything lives in
 	
+	//create an OL for the rides scedules
 	var ol = document.createElement("ol");
 	ol.className="ondark";
 	container.appendChild(ol);
 	
+	//add fake rides to the OL based on the fake avalibilty time created earlier
 	for (var i = 0; i < faketimes.length; i++){
 		var li = document.createElement("li");
 		var liText = ele.value + " @ " + faketimes[i]; 
@@ -140,9 +156,9 @@ function makeTimetable(ele){
 }
 
 function generateFakeTimes(){
-	var times = [];
-	var numberAvalable = randomBetween(1, 5)
-	for (var i = 0; i < numberAvalable; i++){
+	var times = []; 
+	var numberAvalable = randomBetween(1, 5) // random number of available rides 
+	for (var i = 0; i < numberAvalable; i++){ // generate random times for the rides based on how many randomly generated available rides there are
 		var AMorPM = "AM";
 		if (randomBetween(1,2) == 2){
 			AMorPM = "PM";
@@ -157,7 +173,7 @@ function generateFakeTimes(){
 }
 
 function randomBetween(min, max){
-	return Math.floor((Math.random() * max) + min);
+	return Math.floor((Math.random() * max) + min); // code from http://www.w3schools.com/jsref/jsref_random.asp
 }
 
 var temp;
@@ -170,6 +186,7 @@ function addToPlanner(ele, e){
 		var formName = container.childNodes[1].name;
 		//console.log(formName);
 		
+		//checks to see if a UL element exists within the planner and if it does then fetch it. if not make it
 		var planner = document.getElementById("scheduler");
 		var list;
 		if (planner.childNodes.length <= 5 ){ // nothing was added so go add the UL tag
@@ -181,11 +198,13 @@ function addToPlanner(ele, e){
 			list = document.getElementById("plannedSchedule");
 		}
 		
+		//check to see if acceding div or descending div the link belongs in
 		var tripType = "Decent";
 		if (formName == "departureDate"){
 			tripType = "Ascend";
 		}
 		
+		//make the li and add it to the planner's list
 		var li = document.createElement("li");
 		li.innerHTML = tripType + ": " + ele.innerHTML.replace("@", "<br> &nbsp;&nbsp;&nbsp;&nbsp;@") + " CST " + "<a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
 		li.id=ele.innerHTML;
@@ -208,7 +227,7 @@ function schedulerHide(ele){
 	ele.setAttribute("onclick", "schedulerView(this)");
 }
 
+// code from / inspired by: http://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
 Number.prototype.map = function ( inMin , inMax , outMin , outMax ) {
   return ((( this - inMin ) * ( outMax - outMin )) / ( inMax - inMin )) + outMin;
 }
-// code from / inspired by: http://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
