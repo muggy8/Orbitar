@@ -93,7 +93,7 @@ function findRides(ele){
 	//temp = ele;
 	var depart = ele.parentElement.childNodes[1].childNodes[1].childNodes[1];
 	var back = ele.parentElement.childNodes[1].childNodes[3].childNodes[1];
-	console.log(depart.parentElement);
+	//console.log(depart.parentElement);
 	if (depart.value == ""){
 		alert("You need to fill in a depart date");
 		return;
@@ -110,10 +110,32 @@ function makeTimetable(ele){
 	var faketimes = generateFakeTimes();
 	//console.log(faketimes);
 	
+	// code segment from: http://stackoverflow.com/questions/17064603/sort-string-array-containing-time-in-format-0900-am
+	faketimes.sort(function (a, b) {
+	  return new Date('1970/01/01 ' + a) - new Date('1970/01/01 ' + b);
+	});
+
+	//console.log(faketimes);
+	// end code segment
+	
 	ele.style.display="none";
 	var container = ele.parentElement;
+	
+	var ol = document.createElement("ol");
+	ol.className="ondark";
+	container.appendChild(ol);
+	
 	for (var i = 0; i < faketimes.length; i++){
+		var li = document.createElement("li");
+		var liText = ele.value + " @ " + faketimes[i]; 
 		
+		var addLink = document.createElement("a");
+		addLink.innerHTML = liText;
+		addLink.href = "#";
+		addLink.setAttribute("onclick", "addToPlanner(this, event)");
+		li.appendChild(addLink);
+		
+		ol.appendChild(li);
 	}
 }
 
@@ -129,7 +151,7 @@ function generateFakeTimes(){
 		if (minutes.length == 1){
 			minutes = "0" + minutes;
 		}
-		times.push(randomBetween(1,12) + ":" + minutes + AMorPM)
+		times.push(randomBetween(1,12) + ":" + minutes + " " + AMorPM)
 	}
 	return times;
 }
@@ -139,6 +161,10 @@ function randomBetween(min, max){
 }
 
 var temp;
+
+function addToPlanner(ele, e){
+	e.preventDefault();
+}
 
 function submitForm(form){
 	alert("sorry this is just a dummy website for a web design class therefore nothing actually works. sorry if you were actually expectin a real thing...");
