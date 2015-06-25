@@ -54,11 +54,10 @@ function addEvent(ele){
 var temp;
 
 function generateRides(){
+	var planner = document.getElementById("scheduler");
 	var list;
 	if (planner.childNodes.length <= 5 ){ // nothing was added so go add the UL tag
-		list = document.createElement("ul");
-		list.id = "plannedSchedule";
-		planner.appendChild(list);
+		alert("You have not added any events that you want to attend to yet. Please add other events first.");
 	}
 	else{
 		list = document.getElementById("plannedSchedule");
