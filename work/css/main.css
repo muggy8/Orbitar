@@ -537,6 +537,9 @@ ol li{
     #bodyContainer{
         width: 100%;
     }
+	#bodyContainerCheckout{
+		width: 100%;
+	}
 }
 
 #elevatorCable{
