@@ -27,6 +27,44 @@ function elevatorChecker(){
 	//
 }
 
+var elementCounter = 0;
+function addEvent(ele){
+	//console.log(ele.parentElement.parentElement.parentElement.parentElement);
+	var selected = ele.parentElement.parentElement.parentElement.parentElement; //get which overall box the button is in
+	temp = selected.childNodes;
+	var attractionSelected = selected.childNodes[1].childNodes[1].innerHTML;
+	
+	var planner = document.getElementById("scheduler");
+	
+	var list;
+	if (planner.childNodes.length <= 5 ){ // nothing was added so go add the UL tag
+		list = document.createElement("ul");
+		list.id = "plannedSchedule";
+		planner.appendChild(list);
+	}
+	else{
+		list = document.getElementById("plannedSchedule");
+	}
+	var entry =  document.createElement("li");
+	entry. id="item" + elementCounter;
+	entry.innerHTML = attractionSelected;
+	list.appendChild(entry);
+	elementCounter ++;
+}
+var temp;
+
+function generateRides(){
+	var list;
+	if (planner.childNodes.length <= 5 ){ // nothing was added so go add the UL tag
+		list = document.createElement("ul");
+		list.id = "plannedSchedule";
+		planner.appendChild(list);
+	}
+	else{
+		list = document.getElementById("plannedSchedule");
+	}
+}
+
 function submitForm(form){
 	alert("sorry this is just a dummy website for a web design class therefore nothing actually works. sorry if you were actually expectin a real thing...");
 	return false;
