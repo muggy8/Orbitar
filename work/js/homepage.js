@@ -164,6 +164,33 @@ var temp;
 
 function addToPlanner(ele, e){
 	e.preventDefault();
+	
+	if (document.getElementById(ele.innerHTML) === null){ // item not added yet
+		var container = ele.parentElement.parentElement.parentElement;
+		var formName = container.childNodes[1].name;
+		//console.log(formName);
+		
+		var planner = document.getElementById("scheduler");
+		var list;
+		if (planner.childNodes.length <= 5 ){ // nothing was added so go add the UL tag
+			list = document.createElement("ul");
+			list.id = "plannedSchedule";
+			planner.appendChild(list);
+		}
+		else{
+			list = document.getElementById("plannedSchedule");
+		}
+		
+		var tripType = "Decent";
+		if (formName == "departureDate"){
+			tripType = "Ascend";
+		}
+		
+		var li = document.createElement("li");
+		li.innerHTML = tripType + ": " + ele.innerHTML.replace("@", "<br> &nbsp;&nbsp;&nbsp;&nbsp;@") + " CST " + "<a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
+		li.id=ele.innerHTML;
+		list.appendChild(li);
+	}
 }
 
 function submitForm(form){
