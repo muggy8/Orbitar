@@ -61,6 +61,18 @@ function generateRides(){
 	}
 	else{
 		list = document.getElementById("plannedSchedule");
+		
+		var entry =  document.createElement("li");
+		entry. id="rideUp";
+		entry.innerHTML = "Ascend: Feb/14/2088 <br> &nbsp;&nbsp;&nbsp;&nbsp;@4:45PM CST";
+		
+		var first = document.getElementById("item0");
+		list.insertBefore(entry, first);
+		
+		var entry2 =  document.createElement("li");
+		entry2. id="rideUp";
+		entry2.innerHTML = "Decent: Feb/18/2088 <br> &nbsp;&nbsp;&nbsp;&nbsp;@9:05AM CST";
+		list.appendChild(entry2);
 	}
 }
 
