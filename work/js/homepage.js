@@ -47,7 +47,7 @@ function addEvent(ele){
 	}
 	var entry =  document.createElement("li");
 	entry. id="item" + elementCounter;
-	entry.innerHTML = attractionSelected;
+	entry.innerHTML = attractionSelected + " <a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
 	list.appendChild(entry);
 	elementCounter ++;
 }
@@ -64,15 +64,29 @@ function generateRides(){
 		
 		var entry =  document.createElement("li");
 		entry. id="rideUp";
-		entry.innerHTML = "Ascend: Feb/14/2088 <br> &nbsp;&nbsp;&nbsp;&nbsp;@4:45PM CST";
+		entry.innerHTML = "Ascend: Feb/14/2088 <br> &nbsp;&nbsp;&nbsp;&nbsp;@4:45PM CST <a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
 		
 		var first = document.getElementById("item0");
 		list.insertBefore(entry, first);
 		
 		var entry2 =  document.createElement("li");
 		entry2. id="rideUp";
-		entry2.innerHTML = "Decent: Feb/18/2088 <br> &nbsp;&nbsp;&nbsp;&nbsp;@9:05AM CST";
+		entry2.innerHTML = "Decent: Feb/18/2088 <br> &nbsp;&nbsp;&nbsp;&nbsp;@9:05AM CST <a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
 		list.appendChild(entry2);
+	}
+}
+
+function nuke(ele, event){
+	var li = ele.parentElement;
+	var list = ele.parentElement.parentElement;
+	
+	event.preventDefault();
+	
+	if (list.childNodes.length == 1){
+		list.parentElement.removeChild(list);
+	}
+	else{
+		list.removeChild(li);
 	}
 }
 
