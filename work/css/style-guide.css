@@ -54,3 +54,8 @@
 h1#styleGuideHeader {
 	color: black;
 }
+
+/* fix positioning on the contents and citations page to display them statically */
+#earthBackwards, #basePad, #spacePad {
+	position: static;
+}
