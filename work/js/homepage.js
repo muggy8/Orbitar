@@ -42,10 +42,16 @@ $( document ).ready(function() {
 		day.setAttribute("onclick", "dayUpdate()");
 		calender.appendChild(day);
 	}
+	
+	callender.className = "hide";
 });
 
+function showCallender (){
+	document.getElementById("callender").className = "";
+}
+
 function dayUpdate(){
-	
+	document.getElementById("callender").className = "hide";
 }
 
 var elementCounter = 0;
@@ -68,7 +74,7 @@ function addEvent(ele){
 	}
 	var entry =  document.createElement("li");
 	entry. id="item" + elementCounter;
-	entry.innerHTML = attractionSelected + " <a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
+	entry.innerHTML = attractionSelected + "Feb/15/2088 <br> &nbsp;&nbsp;&nbsp;&nbsp;@1:00AM CST <br> &nbsp;&nbsp;&nbsp;&nbsp;duration: 22 hours" + " <a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
 	list.appendChild(entry);
 	elementCounter ++;
 }
@@ -86,7 +92,7 @@ function generateRides(){
 		// creating the first entry
 		var entry =  document.createElement("li");
 		entry. id="rideUp";
-		entry.innerHTML = "Ascend: Feb/14/2088 <br> &nbsp;&nbsp;&nbsp;&nbsp;@4:45PM CST <a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
+		entry.innerHTML = "Ascend: Feb/14/2088 <br> &nbsp;&nbsp;&nbsp;&nbsp;@4:45PM CST <br> &nbsp;&nbsp;&nbsp;&nbsp;duration: 12 hours <a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
 		// the inner html here tells the user when to ascend and give an option to remove this element form the list
 		
 		// insert at the top of list
@@ -101,7 +107,7 @@ function generateRides(){
 		// insert at bottom of list
 		var entry2 =  document.createElement("li");
 		entry2. id="rideUp";
-		entry2.innerHTML = "Decent: Feb/18/2088 <br> &nbsp;&nbsp;&nbsp;&nbsp;@9:05AM CST <a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
+		entry2.innerHTML = "Decent: Feb/18/2088 <br> &nbsp;&nbsp;&nbsp;&nbsp;@9:05AM CST <br> &nbsp;&nbsp;&nbsp;&nbsp;duration: 12 hours <a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
 		list.appendChild(entry2);
 	}
 }

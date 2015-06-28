@@ -617,7 +617,7 @@ ol li{
 
 .scheduler{
   width: 15rem;
-  height: 20rem;
+  min-height: 20rem;
   background-color: rgba(239,239,239,0.7);
   position: fixed;
   right: 0;
@@ -631,6 +631,10 @@ ol li{
 
 .schedulerShow{
 	bottom:0;
+}
+
+#plannedSchedule{
+	margin-bottom:4rem
 }
 
 @media(max-width: 95rem){
@@ -670,6 +674,10 @@ ol li{
 
 .callenderDay:hover{
 	background-color:rgb(200,200,200)
+}
+
+.hide{
+	visibility:hidden;
 }
 
 @media(max-width: 59rem){
