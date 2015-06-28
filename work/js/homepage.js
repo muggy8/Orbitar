@@ -1,31 +1,32 @@
-function elevatorChecker(){
-    var height = $(window).scrollTop(); // jquery documentations
-    //console.log(height);
-    if (height > 1088){
-        $("#cableCart").css("display", "none");
-    }
-    else{
-        $("#cableCart").css("display", "block");
-    }
-    //change brom black to gray between 164-360
-    if (height <= 145){
-        $("#cableCart").css("background-color", "#000000");
-        $("#elevatorCable").css("background-color", "#000000");
-    }
-    
-    if (height>145 && height < 400){
-        var grayscale = height.map(145, 400, 0, 150);
-        $("#cableCart").css("background-color", "rgb(" + grayscale + "," + grayscale + "," + grayscale + ")");
-        $("#elevatorCable").css("background-color", "rgb(" + grayscale + "," + grayscale + "," + grayscale + ")");
-    }
-    
-    if (height >= 400){
-        $("#cableCart").css("background-color", "rgb(" + 150 + "," + 150 + "," + 150 + ")");
-        $("#elevatorCable").css("background-color", "rgb(" + 150 + "," + 150 + "," + 150 + ")");
-    }
-    
-    //
-}
+$( window ).scroll(
+	function (){
+		var height = $(window).scrollTop(); // jquery documentations
+		//console.log(height);
+		if (height > 1088){
+			$("#cableCart").css("display", "none");
+		}
+		else{
+			$("#cableCart").css("display", "block");
+		}
+		//change brom black to gray between 164-360
+		if (height <= 145){
+			$("#cableCart").css("background-color", "#000000");
+			$("#elevatorCable").css("background-color", "#000000");
+		}
+		
+		if (height>145 && height < 400){
+			var grayscale = height.map(145, 400, 0, 150);
+			$("#cableCart").css("background-color", "rgb(" + grayscale + "," + grayscale + "," + grayscale + ")");
+			$("#elevatorCable").css("background-color", "rgb(" + grayscale + "," + grayscale + "," + grayscale + ")");
+		}
+		
+		if (height >= 400){
+			$("#cableCart").css("background-color", "rgb(" + 150 + "," + 150 + "," + 150 + ")");
+			$("#elevatorCable").css("background-color", "rgb(" + 150 + "," + 150 + "," + 150 + ")");
+		}
+		
+		//
+	});
 
 var elementCounter = 0;
 function addEvent(ele){
