@@ -658,6 +658,20 @@ ol li{
   padding: 0.5rem;
 }
 
+.callenderDay{
+  float: left;
+  margin-left: 0.25rem;
+  margin-top: 0.25rem;
+  width: 3rem;
+  height: 2.5rem;
+  border: solid 0.0725rem;
+  text-align: center;
+}
+
+.callenderDay:hover{
+	background-color:rgb(200,200,200)
+}
+
 @media(max-width: 59rem){
 	#elevatorCable{
 		margin-left:29.28125rem;

@@ -27,6 +27,26 @@ $( window ).scroll(
 		
 		//
 	});
+	
+$( document ).ready(function() {
+	var calender = document.getElementById("callender");
+	
+	var month = document.createElement("h3");
+	month.innerHTML = "June";
+	calender.appendChild(month);
+	
+	for (var i = 0; i < 30; i++){
+		var day = document.createElement("div");
+		day.innerHTML = i;
+		day.className = "callenderDay";
+		day.setAttribute("onclick", "dayUpdate()");
+		calender.appendChild(day);
+	}
+});
+
+function dayUpdate(){
+	
+}
 
 var elementCounter = 0;
 function addEvent(ele){
