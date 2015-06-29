@@ -264,15 +264,17 @@ h4 {
     color:#ffffff;
 }
 
-ul{
+.scheduler ul{
     list-style-type: none;
     padding-left:1em;
     margin:0.5em 0;
 }
 
-ul li{
+.scheduler ul li{
     margin:0.125em 0;
 }
+
+
 
 ol{
     padding-left:2em;
@@ -282,6 +284,8 @@ ol{
 ol li{
     margin:0.125em 0;
 }
+
+
 
 .dialogueBox{
     background-color:rgba(239,239,239,0.7);
