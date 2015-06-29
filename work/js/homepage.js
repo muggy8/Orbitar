@@ -74,7 +74,7 @@ function addEvent(ele){
 	}
 	var entry =  document.createElement("li");
 	entry. id="item" + elementCounter;
-	entry.innerHTML = attractionSelected + "Feb/15/2088 <br> &nbsp;&nbsp;&nbsp;&nbsp;@1:00AM CST <br> &nbsp;&nbsp;&nbsp;&nbsp;duration: 22 hours" + " <a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
+	entry.innerHTML = attractionSelected + ": Feb/15/2088 <br> &nbsp;&nbsp;&nbsp;&nbsp;@1:00AM CST <br> &nbsp;&nbsp;&nbsp;&nbsp;duration: 22 hours" + " <a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
 	list.appendChild(entry);
 	elementCounter ++;
 }
