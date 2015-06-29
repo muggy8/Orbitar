@@ -280,6 +280,9 @@ function toggleMenu() {
 }
 
 function editPlan(){
+	if (document.getElementById("plannedSchedule") != null){
+		document.getElementById("plannedSchedule").parentElement.removeChild(document.getElementById("plannedSchedule"));
+	}
 	var buttons = document.getElementsByClassName("buttonGeneric");
 	buttons[2].click();
 	for (var i = 0; i < buttons.length; i++){
