@@ -6,7 +6,9 @@
 
 body {
   font-family: franklin_gothic_fsbook, sans-serif;
-  padding: 2rem;
+  margin:0;
+  padding: 0;
+  background-image: url("../img/starField.jpg");
 }
 
 section:not([id]) {
@@ -30,13 +32,25 @@ section code {
   color:black;
 }
 
+.floatClear{
+    clear:both;
+}
+
+#hotels{
+  margin-top: 2rem;
+}
+
+#science{
+  margin-top: 2rem;
+}
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
 
 /* Styling for the navigation button */
 .buttonNav {
-    font-family: franklin_gothic_fsdemi, sans-serif;
+    font-family: franklin_gothic_fsbook, sans-serif;
+    font-weight: normal;
     display: inline-block;      /* make the button inline, but preserve block properties such as margins */
     padding: 0.5em 1.5em;
     color: rgb(255, 255, 255);
@@ -64,6 +78,15 @@ section code {
     background-color: rgb(44, 44, 230);  /* a darker shade of red as the background colour of the button */
 }
 
+#menuButton {
+    display: none;
+}
+
+@media (max-width: 35rem) {
+    #menuButton {
+        display: block;
+    }
+}
 
 /* Styling for the navigation button */
 .buttonNavM {
@@ -107,9 +130,9 @@ section code {
 }
 
 p a {
-	color: inherit;
-	text-decoration:underline;
-	font-style:italic;
+    color: inherit;
+    text-decoration:underline;
+    font-style:italic;
 }
 
 /*
@@ -118,24 +141,26 @@ p a {
  *  after it is clicked.
  */
 .buttonGeneric, .buttonGeneric:visited, .buttonGeneric:active {
-	background-color: rgb(29, 29, 153);
-	color:rgb(255, 255, 255);
-	padding: 0.5em 1em;
-	font-size:1.125rem;
-	border-radius:0.4rem;
-	border: 0.125em solid #000000;
-	cursor: pointer; cursor: hand;
+    background-color: rgb(29, 29, 153);
+    color:rgb(255, 255, 255);
+    padding: 0.5em 1em;
+    font-size:1.125rem;
+    border-radius:0.4rem;
+    border: 0.125em solid #000000;
+    cursor: pointer; cursor: hand;
+    font-family: franklin_gothic_fsbook, sans-serif;
 }
 
 /* Styling for submit button on a dark background. */
 .buttonGenericOnDark, .buttonGenericOnDark:visited, .buttonGeneric:active {
-	background-color:rgb(29, 29, 153);
-	color:#ffffff;
-	padding: 0.5em 1em;
-	font-size:1.125rem;
-	border-radius:0.4rem;
-	border: 0.125em solid #ffffff;
-	cursor: pointer; cursor: hand;
+    background-color:rgb(29, 29, 153);
+    color:#ffffff;
+    padding: 0.5em 1em;
+    font-size:1.125rem;
+    border-radius:0.4rem;
+    border: 0.125em solid #ffffff;
+    cursor: pointer; cursor: hand;
+    font-family: franklin_gothic_fsbook, sans-serif;
 }
 
 /* Display a lighter shade of blue for both versions of the button */
@@ -143,33 +168,52 @@ p a {
   background-color: rgb(44, 44, 230);
 }
 
+.hugBottom{
+	position:absolute;
+	bottom:0.65rem;
+}
+
+.hugRight{
+	margin-left: auto;
+	margin-right: 0;
+	display: block;
+}
+
 #newAccount{
-	width: 30em;
-	margin: 0.25rem 0;
-	overflow:hidden;
+    width: 30em;
+    margin: 0.25rem 0;
+    overflow:hidden;
 }
 
 .fieldFull{
-	width: 100%;
+    width: 100%;
     width: -webkit-calc(100% - 4px);
     width: -moz-calc(100% - 4px);
     width: calc(100% - 4px);
-	margin: 0.25rem 0;
-	padding: 0.25em 0;
+    margin: 0.25rem 0;
+    padding: 0.25em 0;
 }
 
 .fieldHalfL{
-	width:48%;
-	margin: 0.25rem 0;
-	float:left;
-	padding: 0.25em 0;
+    width:48%;
+    margin: 0.25rem 0;
+    float:left;
+    padding: 0.25em 0;
 }
 
 .fieldHalfR{
-	width:48%;
-	margin: 0.25rem 0;
-	float:right;
-	padding: 0.25em 0;
+    width:48%;
+    margin: 0.25rem 0;
+    float:right;
+    padding: 0.25em 0;
+}
+
+/* properties for form fields within a 2-column structure */
+.fieldHalf {
+    width: 100%;
+    margin: 0.25rem 0;
+    padding: 0.5em 0.5em;
+    font-size: 0.9rem;
 }
 
 /* 
@@ -182,6 +226,11 @@ p a {
   margin-top: 1rem;
 }
 
+#siteName a, #siteName a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 h1 {
   color: #ffffff;
   font-weight: normal;
@@ -190,44 +239,104 @@ h1 {
 }
 
 h2 {
-	font-weight: normal;
-	font-size: 2rem;
-	margin:0;
+    font-weight: normal;
+    font-size: 2rem;
+    margin:0;
 }
 
 h3 {
-	font-weight: normal;
-	font-size: 1.5rem;
-	margin:0;
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin:0;
 }
 
 h4 {
-	font-weight: normal;
-	font-size: 1.25rem;
-	margin:0;
+    font-weight: normal;
+    font-size: 1.25rem;
+    margin:0;
+}
+
+.ManualFindTitle{
+	margin-top:1rem;
 }
 
 .ondark{
-	color:#ffffff;
+    color:#ffffff;
 }
 
 ul{
     list-style-type: none;
-	padding-left:1em;
-	margin:0.5em 0;
+    padding-left:1em;
+    margin:0.5em 0;
 }
 
 ul li{
-	margin:0.125em 0;
+    margin:0.125em 0;
 }
 
 ol{
-	padding-left:2em;
-	margin:0.5em 0;
+    padding-left:2em;
+    margin:0.5em 0;
 }
 
 ol li{
-	margin:0.125em 0;
+    margin:0.125em 0;
+}
+
+.dialogueBox{
+    background-color:rgba(239,239,239,0.7);
+    display:block;
+    position:absolute;
+    border-radius: 0.75rem;
+    padding: 0.5rem;
+    width: 20rem;
+    border: 0.125rem solid black;
+    z-index:+10
+}
+
+#youLame{
+    top:3rem;
+    left:5%;
+}
+
+#youMidCool{
+    top:37rem;
+    right:5%;
+}
+
+#youCool{
+    top:75rem;
+    left:5%;
+}
+
+@media(max-width: 59rem){
+    #youMidCool{
+        right:auto;
+        left:5%;
+    }
+    
+}
+
+@media(max-width: 23.5rem){
+    .dialogueBox{
+        width:92%;
+    }
+    
+    #youLame{
+        top:5rem;
+        left:0;
+    }
+    
+    #youMidCool{
+        top:45rem;
+        right:auto;
+        left:0;
+    }
+    
+    #youCool{
+        top:78rem;
+        left:0;
+    }
 }
 
 /* 
@@ -238,10 +347,15 @@ ol li{
 /* Container for header navigation menu, which is centered and has padding on both sides for
    whitespace */
 #centeredNavContainer {
-    padding-left: 12%;
-    padding-right: 12%;
+/*    padding-left: 15%;
+    padding-right: 15%;*/
     background-color: rgb(29, 29, 153);
     clear: both;
+    position:fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index:+9001;
 }
 
 /* Reduce the padding */
@@ -253,21 +367,34 @@ ol li{
 }
 
 /* Finally, eliminate the padding */
-@media (max-width: 50rem) {
+/*@media (max-width: 50rem) {
     #centeredNavContainer {
         padding-left: 0;
         padding-right: 0;
     }
-}
+}*/
 
 /* The actual centered navigation bar itself */
 #navBar {
     clear: both;
     background-color: rgb(29, 29, 153);
-    max-width: 100%;
+    width: 70rem;
     overflow: auto;
-    margin: 0;
-    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navHeader{
+  position: fixed;
+  z-index: 11;
+  right: 0;
+  left: 0;
+}
+
+@media (max-width: 75rem) {
+    #navBar {
+        width: 100%;
+    }   
 }
 
 /* Remove the bullets and margin/padding from the nav list */
@@ -298,12 +425,55 @@ ol li{
     float: right;
  }
 
+#fullscreenMenuContainer {
+    visibility: hidden;
+}
+
 /* Collapse the right-hand menu options into a second row */
 @media (max-width: 35rem) {
     #navBarRight {
-        clear: both;
-        float: left;
+        /*clear: both;*/
+        /*float: left;*/
+        float: right;
     }
+
+    .buttonNav {
+        display: none;
+    }
+
+    /* Styling for submit button on a dark background. */
+    #menuButton, #menuButton:visited, #menuButton:active {
+        background-color:rgb(29, 29, 153);
+        color:#ffffff;
+        padding: 0.25em 1em;
+        font-size:1.125rem;
+        border-radius:0.4rem;
+        border: 0.125em solid #ffffff;
+        cursor: pointer; cursor: hand;
+        margin-top: 0.3rem;
+        font-family: franklin_gothic_fsdemi, sans-serif;
+        font-variant: small-caps;
+    }
+
+    /* Display a lighter shade of blue for both versions of the button */
+    #menuButton:hover {
+      background-color: rgb(44, 44, 230);
+    }
+
+    #fullscreenMenuContainer {
+        visibility: hidden;
+        position: fixed;
+        background-color: rgb(29, 29, 153);
+        width: 100%;
+        height: 50%;
+        z-index: 9100;
+        clear: both;
+    }
+
+    .expand {
+      visibility: visible;
+    }
+
 }
 
 /* After floating to the right, this sets the order of the menu items in the correct order */
@@ -311,7 +481,10 @@ ol li{
     float: left;
 }
 
-
+.everythingContainer{
+	width:100%;
+	overflow-x:hidden;
+}
 
 #listingContainer{
   overflow: hidden;
@@ -336,9 +509,245 @@ ol li{
 }
 
 .listingButtonHolder{
-	float:right; 
-	z-index:+1; 
-	margin-top:-3.25rem; 
-	margin-right:0.25rem;
-	position:relative;
+    float:right; 
+    z-index:+1; 
+    margin-top:-3.25rem; 
+    margin-right:0.25rem;
+    position:relative;
+}
+
+/* css for the site structure */
+#bodyContainer{
+  /*background-color: green; /*temprary for seeing where it is*/
+  /*height:50rem; temprary for seeing where it is*/
+  background-image: url("../img/earthBackwards.png");
+  background-repeat: no-repeat;
+  width: 70rem;
+  position: relative;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0.75rem;
+  margin-top: 3rem;
+}
+
+#bodyContainerCheckout{
+  width: 70rem;
+  position: relative;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0.75rem;
+  margin-top: 3rem;
+}
+
+@media(max-width: 71rem){ /*media query for if the page width became too smaller than the max possible width of the content*/
+    #bodyContainer{
+        width: 100%;
+    }
+	#bodyContainerCheckout{
+		width: 100%;
+	}
+}
+
+#elevatorCable{
+    height:80rem;
+    width:0.5rem;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    z-index:-1;
+    background-color:black;
+}
+
+#cablePusher{
+    height:25rem;
+    width:0.5rem;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    z-index:-1;
+}
+
+#cableStreacher{
+    height:20rem;
+    width:0.5rem;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    z-index:-1;
+}
+
+#basePad{
+    z-index:+1;
+    display:block;
+    position:absolute;
+    top:19rem;
+    left:41%;
+    left: -moz-calc(50% - 100px);
+    left: -webkit-calc(50% - 100px);
+    left: -o-calc(50% - 100px);
+    left: calc(50% - 100px);
+}
+
+#cableCart{
+    width: 2rem;
+    height: 3rem;
+    background-color: black;
+    position: fixed;
+    top: 25rem;
+    border-radius: 1rem;
+    left: 49%;
+    left: -moz-calc(50% - 1rem);
+    left: -webkit-calc(50% - 1rem);
+    left: -o-calc(50% - 1rem);
+    left: calc(50% - 1rem);
+}
+
+#spacePad{
+    position:absolute;
+    top: 90rem;
+    left: -10.75rem;
+    
+    left: -moz-calc(50% - 732px);
+    left: -webkit-calc(50% - 732px);
+    left: -o-calc(50% - 732px);
+    left: calc(50% - 732px);
+}
+
+.scheduler{
+  width: 15rem;
+  min-height: 20rem;
+  background-color: rgba(239,239,239,0.7);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  border: 0.125rem solid black;
+  border-radius: 0.25rem;
+  padding: 0.7rem;
+  margin: 0.5rem;
+  z-index:+10;
+}
+
+.schedulerShow{
+	bottom:0;
+}
+
+#plannedSchedule{
+	margin-bottom:4rem
+}
+
+@media(max-width: 95rem){
+	.scheduler{
+		bottom:-15rem;
+	}
+	
+	.schedulerShow{
+		bottom:0;
+	}
+}
+
+#callender{
+  width: 30rem;
+  height: 20rem;
+  background-color: #FFFFFF;
+  position: fixed;
+  left: 50%;
+  margin-left:-15rem;
+  top: 50%;
+  margin-top:-10rem;
+  z-index:15;
+  border: solid 0.125rem rgb(100,100,100);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.callenderDay{
+  float: left;
+  margin-left: 0.25rem;
+  margin-top: 0.25rem;
+  width: 3rem;
+  height: 2.5rem;
+  border: solid 0.0725rem;
+  text-align: center;
+}
+
+.callenderDay:hover{
+	background-color:rgb(200,200,200)
+}
+
+.hide{
+	visibility:hidden;
+}
+
+@media(max-width: 59rem){
+	#elevatorCable{
+		margin-left:29.28125rem;
+	}
+	#cablePusher{
+		margin-left:29.28125rem;
+	}
+	#basePad{
+		left:23.3rem;
+		left: -moz-calc(29.5rem - 100px);
+		left: -webkit-calc(29.5rem - 100px);
+		left: -o-calc(29.5rem - 100px);
+		left: calc(29.5rem - 100px);
+	}
+	#cableCart{
+		left: 28.5rem;
+	}
+	#spacePad{
+		left:-16.2rem;
+	}
+}
+
+@media(max-width: 35.75rem){
+    
+    #elevatorCable{
+        margin-left:auto;
+        margin-right:5.96875rem;
+    }
+    #cablePusher{
+        margin-left:auto;
+        margin-right:5.96875rem;
+    }
+    #basePad{
+        left:auto;
+        right:0;
+    }
+    #cableCart{
+        left: auto;
+        right: 5.2rem;
+    }
+    #spacePad{
+        left:auto;
+        right:-39.7rem;
+    }
+    #scheduler{
+        display:none;
+    }
+}
+
+/*
+ *  This is for the container that contains each section that describes the hotel facilities,
+ *  the trip experience, and so on.
+ */
+.featureContainer {
+    background-color: black;    
+    width: 70rem;
+    margin: 0 auto;
+    clear: both;
+    border-top: 0.25em solid rgb(100, 100, 100);
+    border-bottom: 0.25em solid rgb(100, 100, 100);
+}
+
+@media(max-width: 71rem) {
+    .featureContainer {
+        width: 100%;
+    }
+}
+
+.col-1of3 figcaption {
+    margin-top: 0.5em;
 }

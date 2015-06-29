@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Orbitar: The Orbital Space Elevator</title>
+
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/grid.css" rel="stylesheet">
+        <link href="css/style-guide.css" rel="stylesheet">
+        <link href="css/font-embeds.css" rel="stylesheet">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/homepage.js"></script>
+    </head>
+    
+    <body>
+        <nav id="navHeader"> <!-- banner-->
+            <div id="centeredNavContainer">
+                <div id="navBar">
+                    <div id="navBarLeft">
+                        <span id="siteName"><a href="mainpage.html">Orbitar</a></span>
+                    </div> <!-- ./navBarLeft -->
+                    <div id="navBarRight">
+                        <ul class="dropDownContainer">
+                            <li class="buttonListElement">
+                                <a class="buttonNav dropDownButton" href="mainpage.html#aboutOrbitar">About</a>
+                                <!--
+                                <ul class="dropDownList">
+                                    <li></li>
+                                </ul>
+                                -->
+                            </li>
+                            <li><a class="buttonNav dropDownButton" href="mainpage.html#bookingStart">Bookings</a></li>
+                            <li><a class="buttonNav dropDownButton" href="#">Account</a>
+                            <li><a class="buttonNav dropDownButton" href="#">Feedback</a></li>
+                        </ul>
+                        <a id="menuButton" onclick="toggleMenu()" href="#">Menu</a>
+
+                    </div> <!-- ./navBarRight -->
+
+                </div> <!-- ./navBar -->
+            </div> <!-- ./centered-nav-container -->
+            <div id="fullscreenMenuContainer"></div>
+            <div class="floatClear"></div>
+        </nav>
+
+        <!-- TO DO: remove this div, while also fixing a bug where the body is pushed ~50px down if this .everythingContainer is removed -->
+        <div class="everythingContainer">
+            <div id="bodyContainerCheckout">
+                <h2 class="ondark">Complete Bookings</h2>
+                <p class="ondark">
+                    Total cost of your booking: <strong>$6695.00</strong>
+                </p>
+                <ul class="ondark">
+                    <li>Elevator ride and return trip, departing at 6/12/2085 and departing at 6/19/2085: $5495.00</li>
+                    <li>Hotel booking &ndash; citizen vacation class room: $1186.00</li>
+                    <li>Orbital Telescope bookings &ndash; 6/13/2085 and 6/17/2085: $14.00</li>
+                </ul>
+                <form action="reciept.html" method="post" id="startBooking">
+                    <div class="grid">
+                        <div class="mainPageFormGridCol-1of2">
+                            <input class="fieldHalf" type="text" name="departureDate" placeholder="First Name">
+                        </div>
+                        <div class="mainPageFormGridCol-2of2">
+                            <input class="fieldHalf" type="text" name="returnDate" placeholder="Last Name">
+                        </div>
+                        <input class="fieldHalf" type="text" name="returnDate" placeholder="Credit Card Number">
+                        <input class="fieldHalf" type="text" name="phoneNumber" placeholder="Phone Number">
+                        <div class="mainPageFormGridCol-1of2">
+                            <input class="fieldHalf" type="number" name="streetNumber" placeholder="Street Number">
+                        </div>
+                        <div class="mainPageFormGridCol-2of2">
+                            <input class="fieldHalf" type="text" name="streetName" placeholder="Street Name">
+                        </div>
+                        <div class="mainPageFormGridCol-1of2">
+                            <input class="fieldHalf" type="number" name="state" placeholder="State/Province">
+                        </div>
+                        <div class="mainPageFormGridCol-2of2">
+                            <input class="fieldHalf" type="text" name="country" placeholder="Country of Residence">
+                        </div>
+                        <input class="fieldHalf" type="text" name="email" placeholder="e-mail address">
+                        <input class="fieldHalf" type="text" name="SIN" placeholder="Social Insurance Number">
+                        <input class="fieldHalf" type="text" name="institution" placeholder="Institution (optional)">
+                    </div>
+                    <button class="buttonGenericOnDark hugRight">Complete Bookings</button>
+                </form>
+            </div>
+        </div>
+    </body>
+    
+</html>

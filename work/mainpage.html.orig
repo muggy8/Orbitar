@@ -18,6 +18,9 @@
     </head>
 
     <body>
+<<<<<<< HEAD
+        
+=======
         <nav id="navHeader"> <!-- banner-->
             <div id="centeredNavContainer">
                 <div id="navBar">
@@ -206,7 +209,7 @@
 						</div> <!-- ./col-1of3 -->
 					</div>
 				</article>
-        
+
 				<article class="featureContainer">
 					<div class="grid">
 						<div class="col-2of3">
@@ -323,6 +326,7 @@
 			</article>
 
         </div>
+>>>>>>> main-body-content
     </body>
 
 </html>
