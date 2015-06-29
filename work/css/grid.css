@@ -23,7 +23,7 @@
     width: 60%;
 }
 
-.col-1of3 {
+.col-1of3Main {
     width: 40%;
 }
 
@@ -35,11 +35,11 @@
     width: 33.333%;
 }
 
-.col-1of3 figure, .col-1of3Product figure {
+.col-1of3Main figure, .col-1of3Product figure {
     margin: 0;  /* remove default figure margin */
 }
 
-.col-1of3 figure img, .col-1of3Product figure img {
+.col-1of3Main figure img, .col-1of3Product figure img {
     width: 100%;  /* fill as much of the width and height of the column as possible */
     height: 100%;
 }
@@ -50,7 +50,7 @@
         width: 55%;
         padding-right: 1.85em;  /* reduce the amount of padding compared to before */
     }
-    .col-1of3 {
+    .col-1of3Main {
         padding-left: 1.85em;  /* reduce the amount of padding compared to before */
         width: 45%;
     }
@@ -61,7 +61,7 @@
     .col-2of3 {
         width: 100%;
     }
-    .col-1of3, .col-1of3Product {
+    .col-1of3Main, .col-1of3Product {
         padding: 0.5em 1.85em;
         width: 100%;
     }
