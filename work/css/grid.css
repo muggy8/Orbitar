@@ -35,11 +35,11 @@
     width: 33.333%;
 }
 
-.col-1of3Main figure, .col-1of3Service figure {
+.col-1of3Main figure, .serviceFigure figure {
     margin: 0;  /* remove default figure margin */
 }
 
-.col-1of3Main figure img, .col-1of3Service figure img {
+.col-1of3Main figure img, .serviceFigure figure img {
     width: 100%;  /* fill as much of the width and height of the column as possible */
     height: 100%;
 }
@@ -53,6 +53,11 @@
     .col-1of3Main {
         padding-left: 1.85em;  /* reduce the amount of padding compared to before */
         width: 45%;
+    }
+
+    .col-1of3Service {
+        clear: both;
+        width: 100%;
     }
 }
 
