@@ -169,14 +169,14 @@ p a {
 }
 
 .hugBottom{
-	position:absolute;
-	bottom:0.65rem;
+  position:absolute;
+  bottom:0.65rem;
 }
 
 .hugRight{
-	margin-left: auto;
-	margin-right: 0;
-	display: block;
+  margin-left: auto;
+  margin-right: 0;
+  display: block;
 }
 
 #newAccount{
@@ -257,7 +257,7 @@ h4 {
 }
 
 .ManualFindTitle{
-	margin-top:1rem;
+  margin-top:1rem;
 }
 
 .ondark{
@@ -482,8 +482,8 @@ ol li{
 }
 
 .everythingContainer{
-	width:100%;
-	overflow-x:hidden;
+  width:100%;
+  overflow-x:hidden;
 }
 
 #listingContainer{
@@ -545,9 +545,9 @@ ol li{
     #bodyContainer{
         width: 100%;
     }
-	#bodyContainerCheckout{
-		width: 100%;
-	}
+  #bodyContainerCheckout{
+    width: 100%;
+  }
 }
 
 #elevatorCable{
@@ -630,21 +630,21 @@ ol li{
 }
 
 .schedulerShow{
-	bottom:0;
+  bottom:0;
 }
 
 #plannedSchedule{
-	margin-bottom:4rem
+  margin-bottom:4rem
 }
 
 @media(max-width: 95rem){
-	.scheduler{
-		bottom:-15rem;
-	}
-	
-	.schedulerShow{
-		bottom:0;
-	}
+  .scheduler{
+    bottom:-15rem;
+  }
+  
+  .schedulerShow{
+    bottom:0;
+  }
 }
 
 #callender{
@@ -673,33 +673,33 @@ ol li{
 }
 
 .callenderDay:hover{
-	background-color:rgb(200,200,200)
+  background-color:rgb(200,200,200)
 }
 
 .hide{
-	visibility:hidden;
+  visibility:hidden;
 }
 
 @media(max-width: 59rem){
-	#elevatorCable{
-		margin-left:29.28125rem;
-	}
-	#cablePusher{
-		margin-left:29.28125rem;
-	}
-	#basePad{
-		left:23.3rem;
-		left: -moz-calc(29.5rem - 100px);
-		left: -webkit-calc(29.5rem - 100px);
-		left: -o-calc(29.5rem - 100px);
-		left: calc(29.5rem - 100px);
-	}
-	#cableCart{
-		left: 28.5rem;
-	}
-	#spacePad{
-		left:-16.2rem;
-	}
+  #elevatorCable{
+    margin-left:29.28125rem;
+  }
+  #cablePusher{
+    margin-left:29.28125rem;
+  }
+  #basePad{
+    left:23.3rem;
+    left: -moz-calc(29.5rem - 100px);
+    left: -webkit-calc(29.5rem - 100px);
+    left: -o-calc(29.5rem - 100px);
+    left: calc(29.5rem - 100px);
+  }
+  #cableCart{
+    left: 28.5rem;
+  }
+  #spacePad{
+    left:-16.2rem;
+  }
 }
 
 @media(max-width: 35.75rem){
