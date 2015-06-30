@@ -263,8 +263,8 @@ Number.prototype.map = function ( inMin , inMax , outMin , outMax ) {
 function toggleMenu() {
 
     // get current visibility value
-    var visibilityValue = $('#fullscreenMenuContainer').css("visibility");
-    console.log("old visibility = " + visibilityValue);
+    // var visibilityValue = $('#fullscreenMenuContainer').css("visibility");
+    // console.log("old visibility = " + visibilityValue);
 
     // if visibility is visible, toggle to hidden
     if (visibilityValue == "visible") {
@@ -276,5 +276,9 @@ function toggleMenu() {
         visibilityValue = $('#fullscreenMenuContainer').css("visibility", "visible");
     }
     
-    console.log("new visibility = " + visibilityValue);
+    // console.log("new visibility = " + visibilityValue);
+}
+
+function displayHiddenContent() {
+	
 }

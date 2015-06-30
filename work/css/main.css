@@ -680,8 +680,13 @@ ol li{
   background-color:rgb(200,200,200)
 }
 
-.hide{
-  visibility:hidden;
+.hide {
+  /*visibility:hidden;*/ /* only hide the content from the page */
+  display: none; /* completely remove the content from the page */
+}
+
+.show {
+  visibility: visible;
 }
 
 @media(max-width: 59rem){
@@ -760,4 +765,8 @@ ol li{
 /* bold version of the font */
 .fontDemi {
   font-family: franklin_gothic_fsdemi, sans-serif;
+}
+
+.showHiddenContentButton {
+  font-style: normal;
 }
