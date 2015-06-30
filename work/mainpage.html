@@ -31,7 +31,7 @@
                             <li><a class="buttonNav dropDownButton" href="#">Account</a>
                             <li><a class="buttonNav dropDownButton" href="#">Feedback</a></li>
                         </ul>
-                        <a id="menuButton" onclick="toggleMenu()" href="#">Menu</a>
+                        <button id="menuButton" onclick="toggleMenu()">Menu</button>
 
                     </div> <!-- ./navBarRight -->
 
@@ -75,8 +75,8 @@
 			</div>
         
             <section id="scheduler" class="scheduler" onclick="schedulerView(this)">
-                <h3>Trip Planner:</h3>
-                <a href="checkout.html" onclick="validateForm(this)" class="buttonGeneric hugBottom">Checkout</a>
+                <h3 id="plannerHeadder">Trip Planner:</h3>
+                <a href="checkout.html" onclick="validateForm(this)" class="buttonGeneric checkoutButton" id="checkout">Checkout</a>
             </section>
 
             <article class="featureContainer" id="aboutOrbitar">

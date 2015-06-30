@@ -168,9 +168,8 @@ p a {
   background-color: rgb(44, 44, 230);
 }
 
-.hugBottom{
-  position:absolute;
-  bottom:0.65rem;
+.checkoutButton{
+  margin-top: 1rem;
 }
 
 .hugRight{
@@ -644,7 +643,11 @@ ol li{
 }
 
 #plannedSchedule{
-  margin-bottom:4rem
+  margin-bottom:2rem
+}
+
+#plannerHeadder{
+  margin-bottom: 1rem;
 }
 
 @media(max-width: 95rem){
@@ -742,17 +745,17 @@ ol li{
 }
 
 .schedulerInMenu{
-  position:absolute; 
+  position:relative; 
   display:block; 
   bottom:auto; 
-  top:3.25rem;
+  top:0;
+  height:60%;
+  overflow-y:auto;
 }
-
+/*
 @media(max-width: 25.625rem){
-  .schedulerInMenu{
-    top:6.5rem;
-  }
 }
+*/
 
 /*
  *  This is for the container that contains each section that describes the hotel facilities,

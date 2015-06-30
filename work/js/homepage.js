@@ -29,7 +29,7 @@ $( window ).scroll(
 	});
 	
 $( document ).ready(function() {
-	
+
     manageMenu();
 	var calender = document.getElementById("callender");
 	
@@ -102,7 +102,7 @@ function addEvent(ele){
 	if (planner.childNodes.length <= 5 ){ // nothing was added so go add the UL tag
 		list = document.createElement("ul");
 		list.id = "plannedSchedule";
-		planner.appendChild(list);
+		$(list).insertAfter("#plannerHeadder");
 	}
 	else{
 		list = document.getElementById("plannedSchedule");
@@ -254,7 +254,7 @@ function addToPlanner(ele, e){
 		if (planner.childNodes.length <= 5 ){ // nothing was added so go add the UL tag
 			list = document.createElement("ul");
 			list.id = "plannedSchedule";
-			planner.appendChild(list);
+			$(list).insertAfter("#plannerHeadder");
 		}
 		else{
 			list = document.getElementById("plannedSchedule");
