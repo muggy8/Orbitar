@@ -64,13 +64,19 @@ function manageMenu(){
 		// viewport is more than 35 rems wide
 		$(".dropDownContainer").detach().appendTo('#navBarRight');
 		$("#scheduler").detach().appendTo('.everythingContainer');
-		document.getElementById("scheduler").setAttribute("style", "");
+		var scheduler = document.getElementById("scheduler")
+		if (scheduler.className.indexOf(" schedulerInMenu") > -1){
+			scheduler.className = scheduler.className.replace(" schedulerInMenu", ""); 
+		}
 	}
 	else{
 		// viewport is less than 35 rems wide
 		$(".dropDownContainer").detach().appendTo('#fullscreenMenuContainer');
 		$("#scheduler").detach().appendTo('#fullscreenMenuContainer');
-		document.getElementById("scheduler").setAttribute("style", "position:absolute; display:block; bottom:auto; top:0;");
+		var scheduler = document.getElementById("scheduler")
+		if (scheduler.className.indexOf(" schedulerInMenu") == -1){
+			scheduler.className += " schedulerInMenu"; 
+		}
 	}
 }
 
