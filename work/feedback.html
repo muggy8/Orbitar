@@ -62,14 +62,12 @@
                             <h3 class="ondark">How was your experiance</h3>
                             <p class="ondark">where 0 is aweful and 10 is awesome</p>
                             <label class="ondark" for="hotelRange">0</label>
-                            <input class="ondark multiSelect" id="hotelRange" type="range" min="0" max="10" value"5" name="citizenScience">
+                            <input class="ondark multiSelect" id="hotelRange" type="range" min="0" max="10" value"5" name="hotelRange">
                             <label class="ondark" for="hotelRange">10</label>
                         </div>
                         <div class="quantitativeFeedback">
                             <h3 class="ondark">Additional Comments:</h3>
-                            <textarea rows="6" cols="50">
-
-                            </textarea>
+                            <textarea rows="6" cols="50" name="hotelComments"></textarea>
                         </div>
                     </section>
 
@@ -87,9 +85,20 @@
                         <div class="multiSelectOption">
                             <input class="ondark multiSelect" type="checkbox" name="launchPad"><p class="ondark multiSelect">Launch Pad</p>
                         </div>
+                        <div class="quantitativeFeedback">
+                            <h3 class="ondark">How was your experiance</h3>
+                            <p class="ondark">where 0 is aweful and 10 is awesome</p>
+                            <label class="ondark" for="sciRange">0</label>
+                            <input class="ondark multiSelect" id="sciRange" type="range" min="0" max="10" value"5" name="scienceRange">
+                            <label class="ondark" for="hsciRange">10</label>
+                        </div>
+                        <div class="quantitativeFeedback">
+                            <h3 class="ondark">Additional Comments:</h3>
+                            <textarea rows="6" cols="50" name="sciComments"></textarea>
+                        </div>
                     </section>
 
-
+                    <input type="submit" class="buttonGenericOnDark feedbackSubmit" value="Submit">
                 </form>
             </div>
         </div>
