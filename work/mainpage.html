@@ -133,22 +133,27 @@
                                     <span class="fontDemi ondark">Cost: $550 per night</span>
                                 </p>
 
-                                <h4 class="ondark">Room Amenities and Specifications</h4>
-                                <ul class="ondark">
-                                    <li>Cylindrical room with a large glass wall on one end</li>
-                                    <li>Float as you sleep: more comfortable than a bed!</li>
-                                    <li>1-4 person room capacity</li>
-                                    <li>Specialized ultra-lightweight suits provided so that collisions with other room guests and objects won't wake you up</li>
-                                    <li>Pressurized cabins and climate control provide a comfortable atmosphere</li>
-                                    <li>Private bathroom with shower stall</li>
-                                    <li>Entertainment suite with world television and high-speed internet</li>
-                                </ul>
+                                <button class="ondark showHiddenContentButton" onclick="displayHiddenContent(vacationClassHotelHiddenContent)">View More Details&hellip;</button>
+
+                                <div class="show hiddenContent" id="vacationClassHotelHiddenContent">
+                                    <h4 class="ondark">Room Amenities and Specifications</h4>
+                                    <ul class="ondark">
+                                        <li>Cylindrical room with a large glass wall on one end</li>
+                                        <li>Float as you sleep: more comfortable than a bed!</li>
+                                        <li>1-4 person room capacity</li>
+                                        <li>Specialized ultra-lightweight suits provided so that collisions with other room guests and objects won't wake you up</li>
+                                        <li>Pressurized cabins and climate control provide a comfortable atmosphere</li>
+                                        <li>Private bathroom with shower stall</li>
+                                        <li>Entertainment suite with world television and high-speed internet</li>
+                                    </ul>
+                                </div>  <!-- ./hiddenContent -->
+
                             </div>
                         </div>
 
                         <div class="col-1of3Service">
                             <h3 class="ondark">Citizen Scientist Class Hotel Rooms</h3>
-
+                            
                             <div class="serviceFigure">
                                 <figure>
                                     <img src="img/SpaceHotel2-CitizenScientistRoom.jpg" alt="A medium sized room with hi-tech computers that are able to do complex calculations">
@@ -168,17 +173,21 @@
                                     <span class="fontDemi ondark">Cost: $750 per night</span>
                                 </p>
 
-                                <h4 class="ondark">Room Amenities and Specifications</h4>
-                                <ul class="ondark">
-                                    <li>1-2 person room capacity</li>
-                                    <li>Equipment to perform basic astrochemistry and astrophysics experiments</li>
-                                    <li>Computers capable of performing complex calculations</li>
-                                    <li>Access real-time data about the space station</li>
-                                    <li>Strap yourself into a luxurious pull-down bed</li>
-                                    <li>Pressurized cabins and climate control provide a comfortable atmosphere</li>
-                                    <li>Private bathroom with shower stall</li>
-                                    <li>Ultra-high-speed internet</li>
-                                </ul>
+                                <button class="ondark showHiddenContentButton" onclick="displayHiddenContent(citSciClassHotelHiddenContent)">View More Details&hellip;</button>
+
+                                <div class="show hiddenContent" id="citSciClassHotelHiddenContent">
+                                    <h4 class="ondark">Room Amenities and Specifications</h4>
+                                    <ul class="ondark">
+                                        <li>1-2 person room capacity</li>
+                                        <li>Equipment to perform basic astrochemistry and astrophysics experiments</li>
+                                        <li>Computers capable of performing complex calculations</li>
+                                        <li>Access real-time data about the space station</li>
+                                        <li>Strap yourself into a luxurious pull-down bed</li>
+                                        <li>Pressurized cabins and climate control provide a comfortable atmosphere</li>
+                                        <li>Private bathroom with shower stall</li>
+                                        <li>Ultra-high-speed internet</li>
+                                    </ul>
+                                </div>  <!-- ./hiddenContent -->
                             </div>
                         </div>
 
@@ -204,19 +213,23 @@
                                     <span class="fontDemi ondark">Cost: $1200 per night</span>
                                 </p>
 
-                                <h4 class="ondark">Room Amenities and Specifications</h4>
+                                <button class="ondark showHiddenContentButton" onclick="displayHiddenContent(proSciClassHotelHiddenContent)">View More Details&hellip;</button>
 
-                                <ul class="ondark">
-                                    <li>Equipment to perform advanced astrochemistry and astrophysics experiments</li>
-                                    <li>Suitable for confidential work; advanced security measures, including a fingerprint reader door access and reinforced doors and walls, to prevent unauthorized access</li>
-                                    <li>Adjust the microgravity in the room using a switch</li>
-                                    <li>Computers capable of performing complex calculations</li>
-                                    <li>Access real-time data about the space station</li>
-                                    <li>Strap yourself into a luxurious pull-down bed</li>
-                                    <li>Pressurized cabins and climate control provide a comfortable atmosphere</li>
-                                    <li>Private bathroom with shower stall</li>
-                                    <li>Ultra-high-speed internet</li>
-                                </ul>
+                                <div class="show hiddenContent" id="proSciClassHotelHiddenContent">
+                                    <h4 class="ondark">Room Amenities and Specifications</h4>
+                                    <ul class="ondark">
+                                        <li>Equipment to perform advanced astrochemistry and astrophysics experiments</li>
+                                        <li>Suitable for confidential work; advanced security measures, including a fingerprint reader door access and reinforced doors and walls, to prevent unauthorized access</li>
+                                        <li>Adjust the microgravity in the room using a switch</li>
+                                        <li>Computers capable of performing complex calculations</li>
+                                        <li>Access real-time data about the space station</li>
+                                        <li>Strap yourself into a luxurious pull-down bed</li>
+                                        <li>Pressurized cabins and climate control provide a comfortable atmosphere</li>
+                                        <li>Private bathroom with shower stall</li>
+                                        <li>Ultra-high-speed internet</li>
+                                    </ul>
+                                </div>  <!-- ./hiddenContent -->
+
                             </div>
                         </div>
 
@@ -367,9 +380,7 @@
                                 Astrochemistry lab users must be affiliated with a professional research organization.
                             </p>
 
-                            <p class="ondark fontDemi">
-                                <button class="showHiddenContentButton" onclick="displayHiddenContent(chemLabHiddenContent)">View More Details&hellip;</button>
-                            </p>
+                            <button class="ondark showHiddenContentButton" onclick="displayHiddenContent(chemLabHiddenContent)">View More Details&hellip;</button>
 
                             <div class="show hiddenContent" id="chemLabHiddenContent">
                                 <h3 class="ondark">Specifications</h3>
@@ -469,11 +480,11 @@
                             </p>
 
                             <p class="ondark fontDemi">
-                                <button class="showHiddenContentButton" onclick="displayHiddenContent(launchPad)">View More Details&hellip;</button>
+                                <button class="showHiddenContentButton" onclick="displayHiddenContent(launchPadHiddenContent)">View More Details&hellip;</button>
                             </p>
 
-                            <div class="show hiddenContent" id="launchPad">
-                            <h3 class="ondark">Specifications</h3>
+                            <div class="show hiddenContent" id="launchPadHiddenContent">
+                                <h3 class="ondark">Specifications</h3>
                                 <ul>
                                     <li class="ondark">room size: 25m wide x 7.5 meters tall x 30 meters deep</li>
                                     <li class="ondark">Non-pressurized (space suit required)</li>
