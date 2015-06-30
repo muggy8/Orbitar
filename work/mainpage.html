@@ -322,7 +322,7 @@
                             </p>
 
                             <div class="show hiddenContent" id="telescopeHiddenContent">
-                                <p class="ondark">Specifications:</p>
+                                <h3 class="ondark">Specifications</h3>
                                     <ul>
                                         <li class="ondark">Observation Specturm: infrared, optical, ultraviolet (limited)</li>
                                         <li class="ondark">Internal gyroscope</li>
@@ -333,7 +333,7 @@
                                         <li class="ondark">Up to 50,000,000x magnification</li>
                                         <li class="ondark">Up to 1,000,000x illumination</li>
                                     </ul>
-                            </div>
+                            </div>  <!-- ./hiddenContent -->
 
 						</div>
 
@@ -387,7 +387,7 @@
                                     <li class="ondark">ventalation</li>
                                     <li class="ondark">Standard 0g safty equipment</li>
                                 </ul>
-                            </div>
+                            </div>  <!-- ./hiddenContent -->
 
 						</div>
 
@@ -421,14 +421,21 @@
                                 <span class="fontDemi">Usage Cost: $250 per hour, or $5500 per 24 hours</span>
                             </p>
 
-                            <h4 class="ondark">Specifications</h4>
-                            <ul class="ondark">
-                                <li>Proton/antiproton particles collision collision</li>
-                                <li>Beam acceleration of up to 980 GeV</li>
-                                <li>6.3-kilometre circumference circular accelerator ring</li>
-                                <li>1275 sensors to measure collsions</li>
-                                <li>Redundant safety sensors to detect and alert about any irregularities during operation, with automatic emergency safety shutoffs</li>
-                            </ul>
+                            <p class="ondark fontDemi">
+                                <button class="showHiddenContentButton" onclick="displayHiddenContent(particleAccelHiddenContent)">View More Details&hellip;</button>
+                            </p>
+
+                            <div class="show hiddenContent" id="particleAccelHiddenContent">
+                                <h3 class="ondark">Specifications</h3>
+                                <ul class="ondark">
+                                    <li>Proton/antiproton particles collision collision</li>
+                                    <li>Beam acceleration of up to 980 GeV</li>
+                                    <li>6.3-kilometre circumference circular accelerator ring</li>
+                                    <li>1275 sensors to measure collsions</li>
+                                    <li>Redundant safety sensors to detect and alert about any irregularities during operation, with automatic emergency safety shutoffs</li>
+                                </ul>
+                            </div>  <!-- ./hiddenContent -->
+
 						</div>
 
 						<div class="col-1of3Main">
@@ -457,21 +464,28 @@
 
                             <p class="ondark fontDemi">Opperational cost: $400/24hr</p>
 
-                            <p class="ondark">Specifications:</p>
-                            <ul>
-                                <li class="ondark">room size: 25m wide x 7.5 meters tall x 30 meters deep</li>
-                                <li class="ondark">Non-pressurized (space suit required)</li>
-                                <li class="ondark">12 mechanical arms up to 15 meters long each</li>
-                                <li class="ondark">Observation deck for visitors to observe work within the pad</li>
-                                <li class="ondark">Unintended space drift protecting system</li>
-                                <li class="ondark">Unmaned rescue pods</li>
-                                <li class="ondark">Space launch support system</li>
-                                <li class="ondark">Space vehicle return guidance system</li>
-                            </ul>
+                            <p class="ondark">
+                                To use the launch pad, users must be affiliated with a professional research or engeneering organization or be in the posession of a space launch permit.
+                            </p>
 
-							<p class="ondark">
-								To use the launch pad, users must be affiliated with a professional research or engeneering organization or be in the posession of a space launch permit.
-							</p>
+                            <p class="ondark fontDemi">
+                                <button class="showHiddenContentButton" onclick="displayHiddenContent(launchPad)">View More Details&hellip;</button>
+                            </p>
+
+                            <div class="show hiddenContent" id="launchPad">
+                            <h3 class="ondark">Specifications</h3>
+                                <ul>
+                                    <li class="ondark">room size: 25m wide x 7.5 meters tall x 30 meters deep</li>
+                                    <li class="ondark">Non-pressurized (space suit required)</li>
+                                    <li class="ondark">12 mechanical arms up to 15 meters long each</li>
+                                    <li class="ondark">Observation deck for visitors to observe work within the pad</li>
+                                    <li class="ondark">Unintended space drift protecting system</li>
+                                    <li class="ondark">Unmaned rescue pods</li>
+                                    <li class="ondark">Space launch support system</li>
+                                    <li class="ondark">Space vehicle return guidance system</li>
+                                </ul>
+                            </div>  <!-- ./hiddenContent -->
+							
 						</div>
 
 						<div class="col-1of3Main">
