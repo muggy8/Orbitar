@@ -35,12 +35,16 @@ section code {
 .floatClear{
     clear:both;
 }
-
+/*
 #hotels{
   margin-top: 2rem;
 }
 
 #science{
+  margin-top: 2rem;
+}*/
+
+.majorSection{
   margin-top: 2rem;
 }
 /* 
