@@ -97,6 +97,8 @@
                 </div>
             </article>
 
+            
+
             <article class="featureContainer">
                 <div class="grid">
                     <div class="col-2of3">
@@ -143,15 +145,47 @@
 
                     <div class="col-1of3Main">
                         <figure>
-                            <img src="img/OrbitalElevatorCloseUp.jpg" alt="The orbital elevator, close up in space" width="400" height="242">
+                            <img src="img/OrbitalElevatorCloseUp.jpg" alt="The orbital elevator, up close in space" width="400" height="242">
                             <figcaption class="ondark">
-                                The orbital elevator, close up in space
+                                The orbital elevator, up close in space
                             </figcaption>
                         </figure>
                     </div> <!-- ./col-1of3Main -->
                 </div>
             </article>
 
+            <article class="featureContainer">
+                <div class="grid">
+                    <div class="col-2of3">
+                        <h2 class="ondark">Generate Optimal Ride</h2>
+                        
+                        <button class="buttonGenericOnDark" onclick="generateRides();">Ride Generator</button>
+                        
+                        <h2 class="ManualFindTitle ondark">Manually Find my Rides</h2>
+                        
+                        <form action="checkout.html" method="post" id="startBooking" onsubmit="return false">
+                            <div class="grid">
+                                <div class="mainPageFormGridCol-1of2">
+                                    <input class="fieldHalf" type="text" name="departureDate" placeholder="Departure Date">
+                                </div>
+                                <div class="mainPageFormGridCol-2of2">
+                                    <input class="fieldHalf" type="text" name="returnDate" placeholder="Return Date">
+                                </div>
+                            </div>
+                            <button class="buttonGenericOnDark" onclick="findRides(this)">Find Manually</button>
+                        </form>
+                    </div>
+
+                    <div class="col-1of3Main">
+                        <h2 class="ondark">Already have schedule?</h2>
+                        <p class="ondark">Modify my schedule by confirmation number:</p>
+                        <form action="mainPage.html" method="post" id="editPlan" onsubmit="return false">
+                            <input class="fieldHalf" type="text" name="confirmationNumber" placeholder="Confirmation Number">
+                            <button class="buttonGenericOnDark" onclick="editPlan()">Edit My Plan</button>
+                        </form>
+                    </div> <!-- ./col-1of3Main -->
+                </div>
+            </article>
 
 			<div id="hotels">
                 <article class="featureContainer" id="bookingStart">
@@ -556,39 +590,6 @@
 					</div>
 				</article>
 			</div>
-			
-            <article class="featureContainer">
-				<div class="grid">
-					<div class="col-2of3">
-						<h2 class="ondark">Generate Optimal Ride</h2>
-						
-						<button class="buttonGenericOnDark" onclick="generateRides();">Ride Generator</button>
-						
-						<h2 class="ManualFindTitle ondark">Manually Find my Rides</h2>
-						
-						<form action="checkout.html" method="post" id="startBooking" onsubmit="return false">
-							<div class="grid">
-								<div class="mainPageFormGridCol-1of2">
-									<input class="fieldHalf" type="text" name="departureDate" placeholder="Departure Date">
-								</div>
-								<div class="mainPageFormGridCol-2of2">
-									<input class="fieldHalf" type="text" name="returnDate" placeholder="Return Date">
-								</div>
-							</div>
-							<button class="buttonGenericOnDark" onclick="findRides(this)">Find Manually</button>
-						</form>
-					</div>
-
-					<div class="col-1of3Main">
-						<h2 class="ondark">Already have schedule?</h2>
-						<p class="ondark">Modify my schedule by confirmation number:</p>
-						<form action="mainPage.html" method="post" id="editPlan" onsubmit="return false">
-							<input class="fieldHalf" type="text" name="confirmationNumber" placeholder="Confirmation Number">
-							<button class="buttonGenericOnDark" onclick="editPlan()">Edit My Plan</button>
-						</form>
-					</div> <!-- ./col-1of3Main -->
-				</div>
-			</article>
 
         </div>
     </body>
