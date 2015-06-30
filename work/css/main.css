@@ -751,3 +751,13 @@ ol li{
 .col-1of3 figcaption {
     margin-top: 0.5em;
 }
+
+.multiSelect{
+    display: inline-block;
+    margin-left: 1rem;
+ƒ}
+.multiSelectOption{
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: :0;
+}
