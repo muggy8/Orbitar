@@ -759,7 +759,13 @@ ol li{
 .multiSelect{
     display: inline-block;
     margin-left: 1rem;
-ƒ}
+}
+
+.quantitativeFeedback{
+    display: inline-block;
+    margin-left: 1rem;
+}
+
 .multiSelectOption{
   display: block;
   margin-top: 0.5rem;
