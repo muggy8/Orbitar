@@ -755,3 +755,9 @@ ol li{
 .col-1of3Main figcaption {
     margin-top: 0.5em;
 }
+
+
+/* bold version of the font */
+.fontDemi {
+  font-family: franklin_gothic_fsdemi, sans-serif;
+}
