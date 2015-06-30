@@ -29,6 +29,8 @@ $( window ).scroll(
 	});
 	
 $( document ).ready(function() {
+	
+    manageMenu();
 	var calender = document.getElementById("callender");
 	
 	var month = document.createElement("h3");
@@ -52,7 +54,6 @@ $( document ).ready(function() {
         $(".hiddenContent").removeClass("show");
         $(".hiddenContent").addClass("hide");
     }
-    manageMenu();
 });
 
 $( window ).resize(function() {
