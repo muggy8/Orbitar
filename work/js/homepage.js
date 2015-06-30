@@ -44,6 +44,15 @@ $( document ).ready(function() {
 	}
 	
 	callender.className = "hide";
+
+    // For content sections that are supposed to be hidden, they are shown by default for browsers
+    // that don't support JavaScript. Since the JS code is running, hide the sections when the
+    // page loads.
+    if ($(".hiddenContent").hasClass("show")) {
+        $(".hiddenContent").removeClass("show");
+        $(".hiddenContent").addClass("hide");
+    }
+    
 });
 
 function showCallender (){
