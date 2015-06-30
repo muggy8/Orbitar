@@ -274,7 +274,13 @@ h4 {
     margin:0.125em 0;
 }
 
+.dropDownContainer{
+  list-style-type: none;
+}
 
+.dropDownContainer li{
+  display:inline-block;
+}
 
 ol{
     padding-left:2em;
@@ -442,7 +448,7 @@ ol li{
     }
 
     .buttonNav {
-        display: none;
+        /*display: none;*/
     }
 
     /* Styling for submit button on a dark background. */
@@ -711,7 +717,7 @@ ol li{
   }
 }
 
-@media(max-width: 35.75rem){
+@media(max-width: 35rem){
     
     #elevatorCable{
         margin-left:auto;

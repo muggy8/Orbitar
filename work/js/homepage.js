@@ -52,8 +52,27 @@ $( document ).ready(function() {
         $(".hiddenContent").removeClass("show");
         $(".hiddenContent").addClass("hide");
     }
-    
+    manageMenu();
 });
+
+$( window ).resize(function() {
+	manageMenu();
+});
+
+function manageMenu(){
+	if (window.matchMedia("(min-width: 35rem)").matches) {
+		// viewport is more than 35 rems wide
+		$(".dropDownContainer").detach().appendTo('#navBarRight');
+		$("#scheduler").detach().appendTo('.everythingContainer');
+		document.getElementById("scheduler").setAttribute("style", "");
+	}
+	else{
+		// viewport is less than 35 rems wide
+		$(".dropDownContainer").detach().appendTo('#fullscreenMenuContainer');
+		$("#scheduler").detach().appendTo('#fullscreenMenuContainer');
+		document.getElementById("scheduler").setAttribute("style", "position:absolute; display:block; bottom:auto; top:0;");
+	}
+}
 
 function showCallender (){
 	document.getElementById("callender").className = "";
@@ -272,7 +291,7 @@ Number.prototype.map = function ( inMin , inMax , outMin , outMax ) {
 function toggleMenu() {
 
     // get current visibility value
-    // var visibilityValue = $('#fullscreenMenuContainer').css("visibility");
+    var visibilityValue = $('#fullscreenMenuContainer').css("visibility");
     // console.log("old visibility = " + visibilityValue);
 
     // if visibility is visible, toggle to hidden
