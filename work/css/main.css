@@ -686,7 +686,7 @@ ol li{
 }
 
 .show {
-  visibility: visible;
+  display: inline;
 }
 
 @media(max-width: 59rem){

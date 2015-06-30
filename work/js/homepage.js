@@ -279,6 +279,6 @@ function toggleMenu() {
     // console.log("new visibility = " + visibilityValue);
 }
 
-function displayHiddenContent() {
-	
+function displayHiddenContent(currentID) {
+    $(currentID).toggleClass("show");
 }
