@@ -17,7 +17,7 @@
 }
 
 /*
- *  3-column grid structure
+ *  General 3-column grid structure
  */
 .col-2of3 {
     width: 60%;
@@ -96,11 +96,25 @@
 @media (max-width: 50.75rem) {
     .col-2of3 {
         width: 100%;
+
+        /* specifying padding again is necessary to reset it; without it, extra padding will appear */
+        padding: 0.5em 1.85em;
     }
-    .col-1of3Main, .col-1of3Service, .col-2of3ServiceDescription, .col-1of3ServiceFigure {
+    .col-1of3Main, .col-1of3Service {
         padding: 0.5em 1.85em;
         width: 100%;
     }
+
+    .col-2of3ServiceDescription, .col-1of3ServiceFigure {
+        padding: 0;
+        width: 100%;
+    }
+
+    .col-3of3 {
+        padding: 0.5em 1.85em;
+        width: 100%;
+    }
+
 }
 
 /* left column */
@@ -117,6 +131,7 @@
     margin-left: 1.5%;
 }
 
+/* collapse form to single-column */
 @media (max-width: 48rem) {
     /* query code for both columns; collapse to single-column */
     .mainPageFormGridCol-1of2, .mainPageFormGridCol-2of2 {
@@ -134,6 +149,8 @@
     .mainPageFormGridCol-2of2 {
         margin-left: 0;
     }
+
+
 }
 
 
