@@ -49,6 +49,15 @@
                         It's pretty lame, right? Earth can get boring after a while. Time to explore somewhere completely different&hellip;
                     </p>
                 </section>
+				
+				<section id="modRide" class="dialogueBox">
+                    <h2 class="ondark">Already have schedule?</h2>
+					<p class="ondark">Modify my schedule by confirmation number:</p>
+					<form action="mainPage.html" method="post" id="editPlan" onsubmit="return false">
+						<input class="fieldHalf" type="text" name="confirmationNumber" placeholder="Confirmation Number">
+						<button class="buttonGenericOnDark" onclick="editPlan()">Edit My Plan</button>
+					</form>
+                </section>
 
                 <section id="youMidCool" class="dialogueBox">
                     <h2>This is you on the elevator.</h2>
@@ -178,12 +187,7 @@
                     </div>
 
                     <div class="col-1of3Main">
-                        <h2 class="ondark">Already have schedule?</h2>
-                        <p class="ondark">Modify my schedule by confirmation number:</p>
-                        <form action="mainPage.html" method="post" id="editPlan" onsubmit="return false">
-                            <input class="fieldHalf" type="text" name="confirmationNumber" placeholder="Confirmation Number">
-                            <button class="buttonGenericOnDark" onclick="editPlan()">Edit My Plan</button>
-                        </form>
+                        
                     </div> <!-- ./col-1of3Main -->
                 </div>
             </article>
