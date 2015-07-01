@@ -91,9 +91,9 @@ function dayUpdate(){
 
 var elementCounter = 0;
 function addEvent(ele){
-	//console.log(ele.parentElement.parentElement.parentElement.parentElement);
+	console.log(ele.parentElement.parentElement.parentElement.parentElement);
 	var selected = ele.parentElement.parentElement.parentElement.parentElement; //get which overall box the button is in
-	//temp = selected.childNodes;
+	temp = selected.childNodes;
 	var attractionSelected = selected.childNodes[1].childNodes[1].innerHTML;
 	
 	var planner = document.getElementById("scheduler");
