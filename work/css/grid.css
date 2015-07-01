@@ -51,20 +51,19 @@
 }
 
 @media (max-width: 70rem) {
-    .col-1of3Service {
+    .hotelGrid .col-1of3Service {
         width: 100%;
     }
 
     .col-2of3ServiceDescription {
-        width: 60%;
-        float: left;
-        padding: 0;
+        width: 62.1%;  /* make this text section as close to the images as possible */
+        padding-right: 1.85em;  /* reduce the amount of padding compared to before */
     }
 
     .col-1of3ServiceFigure {
-        width: 40%;
         float: right;
-        padding: 0;
+        padding-left: 1.85em;  /* reduce the amount of padding compared to before */
+        width: 37.9%;  /* make this image width as close to the images as possible */
     }
 
     .hotelGrid:after {
@@ -98,7 +97,7 @@
     .col-2of3 {
         width: 100%;
     }
-    .col-1of3Main, .col-1of3Service {
+    .col-1of3Main, .col-1of3Service, .col-2of3ServiceDescription, .col-1of3ServiceFigure {
         padding: 0.5em 1.85em;
         width: 100%;
     }
