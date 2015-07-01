@@ -74,7 +74,7 @@ function manageMenu(){
 		// viewport is less than 35 rems wide
 		$(".dropDownContainer").detach().appendTo('#fullscreenMenuContainer');
 		$("#scheduler").detach().appendTo('#fullscreenMenuContainer');
-		var scheduler = document.getElementById("scheduler")
+		var scheduler = document.getElementById("scheduler");
 		if (scheduler.className.indexOf(" schedulerInMenu") == -1){
 			scheduler.className += " schedulerInMenu"; 
 		}
@@ -103,6 +103,7 @@ function addEvent(ele){
 		list = document.createElement("ul");
 		list.id = "plannedSchedule";
 		$(list).insertAfter("#plannerHeadder");
+		planner.className = planner.className.replace(" hide", "");
 	}
 	else{
 		list = document.getElementById("plannedSchedule");
@@ -154,6 +155,7 @@ function nuke(ele, event){//remove the element from the UL in the planner
 	event.preventDefault();
 	
 	if (list.childNodes.length == 1){ // there are no other items in the list then remove the list element
+		list.parentElement.className = list.parentElement.className + " hide";
 		list.parentElement.removeChild(list);
 	}
 	else{ // or else just remove this element
@@ -252,6 +254,7 @@ function addToPlanner(ele, e){
 		var planner = document.getElementById("scheduler");
 		var list;
 		if (planner.childNodes.length <= 5 ){ // nothing was added so go add the UL tag
+			planner.className = planner.className.replace(" hide", "");
 			list = document.createElement("ul");
 			list.id = "plannedSchedule";
 			$(list).insertAfter("#plannerHeadder");
@@ -268,7 +271,7 @@ function addToPlanner(ele, e){
 		
 		//make the li and add it to the planner's list
 		var li = document.createElement("li");
-		li.innerHTML = tripType + ": " + ele.innerHTML.replace("@", "<br> &nbsp;&nbsp;&nbsp;&nbsp;@") + " CST " + "<a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
+		li.innerHTML = tripType + ": " + ele.innerHTML.replace("@", "<br> &nbsp;&nbsp;&nbsp;&nbsp;@") + " CST " + "<br> &nbsp;&nbsp;&nbsp;&nbsp;duration: 12 hours <a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
 		li.id=ele.innerHTML;
 		list.appendChild(li);
 	}

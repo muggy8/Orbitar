@@ -83,7 +83,7 @@
 				
 			</div>
         
-            <section id="scheduler" class="scheduler" onclick="schedulerView(this)">
+            <section id="scheduler" class="scheduler hide" onclick="schedulerView(this)">
                 <h3 id="plannerHeadder">Trip Planner:</h3>
                 <a href="checkout.html" onclick="validateForm(this)" class="buttonGeneric checkoutButton" id="checkout">Checkout</a>
             </section>
@@ -163,34 +163,7 @@
                 </div>
             </article>
 
-            <article class="featureContainer">
-                <div class="grid">
-                    <div class="col-2of3">
-                        <h2 class="ondark">Event Based Elevator Ride Generator</h2>
-						<p class="ondark">Based on my selection of events I wanted to attend to, generate elevator rides that best suit these schedules.</p>
-                        
-                        <button class="buttonGenericOnDark" onclick="generateRides();">Ride Generator</button>
-                        
-                        <h2 class="ManualFindTitle ondark">Manually Find my Rides</h2>
-                        <p class="ondark">I have a very rigid schedule and would the elevator rides needs to be very specific. I'll look though the database and find an elevator ride that suits me best.</p>
-                        <form action="checkout.html" method="post" id="startBooking" onsubmit="return false">
-                            <div class="grid">
-                                <div class="mainPageFormGridCol-1of2">
-                                    <input class="fieldHalf" type="text" name="departureDate" placeholder="Departure Date">
-                                </div>
-                                <div class="mainPageFormGridCol-2of2">
-                                    <input class="fieldHalf" type="text" name="returnDate" placeholder="Return Date">
-                                </div>
-                            </div>
-                            <button class="buttonGenericOnDark" onclick="findRides(this)">Find Manually</button>
-                        </form>
-                    </div>
-
-                    <div class="col-1of3Main">
-                        
-                    </div> <!-- ./col-1of3Main -->
-                </div>
-            </article>
+            
 
 			<div id="hotels">
                 <article class="featureContainer" id="bookingStart">
@@ -594,8 +567,37 @@
 						</div> <!-- ./col-1of3Main -->
 					</div>
 				</article>
+				
 			</div>
+			
+			<article class="featureContainer">
+                <div class="grid">
+                    <div class="col-2of3">
+                        <h2 class="ondark">Event Based Elevator Ride Generator</h2>
+						<p class="ondark">Based on my selection of events I wanted to attend to, generate elevator rides that best suit these schedules.</p>
+                        
+                        <button class="buttonGenericOnDark" onclick="generateRides();">Ride Generator</button>
+                        
+                        <h2 class="ManualFindTitle ondark">Manually Find my Rides</h2>
+                        <p class="ondark">I have a very rigid schedule and would the elevator rides needs to be very specific. I'll look though the database and find an elevator ride that suits me best.</p>
+                        <form action="checkout.html" method="post" id="startBooking" onsubmit="return false">
+                            <div class="grid">
+                                <div class="mainPageFormGridCol-1of2">
+                                    <input class="fieldHalf" type="text" name="departureDate" placeholder="Departure Date">
+                                </div>
+                                <div class="mainPageFormGridCol-2of2">
+                                    <input class="fieldHalf" type="text" name="returnDate" placeholder="Return Date">
+                                </div>
+                            </div>
+                            <button class="buttonGenericOnDark" onclick="findRides(this)">Find Manually</button>
+                        </form>
+                    </div>
 
+                    <div class="col-1of3Main">
+                        
+                    </div> <!-- ./col-1of3Main -->
+                </div>
+            </article>
         </div>
     </body>
 
