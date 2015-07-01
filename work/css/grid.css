@@ -44,6 +44,36 @@
     height: 100%;
 }
 
+/* override the [class^='col-'] declaration above for now */
+.col-2of3ServiceDescription, .col-1of3ServiceFigure {
+    width: 100%;
+    padding: 0;
+}
+
+@media (max-width: 70rem) {
+    .hotelGrid .col-1of3Service {
+        width: 100%;
+    }
+
+    .col-2of3ServiceDescription {
+        width: 62.1%;  /* make this text section as close to the images as possible */
+        padding-right: 1.85em;  /* reduce the amount of padding compared to before */
+    }
+
+    .col-1of3ServiceFigure {
+        float: right;
+        padding-left: 1.85em;  /* reduce the amount of padding compared to before */
+        width: 37.9%;  /* make this image width as close to the images as possible */
+    }
+
+    .hotelGrid:after {
+        content: "";
+        display: block; /* in case it wasn't */
+        clear: both;
+    }
+
+}
+
 /* increase the amount of column width dedicated to the image */
 @media (max-width: 59rem) {
     .col-2of3 {
@@ -55,6 +85,7 @@
         width: 45%;
     }
 
+    /* fix bug with float - fixes a problem where floated items don't have a height */
     .col-1of3Service {
         clear: both;
         width: 100%;
@@ -66,7 +97,7 @@
     .col-2of3 {
         width: 100%;
     }
-    .col-1of3Main, .col-1of3Service {
+    .col-1of3Main, .col-1of3Service, .col-2of3ServiceDescription, .col-1of3ServiceFigure {
         padding: 0.5em 1.85em;
         width: 100%;
     }

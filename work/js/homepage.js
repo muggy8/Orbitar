@@ -317,6 +317,16 @@ function toggleMenu() {
     // console.log("new visibility = " + visibilityValue);
 }
 
-function displayHiddenContent(currentID) {
+function displayHiddenContent(button, currentID) {
     $(currentID).toggleClass("show");
+
+    // show "Hide Details..." as the button text if details are currently expanded
+    if ($(currentID).hasClass("show")) {
+    	$(button).html("Hide Details&hellip;");
+    }
+
+    // show "View More Details..." as the button text if details are currently hidden
+    else {
+    	$(button).html("View More Details&hellip;");
+    }
 }

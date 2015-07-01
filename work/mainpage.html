@@ -93,7 +93,7 @@
                         <h2 class="ondark">About Orbitar</h2>
 
                         <p class="ondark">
-                            The Orbitar service will whisk you from Earth to our space station comfortably, safely, and quickly, at an affordable cost. Once arriving at the space station, you can enjoy our vast amount of amenities and facilities, ranging from sightseeing and entertainment to academic research.
+                            The Orbitar Elevator will whisk you from Earth to our Orbitar Space Station comfortably, safely, and quickly, at an affordable cost. Once arriving at the space station, you can enjoy our vast amount of amenities and facilities, ranging from sightseeing and entertainment to academic research.
                         </p>
                     </div>
                 </div>
@@ -110,7 +110,11 @@
                             The elevator will transport you from Earth to the space station, 45,000 kilometres above the planet, in less than 12 hours of ascend time. With a fleet of 4 elevators, and a capacity of 40 passengers per elevator, we make it easy for you to book a trip.
                         </p>
 
-                        <button class="ondark showHiddenContentButton" onclick="displayHiddenContent(elevatorHiddenContent)">View More Details&hellip;</button>
+                        <p class="ondark">
+                            <span class="fontDemi ondark">Cost: $5800 per return trip</span>
+                        </p>
+
+                        <button class="ondark showHiddenContentButton" onclick="displayHiddenContent(this, elevatorHiddenContent)">View More Details&hellip;</button>
 
                         <div class="show hiddenContent" id="elevatorHiddenContent">
                             <h4 class="ondark">Elevator Amenities</h4>
@@ -120,24 +124,24 @@
                                 <li>Shared sleeping rooms with comfortable beds, with harnesses available so you won't float out of bed when reaching space</li>
                                 <li>Pressurized cabins and climate control provide a comfortable atmosphere</li>
                                 <li>Spacious washrooms</li>
-                            </ul>
-
-                            <h4 class="ondark">Technical Information</h4>
-                            <ul class="ondark">
-                                <li>Maximum operational speed of 80 km/s</li>
-                                <li>Each cabin has seven floors of space</li>
-                                <li>Wheelchair accessible</li>
+                                <li>Wheelchair accessible, including lifts to move between each floor</li>
                             </ul>
 
                             <h4 class="ondark">Safety Features</h4>
                             <ul class="ondark">
-                                <li>Elevator cables are made of diamond nanothreads&mdash;one of the strongest materials in existance</li>
+                                <li>Elevator cables are made of diamond nanotubes&mdash;one of the strongest materials in existence</li>
                                 <li>Elevator cabins are built with reinforced titanium</li>
                                 <li>Both have been engineered to survive impacts from foreign objects, such as meteoroids, with multiple failsafe systems</li>
-                                <li>Weather-proof, corrosion-proof, radiation-proof</li>
+                                <li>Weather-proof, corrosion-proof, and radiation-proof cables and elevator cabins</li>
                                 <li>Frequent maintenance ensures the elevator system is always in safe condition</li>
                                 <li>Advanced warning systems to warn of any incoming dangers</li>
                                 <li>Crew of trained attendants can help with any concerns or medical emergencies on board</li>
+                            </ul>
+
+                            <h4 class="ondark">Other Technical Information</h4>
+                            <ul class="ondark">
+                                <li>Maximum operational speed of 80 km/s</li>
+                                <li>Each cabin has seven spacious floors with ~800 square feet of room</li>
                             </ul>
 
 
@@ -194,207 +198,151 @@
                             <p class="ondark">The Orbitar space station has a variety of rooms at an affordable price.</p>
                         </div>
                         
+                        <div id="citizenVacationHotel" class="hotelGrid">
+                            <div class="col-1of3Service">
+                                <h3 class="ondark">Citizen Vacation Class Hotel Rooms</h3>
 
-                        <div class="col-1of3Service">
-                            <h3 class="ondark">Citizen Vacation Class Hotel Rooms</h3>
-
-                            <div class="serviceFigure">
-                                <figure>
-                                    <img src="img/SpaceHotel1-VacationRoom.jpg" alt="A vacation class room">
-                                    <div class="listingButtonHolder">
-                                        <button class="buttonGeneric" onclick="showCallender()">calender</button>
-                                        <button class="buttonGeneric" onclick="addEvent(this)">add to Planner</button>
+                                <div class="col-1of3ServiceFigure">
+                                    <div class="serviceFigure">
+                                        <figure>
+                                            <img src="img/SpaceHotel1-VacationRoom.jpg" alt="A vacation class room">
+                                            <div class="listingButtonHolder">
+                                                <button class="buttonGeneric" onclick="showCallender()">calender</button>
+                                                <button class="buttonGeneric" onclick="addEvent(this)">add to Planner</button>
+                                            </div>
+                                        </figure>
                                     </div>
-                                </figure>
-                            </div>
-                            
-                            <div class="serviceDescription">
-                                <p class="ondark">
-                                    Citizen vacation class rooms provide a comfortable way for visitors who are vacationing at the space station to get some rest after a day of exploration. Experience floating into sleep in a unique, cylindrical room in zero gravity!
-                                </p>
-                                <p class="ondark">
-                                    <span class="fontDemi ondark">Cost: $550 per night</span>
-                                </p>
+                                </div>
+                                
+                                <div class="col-2of3ServiceDescription">
+                                    <div class="serviceDescription">
+                                        <p class="ondark">
+                                            Citizen vacation class rooms provide a comfortable way for visitors who are vacationing at the space station to get some rest after a day of exploration. Experience floating into sleep in a unique, cylindrical room in zero gravity!
+                                        </p>
+                                        <p class="ondark">
+                                            <span class="fontDemi ondark">Cost: $550 per night</span>
+                                        </p>
 
-                                <button class="ondark showHiddenContentButton" onclick="displayHiddenContent(vacationClassHotelHiddenContent)">View More Details&hellip;</button>
+                                        <button class="ondark showHiddenContentButton" onclick="displayHiddenContent(this, vacationClassHotelHiddenContent)">View More Details&hellip;</button>
 
-                                <div class="show hiddenContent" id="vacationClassHotelHiddenContent">
-                                    <h4 class="ondark">Room Amenities and Specifications</h4>
-                                    <ul class="ondark">
-                                        <li>Cylindrical room with a large glass wall on one end</li>
-                                        <li>Float as you sleep: more comfortable than a bed!</li>
-                                        <li>1-4 person room capacity</li>
-                                        <li>Specialized ultra-lightweight suits provided so that collisions with other room guests and objects won't wake you up</li>
-                                        <li>Pressurized cabins and climate control provide a comfortable atmosphere</li>
-                                        <li>Private bathroom with shower stall</li>
-                                        <li>Entertainment suite with world television and high-speed internet</li>
-                                    </ul>
-                                </div>  <!-- ./hiddenContent -->
+                                        <div class="show hiddenContent" id="vacationClassHotelHiddenContent">
+                                            <h4 class="ondark">Room Amenities and Specifications</h4>
+                                            <ul class="ondark">
+                                                <li>Cylindrical room with a large glass wall on one end</li>
+                                                <li>Float as you sleep: more comfortable than a bed!</li>
+                                                <li>1-4 person room capacity</li>
+                                                <li>Specialized ultra-lightweight suits provided so that collisions with other room guests and objects won't wake you up</li>
+                                                <li>Pressurized cabins and climate control provide a comfortable atmosphere</li>
+                                                <li>Private bathroom with shower stall</li>
+                                                <li>Entertainment suite with world television and high-speed internet</li>
+                                            </ul>
+                                        </div>  <!-- ./hiddenContent -->
+                                    </div>
 
+                                </div>
                             </div>
                         </div>
 
-                        <div class="col-1of3Service">
-                            <h3 class="ondark">Citizen Scientist Class Hotel Rooms</h3>
-                            
-                            <div class="serviceFigure">
-                                <figure>
-                                    <img src="img/SpaceHotel2-CitizenScientistRoom.jpg" alt="A medium sized room with hi-tech computers that are able to do complex calculations">
-                                    <div class="listingButtonHolder">
-                                        <button class="buttonGeneric" onclick="showCallender()">calender</button>
-                                        <button class="buttonGeneric" onclick="addEvent(this)">add to Planner</button>
+                        <div id="citizenScientistHotel" class="hotelGrid">
+                            <div class="col-1of3Service">
+                                <h3 class="ondark">Citizen Scientist Class Hotel Rooms</h3>
+                                
+                                <div class="col-1of3ServiceFigure">
+                                    <div class="serviceFigure">
+                                        <figure>
+                                            <img src="img/SpaceHotel2-CitizenScientistRoom.jpg" alt="A medium sized room with hi-tech computers that are able to do complex calculations">
+                                            <div class="listingButtonHolder">
+                                                <button class="buttonGeneric" onclick="showCallender()">calender</button>
+                                                <button class="buttonGeneric" onclick="addEvent(this)">add to Planner</button>
+                                            </div>
+                                        </figure>
                                     </div>
-                                </figure>
-                            </div>
+                                </div>
 
-                            <div class="serviceDescription">
-                                <p class="ondark">
-                                    This is for the amateur scientist who wants to conduct experiments in the comfort of their own room without the need to be professionally affiliated with a company or research organization. We provide equipment for you to work with to expand your research in citizen scientist class rooms.
-                                </p>
+                                <div class="col-2of3ServiceDescription">
+                                    <div class="serviceDescription">
+                                        <p class="ondark">
+                                            This is for the amateur scientist who wants to conduct experiments in the comfort of their own room without the need to be professionally affiliated with a company or research organization. We provide equipment for you to work with to expand your research in citizen scientist class rooms.
+                                        </p>
 
-                                <p class="ondark">
-                                    <span class="fontDemi ondark">Cost: $750 per night</span>
-                                </p>
+                                        <p class="ondark">
+                                            <span class="fontDemi ondark">Cost: $750 per night</span>
+                                        </p>
 
-                                <button class="ondark showHiddenContentButton" onclick="displayHiddenContent(citSciClassHotelHiddenContent)">View More Details&hellip;</button>
+                                        <button class="ondark showHiddenContentButton" onclick="displayHiddenContent(this, citSciClassHotelHiddenContent)">View More Details&hellip;</button>
 
-                                <div class="show hiddenContent" id="citSciClassHotelHiddenContent">
-                                    <h4 class="ondark">Room Amenities and Specifications</h4>
-                                    <ul class="ondark">
-                                        <li>1-2 person room capacity</li>
-                                        <li>Equipment to perform basic astrochemistry and astrophysics experiments</li>
-                                        <li>Computers capable of performing complex calculations</li>
-                                        <li>Access real-time data about the space station</li>
-                                        <li>Strap yourself into a luxurious pull-down bed</li>
-                                        <li>Pressurized cabins and climate control provide a comfortable atmosphere</li>
-                                        <li>Private bathroom with shower stall</li>
-                                        <li>Ultra-high-speed internet</li>
-                                    </ul>
-                                </div>  <!-- ./hiddenContent -->
+                                        <div class="show hiddenContent" id="citSciClassHotelHiddenContent">
+                                            <h4 class="ondark">Room Amenities and Specifications</h4>
+                                            <ul class="ondark">
+                                                <li>1-2 person room capacity</li>
+                                                <li>Equipment to perform basic astrochemistry and astrophysics experiments</li>
+                                                <li>Computers capable of performing complex calculations</li>
+                                                <li>Access real-time data about the space station</li>
+                                                <li>Strap yourself into a luxurious pull-down bed</li>
+                                                <li>Pressurized cabins and climate control provide a comfortable atmosphere</li>
+                                                <li>Private bathroom with shower stall</li>
+                                                <li>Ultra-high-speed internet</li>
+                                            </ul>
+                                        </div>  <!-- ./hiddenContent -->
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="col-1of3Service">
-                            <h3 class="ondark">Advanced Scientist Class Hotel Rooms</h3>
+                        <div id="advancedScientistHotel" class="hotelGrid">
+                            <div class="col-1of3Service">
+                                <h3 class="ondark">Advanced Scientist Class Hotel Rooms</h3>
 
-                            <div class="serviceFigure">
-                                <figure>
-                                    <img src="img/SpaceHotel3-AdvancedScientistRoom.jpg" alt="A large hotel room with highly specialized equipment for doing professional research and other experiments">
-                                    <div class="listingButtonHolder">
-                                        <button class="buttonGeneric" onclick="showCallender()">calender</button>
-                                        <button class="buttonGeneric" onclick="addEvent(this)">add to Planner</button>
+                                <div class="col-1of3ServiceFigure">
+                                    <div class="serviceFigure">
+                                        <figure>
+                                            <img src="img/SpaceHotel3-AdvancedScientistRoom.jpg" alt="A large hotel room with highly specialized equipment for doing professional research and other experiments">
+                                            <div class="listingButtonHolder">
+                                                <button class="buttonGeneric" onclick="showCallender()">calender</button>
+                                                <button class="buttonGeneric" onclick="addEvent(this)">add to Planner</button>
+                                            </div>
+                                        </figure>
                                     </div>
-                                </figure>
-                            </div>
+                                </div>
 
-                            <div class="serviceDescription">
-                                <p class="ondark">
-                                    Advanced scientist class rooms are a great way for professional scientists to work on business and sleep in the comfort of a large, private room. We provide a variety of highly specialized equipment and technology that makes it easier to work with your data. It also comes with a big, luxurious bed!
-                                </p>
+                                <div class="col-2of3ServiceDescription">
+                                    <div class="serviceDescription">
+                                        <p class="ondark">
+                                            Advanced scientist class rooms are a great way for professional scientists to work on business and sleep in the comfort of a large, private room. We provide a variety of highly specialized equipment and technology that makes it easier to work with your data.
+                                        </p>
 
-                                <p class="ondark">
-                                    <span class="fontDemi ondark">Cost: $1200 per night</span>
-                                </p>
+                                        <p class="ondark">
+                                            <span class="fontDemi ondark">Cost: $1200 per night</span>
+                                        </p>
 
-                                <button class="ondark showHiddenContentButton" onclick="displayHiddenContent(proSciClassHotelHiddenContent)">View More Details&hellip;</button>
+                                        <button class="ondark showHiddenContentButton" onclick="displayHiddenContent(this, proSciClassHotelHiddenContent)">View More Details&hellip;</button>
 
-                                <div class="show hiddenContent" id="proSciClassHotelHiddenContent">
-                                    <h4 class="ondark">Room Amenities and Specifications</h4>
-                                    <ul class="ondark">
-                                        <li>Equipment to perform advanced astrochemistry and astrophysics experiments</li>
-                                        <li>Suitable for confidential work; advanced security measures, including a fingerprint reader door access and reinforced doors and walls, to prevent unauthorized access</li>
-                                        <li>Adjust the microgravity in the room using a switch</li>
-                                        <li>Computers capable of performing complex calculations</li>
-                                        <li>Access real-time data about the space station</li>
-                                        <li>Strap yourself into a luxurious pull-down bed</li>
-                                        <li>Pressurized cabins and climate control provide a comfortable atmosphere</li>
-                                        <li>Private bathroom with shower stall</li>
-                                        <li>Ultra-high-speed internet</li>
-                                    </ul>
-                                </div>  <!-- ./hiddenContent -->
+                                        <div class="show hiddenContent" id="proSciClassHotelHiddenContent">
+                                            <h4 class="ondark">Room Amenities and Specifications</h4>
+                                            <ul class="ondark">
+                                                <li>1-3 person capacity</li>
+                                                <li>Equipment to perform advanced astrochemistry and astrophysics experiments</li>
+                                                <li>Suitable for confidential work; advanced security measures, including a fingerprint reader door access and reinforced doors and walls, to prevent unauthorized access</li>
+                                                <li>Adjust the microgravity in the room using a switch</li>
+                                                <li>Computers capable of performing complex calculations</li>
+                                                <li>Access real-time data about the space station</li>
+                                                <li>Strap yourself into a luxurious pull-down bed</li>
+                                                <li>Pressurized cabins and climate control provide a comfortable atmosphere</li>
+                                                <li>Private bathroom with shower stall</li>
+                                                <li>Ultra-high-speed internet</li>
+                                            </ul>
+                                        </div>  <!-- ./hiddenContent -->
 
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                     </div>
 
                 </article>
+		
 
-
-
-				<article class="featureContainer"> <!-- removed id="bookingStart" here -->
-					<div class="grid">
-						<div class="col-2of3">
-							<h2 class="ondark">Citizen Vacation Class Hotel Rooms</h2>
-
-							<p class="ondark">
-								Citizen vacation class rooms provide a comfortable way for visitors who are vacationing at the space station to get some rest after a day of exploration. Pressurized cabins provide a comfortable atmosphere. Drift off into sleep in a unique room that is padded to prevent injuries, and to prevent getting woken up due to collisions.
-							</p>
-						</div>
-
-						<div class="col-1of3Main">
-							<figure>
-								<img src="img/SpaceHotel1-VacationRoom.jpg" alt="A vacation class room">
-								<div class="listingButtonHolder">
-									<button class="buttonGeneric" onclick="showCallender()">calender</button>
-									<button class="buttonGeneric" onclick="addEvent(this)">add to Planner</button>
-								</div>
-								<figcaption class="ondark">Vacation class room</figcaption>
-							</figure>
-						</div> <!-- ./col-1of3Main -->
-					</div>
-				</article>
-			
-				<article class="featureContainer">
-					<div class="grid">
-						<div class="col-2of3">
-							<h2 class="ondark">Citizen Scientist Class Hotel Rooms</h2>
-							
-							<p class="ondark">
-								For visitors to the space station who want to conduct science experiments on their own without the need to be professionally affiliated with a company or research organization, citizen scientist class rooms are a great way to get started. We provide equipment for you to work with to expand your research, with the ability to do complex calculations. When you're ready to get some rest, pull down our luxurious bed and strap yourself in.
-							</p>
-						</div>
-
-						<div class="col-1of3Main">
-							<figure>
-								<img src="img/SpaceHotel2-CitizenScientistRoom.jpg" alt="A medium sized room with hi-tech computers that are able to do complex calculations">
-								<div class="listingButtonHolder">
-									<button class="buttonGeneric" onclick="showCallender()">calender</button>
-									<button class="buttonGeneric" onclick="addEvent(this)">add to Planner</button>
-								</div>
-								<figcaption class="ondark">Citizen scientist class room</figcaption>
-							</figure>
-						</div> <!-- ./col-1of3Main -->
-					</div>
-				</article>
-			
-				<article class="featureContainer">
-					<div class="grid">
-						<div class="col-2of3">
-							<h2 class="ondark">Advanced Scientist Class Hotel Rooms</h2>
-
-							<p class="ondark">
-								Advanced scientist class rooms are a great way for professional scientists to work on business and sleep in the comfort of a large, private room. We provide a variety of highly specialized equipment and technology that makes it easier to work with your data. It also comes with a big, luxurious bed!
-							</p>
-
-							<p>
-								Please note that due to the sensitive nature of the equipment, you must be affiliated with a professional research organization to book this room.
-							</p>
-						</div>
-
-						<div class="col-1of3Main">
-							<figure>
-								<img src="img/SpaceHotel3-AdvancedScientistRoom.jpg" alt="A large hotel room with highly specialized equipment for doing professional research and other experiments">
-								<div class="listingButtonHolder">
-									<button class="buttonGeneric" onclick="showCallender()">calender</button>
-									<button class="buttonGeneric" onclick="addEvent(this)">add to Planner</button>
-								</div>
-								<figcaption class="ondark">Advanced scientist class hotel room
-								</figcaption>
-							</figure>
-						</div> <!-- ./col-1of3Main -->
-					</div>
-				</article>
 			</div>
 			
 			<div id="science">
@@ -413,7 +361,7 @@
                                 Visitors and scientists are both allowed to use the telescope.
                             </p>
 
-                            <button class="showHiddenContentButton" onclick="displayHiddenContent(telescopeHiddenContent)">View More Details&hellip;</button>
+                            <button class="showHiddenContentButton" onclick="displayHiddenContent(this, telescopeHiddenContent)">View More Details&hellip;</button>
 
                             <div class="show hiddenContent" id="telescopeHiddenContent">
                                 <h3 class="ondark">Specifications</h3>
@@ -461,7 +409,7 @@
                                 Astrochemistry lab users must be affiliated with a professional research organization.
                             </p>
 
-                            <button class="showHiddenContentButton" onclick="displayHiddenContent(chemLabHiddenContent)">View More Details&hellip;</button>
+                            <button class="showHiddenContentButton" onclick="displayHiddenContent(this, chemLabHiddenContent)">View More Details&hellip;</button>
 
                             <div class="show hiddenContent" id="chemLabHiddenContent">
                                 <h3 class="ondark">Specifications</h3>
@@ -513,7 +461,7 @@
                                 <span class="fontDemi">Usage Cost: $250 per hour, or $5500 per 24 hours</span>
                             </p>
 
-                            <button class="showHiddenContentButton" onclick="displayHiddenContent(particleAccelHiddenContent)">View More Details&hellip;</button>
+                            <button class="showHiddenContentButton" onclick="displayHiddenContent(this, particleAccelHiddenContent)">View More Details&hellip;</button>
 
                             <div class="show hiddenContent" id="particleAccelHiddenContent">
                                 <h3 class="ondark">Specifications</h3>
@@ -558,7 +506,7 @@
                                 To use the launch pad, users must be affiliated with a professional research or engeneering organization or be in the posession of a space launch permit.
                             </p>
 
-                            <button class="showHiddenContentButton" onclick="displayHiddenContent(launchPadHiddenContent)">View More Details&hellip;</button>
+                            <button class="showHiddenContentButton" onclick="displayHiddenContent(this, launchPadHiddenContent)">View More Details&hellip;</button>
 
                             <div class="show hiddenContent" id="launchPadHiddenContent">
                                 <h3 class="ondark">Specifications</h3>
