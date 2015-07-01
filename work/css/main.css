@@ -322,22 +322,11 @@ ol li{
     left:5%;
 }
 
-#modRide{
-	top:15rem;
-	right:5%;
-	background-color: rgba(50,50,50,0.5);
-}
-
 @media(max-width: 59rem){
     #youMidCool{
         right:auto;
         left:5%;
     }
-    
-	#modRide{
-		right:auto;
-		left:5%;
-	}
 }
 
 @media(max-width: 23.5rem){
