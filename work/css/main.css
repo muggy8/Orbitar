@@ -318,12 +318,21 @@ ol li{
     left:5%;
 }
 
+#modRide{
+	top:15rem;
+	right:5%;
+}
+
 @media(max-width: 59rem){
     #youMidCool{
         right:auto;
         left:5%;
     }
     
+	#modRide{
+		right:auto;
+		left:5%;
+	}
 }
 
 @media(max-width: 23.5rem){
@@ -346,6 +355,11 @@ ol li{
         top:78rem;
         left:0;
     }
+	
+	#modRide{
+		top:22rem;
+		left:0;
+	}
 }
 
 /* 
