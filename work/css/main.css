@@ -312,6 +312,12 @@ ol li{
     left:5%;
 }
 
+#dude{
+  position: absolute;
+  left: calc(22rem + 5%);
+  top: 4rem;
+}
+
 #youMidCool{
     top:37rem;
     right:5%;
@@ -533,12 +539,18 @@ ol li{
     position:relative;
 }
 
+.earthBG{
+  background-image: url("../img/earthBackwards.png");
+  background-repeat: no-repeat;
+  background-size: 1876.5px;
+}
+
 /* css for the site structure */
 #bodyContainer{
   /*background-color: green; /*temprary for seeing where it is*/
   /*height:50rem; temprary for seeing where it is*/
-  background-image: url("../img/earthBackwards.png");
-  background-repeat: no-repeat;
+  /*background-image: url("../img/earthBackwards.png");
+  background-repeat: no-repeat;*/
   width: 70rem;
   position: relative;
   display: block;
