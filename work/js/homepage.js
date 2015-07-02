@@ -45,6 +45,12 @@ $( document ).ready(function() {
 		calender.appendChild(day);
 	}
 	
+	var cancleBtn = document.createElement("button");
+	cancleBtn.className = "buttonGeneric absoluteBottomRight";
+	cancleBtn.innerHTML = "Cancel";
+	cancleBtn.setAttribute("onclick", "dayUpdate()");
+	calender.appendChild(cancleBtn);
+	
 	callender.className = "hide";
 
     // For content sections that are supposed to be hidden, they are shown by default for browsers
