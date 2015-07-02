@@ -8,5 +8,5 @@ html{
 
 .everythingContainer{
 	position:relative;
-	height: calc(100% - 3rem);
+	min-height: calc(100% - 3rem);
 }
