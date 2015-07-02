@@ -147,6 +147,9 @@
     margin-right: 0;
 }
 
+.formLable{
+	margin-top:0.5rem;
+}
 
 /* collapse form to single-column */
 @media (max-width: 48rem) {

@@ -245,9 +245,10 @@ p a {
 /* properties for form fields within a 2-column structure */
 .fieldHalf {
     width: 100%;
-    margin: 0.25rem 0;
+    margin: 0.125rem 0;
     padding: 0.5em 0.5em;
     font-size: 0.9rem;
+	margin-bottom:0.5rem;
 }
 
 .fieldTextarea {
