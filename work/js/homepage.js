@@ -1,4 +1,4 @@
-$( window ).scroll(
+$(window).scroll(
     function (){
         scrollCheck();
         //
@@ -31,7 +31,7 @@ function scrollCheck(){
         }
 }
     
-$( document ).ready(function() {
+$(document).ready(function(){
 
     manageMenu();
     var calender = document.getElementById("callender");
