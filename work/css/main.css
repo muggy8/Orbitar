@@ -82,7 +82,7 @@ section code {
     display: none;
 }
 
-@media (max-width: 35rem) {
+@media (max-width: 39.5rem) {
     #menuButton {
         display: block;
     }
@@ -335,15 +335,26 @@ ol li{
     }
 }
 
-@media(max-width: 23.5rem){
-    .dialogueBox{
-        width:92%;
+@media(max-width: 27.5rem){
+	#dude{
+	  right: 0.5rem;
+	  left:auto;
+	}
+	
+	.dialogueBox{
+        width:75%;
     }
-    
+}
+
+@media(max-width: 23.5rem){
     #youLame{
         top:5rem;
         left:0;
     }
+	
+	#dude{
+		top:7.75rem;
+	}
     
     #youMidCool{
         top:45rem;
@@ -453,7 +464,7 @@ ol li{
 }
 
 /* Collapse the right-hand menu options into a second row */
-@media (max-width: 35rem) {
+@media (max-width: 39.5rem) {
     #navBarRight {
         /*clear: both;*/
         /*float: left;*/
@@ -542,7 +553,12 @@ ol li{
 .earthBG{
   background-image: url("../img/earthBackwards.png");
   background-repeat: no-repeat;
-  background-size: 1876.5px;
+}
+
+@media(max-width: 1876px){ 
+	.earthBG{
+	  background-size: 1876.5px;
+	}
 }
 
 /* css for the site structure */

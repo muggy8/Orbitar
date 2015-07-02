@@ -61,7 +61,7 @@ $( window ).resize(function() {
 });
 
 function manageMenu(){
-	if (window.matchMedia("(min-width: 35rem)").matches) {
+	if (window.matchMedia("(min-width: 39.5rem)").matches) {
 		// viewport is more than 35 rems wide
 		$(".dropDownContainer").detach().appendTo('#navBarRight');
 		$("#scheduler").detach().appendTo('.everythingContainer');
