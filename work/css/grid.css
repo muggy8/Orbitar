@@ -90,18 +90,27 @@
         clear: both;
         width: 100%;
     }
+
+    .col-2of3ServiceDescription {
+        width: 55.5%;
+        padding-right: 1.85em;  /* reduce the amount of padding compared to before */
+    }
+
+    .col-1of3ServiceFigure {
+        width: 44.5%;
+        padding-left: 1.85em;  /* reduce the amount of padding compared to before */
+    }
 }
 
 /* collapse to single-column */
 @media (max-width: 50.75rem) {
     .col-2of3 {
         width: 100%;
-
-        /* specifying padding again is necessary to reset it; without it, extra padding will appear */
-        padding: 0.5em 1.85em;
+        padding: 1.5em 1.85em;  /* add more vertical padding */
     }
+
     .col-1of3Main, .col-1of3Service {
-        padding: 0.5em 1.85em;
+        padding: 1.5em 1.85em;
         width: 100%;
     }
 
@@ -111,7 +120,7 @@
     }
 
     .col-3of3 {
-        padding: 0.5em 1.85em;
+        padding: 1.5em 1.85em;
         width: 100%;
     }
 
@@ -152,32 +161,6 @@
 
 
 }
-
-
-/*.col-5of10 {
-    width: 50%;
-}
-
-.col-2of10 {
-    width: 20%;
-}*/
-
-/* site breaks at about 750px - 750 / 16 = ~47 */
-/*@media (max-width: 50rem) {
-    .col-2of10 {
-        width: 33.333%;
-    }
-}
-
-@media (max-width: 30rem) {
-    .col-2of10 {
-        width: 100%;
-    }
-
-    .col-5of10 {
-        width: 100%;
-    }
-}*/
 
 /* fix bug with float - fixes a problem where floated items don't have a height */
 .grid:after {
