@@ -37,7 +37,7 @@ $( document ).ready(function() {
 	month.innerHTML = "June";
 	calender.appendChild(month);
 	
-	for (var i = 0; i < 30; i++){
+	for (var i = 1; i <= 30; i++){
 		var day = document.createElement("div");
 		day.innerHTML = i;
 		day.className = "callenderDay";
