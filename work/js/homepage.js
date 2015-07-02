@@ -362,14 +362,14 @@ function editPlan(){
 		document.getElementById("plannedSchedule").parentElement.removeChild(document.getElementById("plannedSchedule"));
 	}
 	var buttons = document.getElementsByClassName("buttonGeneric");
-	buttons[2].click();
+	buttons[3].click();
 	for (var i = 0; i < buttons.length; i++){
 		if (buttons[i].innerHTML == "Add to Planner" && randomBetween(1,5) == 5){
 			buttons[i].click();
 		}
 	}
-	document.getElementsByClassName("buttonGenericOnDark")[0].click();
-	var bookButton = document.getElementsByClassName("buttonGeneric hugBottom")[0];
-	bookButton.innerHTML = "Modify Plan";
+	document.getElementById("ridegen").click();
+	var bookButton = document.getElementById("checkout");
+	bookButton.innerHTML = "Update";
 	bookButton.href = "reciept.html";
 }
