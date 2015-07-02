@@ -24,10 +24,11 @@
                     </div> <!-- ./navBarLeft -->
                     <div id="navBarRight">
                         <ul class="dropDownContainer">
-                            <li><a class="buttonNav dropDownButton" href="#aboutOrbitar">About</a></li>
-                            <li><a class="buttonNav dropDownButton" href="#bookingStart">Create / Modify Booking</a></li>
+                            <!-- when any of these buttons are clicked, close the menu -->
+                            <li><a class="buttonNav dropDownButton" href="#aboutOrbitar" onclick="closeMenu()">About</a></li>
+                            <li><a class="buttonNav dropDownButton" href="#bookingStart" onclick="closeMenu()">Create / Modify Booking</a></li>
                             <!-- <li><a class="buttonNav dropDownButton" href="#modRide">Modify Bookings</a> -->
-                            <li><a class="buttonNav dropDownButton" href="feedback.html">Feedback</a></li>
+                            <li><a class="buttonNav dropDownButton" href="feedback.html" onclick="closeMenu()">Feedback</a></li>
                         </ul>
                         <button id="menuButton" onclick="toggleMenu()">Menu</button>
 
@@ -42,7 +43,7 @@
         </nav>
         <div class="everythingContainer earthBG">
             
-            <section id="bodyContainer">
+            <div id="bodyContainer">
                 <section id="youLame" class="dialogueBox">
                     <h2>This is you on Earth.</h2>
                     <p>
@@ -68,7 +69,7 @@
                 <div id="cableCart"></div>
                 <img id="spacePad" src='img/SpacePad.png' height="491" width="1464" alt="Image of the space station">
                 <div id="cableStreacher"></div>
-            </section>
+            </div>
             
             <div id="callender">
                 
