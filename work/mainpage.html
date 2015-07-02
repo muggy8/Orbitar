@@ -5,7 +5,7 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Orbitar: The Orbital Space Elevator</title>
+        <title>Orbitar: The Orbital Elevator and Space Station Service</title>
 
         <link href="css/main.css" rel="stylesheet">
         <link href="css/grid.css" rel="stylesheet">
@@ -88,14 +88,14 @@
                         </figure>
                     </div>
                     <div class="col-2of3">
-                        <h2 class="ondark">About Orbitar: An Evolution in Extraterrestrial Travel</h2>
+                        <h2 class="ondark">Orbitar: An Evolution in Space Tourism and Research</h2>
 
                         <p class="ondark">
-                            Orbitar is the service that helps you explore what is beyond Earth. The Orbitar Elevator will whisk you from Earth to our Orbitar Space Station comfortably, safely, and quickly, at an affordable cost. Once arriving at the space station, you can enjoy our vast amount of amenities and facilities, ranging from sightseeing and entertainment to academic research.
+                            Orbitar is the revolutionary service that specializes in space tourism and research for all humans on Earth. The Orbitar Elevator will whisk you from Earth to our Orbitar Space Station comfortably, safely, and quickly, at an affordable cost. Once arriving at the space station, you can enjoy our vast amount of amenities and facilities, ranging from sightseeing and entertainment to academic research.
                         </p>
 
                         <p class="ondark">
-                            
+                            The Orbitar Corporation was founded in 2059 by Robert Hamilton, with our initial elevator and space station launched in 2064. With over 25 years of experience, we were the first company to take bring 10 million people into space.
                         </p>
                     </div>
                 </div>
@@ -114,6 +114,10 @@
 
                         <p class="ondark">
                             <span class="fontDemi ondark">Cost: $5800 per return trip</span>
+                        </p>
+
+                        <p class="ondark">
+                            To continue booking your trip, please book your hotel accommodations and any optional room/equipment bookings below.
                         </p>
 
                         <button class="ondark showHiddenContentButton" onclick="displayHiddenContent(this, elevatorHiddenContent)">View More Details&hellip;</button>
@@ -153,12 +157,17 @@
 					
 					<div class="col-1of3Main">
                         <section id="modRide">
-							<h2 class="ondark" >Already have plans on going up to space?</h2>
-							<p class="ondark">Modify my schedule by confirmation number:</p>
+							<h2 class="ondark">Already Booked Your Trip?</h2>
+							<p class="ondark">
+                                Modify your schedule by entering your confirmation number.
+                            </p>
+
 							<form action="mainPage.html" method="post" id="editPlan" onsubmit="return false">
 								<input class="fieldHalf" type="text" name="confirmationNumber" placeholder="Confirmation Number">
 								<button class="buttonGeneric" onclick="editPlan()">Edit My Plan</button>
 							</form>
+
+
 						</section>
                     </div>
 <!--
@@ -197,7 +206,12 @@
                     <div class="grid">
                         <div class="col-3of3">
                             <h2 class="ondark">Hotel Rooms</h2>
-                            <p class="ondark">The Orbitar space station has a variety of rooms at an affordable price.</p>
+                            <p class="ondark">
+                                The Orbitar Space Station has a variety of rooms at an affordable price.
+                            </p>
+                            <p class="ondark">
+                                Please select one (or more) of the hotel room types below. You will automatically be booked for the duration in which you arrive to and depart from the Orbitar Elevator to the Orbitar Space Station.
+                            </p>
                         </div>
                         
                         <div id="citizenVacationHotel" class="hotelGrid">
@@ -222,7 +236,7 @@
                                             Citizen vacation class rooms provide a comfortable way for visitors who are vacationing at the space station to get some rest after a day of exploration. Experience floating into sleep in a unique, cylindrical room in zero gravity!
                                         </p>
                                         <p class="ondark">
-                                            <span class="fontDemi ondark">Cost: $550 per night</span>
+                                            <span class="fontDemi ondark">Cost: $550 per 24 hours</span>
                                         </p>
 
                                         <button class="ondark showHiddenContentButton" onclick="displayHiddenContent(this, vacationClassHotelHiddenContent)">View More Details&hellip;</button>
@@ -268,7 +282,7 @@
                                         </p>
 
                                         <p class="ondark">
-                                            <span class="fontDemi ondark">Cost: $750 per night</span>
+                                            <span class="fontDemi ondark">Cost: $750 per 24 hours</span>
                                         </p>
 
                                         <button class="ondark showHiddenContentButton" onclick="displayHiddenContent(this, citSciClassHotelHiddenContent)">View More Details&hellip;</button>
@@ -314,7 +328,7 @@
                                         </p>
 
                                         <p class="ondark">
-                                            <span class="fontDemi ondark">Cost: $1200 per night</span>
+                                            <span class="fontDemi ondark">Cost: $1200 per 24 hours</span>
                                         </p>
 
                                         <button class="ondark showHiddenContentButton" onclick="displayHiddenContent(this, proSciClassHotelHiddenContent)">View More Details&hellip;</button>
