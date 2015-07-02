@@ -11,6 +11,7 @@
         <link href="css/grid.css" rel="stylesheet">
         <link href="css/style-guide.css" rel="stylesheet">
         <link href="css/font-embeds.css" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
        
     </head>
 
@@ -567,10 +568,10 @@
                         <form action="checkout.html" method="post" id="startBooking" onsubmit="return false">
                             <div class="grid">
                                 <div class="mainPageFormGridCol-1of2">
-                                    <input class="fieldHalf" type="text" name="departureDate" placeholder="Departure Date">
+                                    <input class="fieldHalf" type="date" name="departureDate" placeholder="Departure Date" required>
                                 </div>
                                 <div class="mainPageFormGridCol-2of2">
-                                    <input class="fieldHalf" type="text" name="returnDate" placeholder="Return Date">
+                                    <input class="fieldHalf" type="date" name="returnDate" placeholder="Return Date" required>
                                 </div>
                             </div>
                             <button class="buttonGeneric" onclick="findRides(this)">Find Manually</button>
@@ -609,20 +610,20 @@
                         <div class="grid">
                             
                                 <div class="mainPageFormGridCol-1of2">
-                                    <input class="fieldHalf" type="text" name="departureDate" placeholder="* First Name">
+                                    <input class="fieldHalf" type="text" name="departureDate" placeholder="* First Name" required>
                                 </div>
                                 <div class="mainPageFormGridCol-2of2">
-                                    <input class="fieldHalf" type="text" name="returnDate" placeholder="* Last Name">
+                                    <input class="fieldHalf" type="text" name="returnDate" placeholder="* Last Name" required>
                                 </div>
                                 <div class="mainPageFormGridCol-1of2">
-                                    <input class="fieldHalf" type="text" name="departureDate" placeholder="* Email">
+                                    <input class="fieldHalf" type="text" name="departureDate" placeholder="* Email" required>
                                 </div>
                                 <div class="mainPageFormGridCol-2of2">
                                     <input class="fieldHalf" type="text" name="returnDate" placeholder="Booking Confirmation # (If Applicable)">
                                 </div>
 
                                 <div class="mainPageFormGridFullWidth">
-                                    <textarea class="commentsTextareaFull" placeholder="* Write your questions or comments here"></textarea>
+                                    <textarea class="commentsTextareaFull" placeholder="* Write your questions or comments here" required></textarea>
                                 </div>
 
                                 <button class="buttonGeneric" type="submit">Send Questions / Comments</button>
