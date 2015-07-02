@@ -313,8 +313,12 @@ h4 {
   margin-top:1rem;
 }
 
+.ondarkContrast{
+    color:#FFFFFF;
+}
+
 .ondark{
-    color:#ffffff;
+  color:rgb(200,200,200);
 }
 
 .ondim{
@@ -357,7 +361,7 @@ ol li{
     border-radius: 0.75rem;
     padding: 0.5rem;
     width: 20rem;
-    border: 0.125rem solid black;
+    border: 0.125rem solid rgb(70,70,70);
     z-index:+10
 }
 
