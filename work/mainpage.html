@@ -104,7 +104,7 @@
                 </div>
             </article>
 
-			<div id="hotels" class="majorSection">
+			<div class="majorSection">
 
             <!-- dummy tag with an anchor placed above the actual section, so that the fixed nav bar doesn't obscure the content behind it -->
             <span class="anchorLink" id="bookingStart"></span>
@@ -554,10 +554,10 @@
                         <form action="checkout.html" method="post" id="startBooking" onsubmit="return false">
                             <div class="grid">
                                 <div class="mainPageFormGridCol-1of2">
-                                    <input class="fieldHalf" type="date" name="departureDate" placeholder="Departure Date" required>
+                                    <input class="fieldHalf" type="text" name="departureDate" placeholder="Departure Date" required>
                                 </div>
                                 <div class="mainPageFormGridCol-2of2">
-                                    <input class="fieldHalf" type="date" name="returnDate" placeholder="Return Date" required>
+                                    <input class="fieldHalf" type="text" name="returnDate" placeholder="Return Date" required>
                                 </div>
                             </div>
                             <button class="buttonGeneric" onclick="findRides(this)">Find Manually</button>
