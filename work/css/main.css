@@ -898,5 +898,6 @@ ol li{
 }
 
 footer{
-
+	height:3rem;
+	background-color: rgb(29, 29, 153);
 }
