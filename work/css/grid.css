@@ -154,7 +154,7 @@
     .mainPageFormGridCol-1of2, .mainPageFormGridCol-2of2 {
         width: 100%;
         clear: both;
-        margin-bottom: 0.9em;
+        /*margin-bottom: 0.9em;*/
     }
 
     /* left column */
