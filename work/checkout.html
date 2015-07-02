@@ -53,34 +53,50 @@
                 <form action="reciept.html" method="post" id="startBooking">
                     <div class="grid">
                         <div class="mainPageFormGridCol-1of2">
-                            <input class="fieldHalf" type="text" name="FirstName" placeholder="First Name">
+                            <input class="fieldHalf" type="text" id="FirstName" name="FirstName" placeholder="First Name">
                         </div>
                         <div class="mainPageFormGridCol-2of2">
-                            <input class="fieldHalf" type="text" name="LastName" placeholder="Last Name">
+                            <input class="fieldHalf" type="text" id="LastName" name="LastName" placeholder="Last Name">
                         </div>
-                        <input class="fieldHalf" type="text" name="creditCard" placeholder="Credit Card Number">
-                        <input class="fieldHalf" type="text" name="phoneNumber" placeholder="Phone Number">
+                        <input class="fieldHalf" type="text" id="creditCard" name="creditCard" placeholder="Credit Card Number">
+                        <input class="fieldHalf" type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
                         <div class="mainPageFormGridCol-1of2">
-                            <input class="fieldHalf" type="number" name="streetNumber" placeholder="Street Number">
+                            <input class="fieldHalf" type="number" id="streetNumber" name="streetNumber" placeholder="Street Number">
                         </div>
                         <div class="mainPageFormGridCol-2of2">
-                            <input class="fieldHalf" type="text" name="streetName" placeholder="Street Name">
+                            <input class="fieldHalf" type="text" id="streetName" name="streetName" placeholder="Street Name">
                         </div>
                         <div class="mainPageFormGridCol-1of2">
-                            <input class="fieldHalf" type="number" name="state" placeholder="State/Province">
+                            <input class="fieldHalf" type="text" id="state" name="state" placeholder="State/Province">
                         </div>
                         <div class="mainPageFormGridCol-2of2">
-                            <input class="fieldHalf" type="text" name="country" placeholder="Country of Residence">
+                            <input class="fieldHalf" type="text" id="country" name="country" placeholder="Country of Residence">
                         </div>
-                        <input class="fieldHalf" type="text" name="email" placeholder="e-mail address">
-                        <input class="fieldHalf" type="text" name="SIN" placeholder="Social Insurance Number">
-                        <input class="fieldHalf" type="text" name="institution" placeholder="Institution (optional)">
+                        <input class="fieldHalf" type="text" id="email" name="email" placeholder="e-mail address">
+                        <input class="fieldHalf" type="number" id="SIN" name="SIN" placeholder="Social Insurance Number">
+                        <input class="fieldHalf" type="text" id="institution" name="institution" placeholder="Institution (optional)">
                     </div>
                     <button class="buttonGenericOnDark hugRight">Complete Bookings</button>
                 </form>
             </div>
         </div>
 
+		<footer>
+			<div id="centeredNavContainer">
+                <div id="navBar">
+                    <div id="navBarLeft">
+                        <span id="siteName"></span>
+                    </div> <!-- ./navBarLeft -->
+                    <div id="navBarRight">
+						<ul>
+                            <li><a class="buttonNav" href="contents-and-citations.html">Citations</a></li>
+                            <li><a class="buttonNav" href="styleguide.html">Style Guide</a></li>
+                        </ul>
+					</div> <!-- ./navBarRight -->
+
+                </div> <!-- ./navBar -->
+            </div>
+		</footer>
         <!-- load scripts at the end of the page to decrease loading times -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="js/homepage.js"></script>
