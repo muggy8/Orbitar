@@ -35,12 +35,16 @@ section code {
 .floatClear{
     clear:both;
 }
-
+/*
 #hotels{
   margin-top: 2rem;
 }
 
 #science{
+  margin-top: 2rem;
+}*/
+
+.majorSection{
   margin-top: 2rem;
 }
 /* 
@@ -816,6 +820,26 @@ ol li{
 .col-1of3Main figcaption {
     margin-top: 0.5em;
 }
+
+.multiSelect{
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.quantitativeFeedback{
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+.multiSelectOption{
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: :0;
+}
+
+.feedbackSubmit{
+  display: block;
+  margin-top: 1rem;
 
 
 /* bold version of the font */

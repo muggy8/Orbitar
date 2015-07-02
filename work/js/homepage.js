@@ -350,3 +350,20 @@ function displayHiddenContent(button, currentID) {
     	$(button).html("View More Details&hellip;");
     }
 }
+
+function editPlan(){
+	if (document.getElementById("plannedSchedule") != null){
+		document.getElementById("plannedSchedule").parentElement.removeChild(document.getElementById("plannedSchedule"));
+	}
+	var buttons = document.getElementsByClassName("buttonGeneric");
+	buttons[2].click();
+	for (var i = 0; i < buttons.length; i++){
+		if (buttons[i].innerHTML == "Add to Planner" && randomBetween(1,5) == 5){
+			buttons[i].click();
+		}
+	}
+	document.getElementsByClassName("buttonGenericOnDark")[0].click();
+	var bookButton = document.getElementsByClassName("buttonGeneric hugBottom")[0];
+	bookButton.innerHTML = "Modify Plan";
+	bookButton.href = "reciept.html";
+}

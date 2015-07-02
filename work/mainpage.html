@@ -29,7 +29,7 @@
                             <li><a class="buttonNav dropDownButton" href="#aboutOrbitar">About</a></li>
                             <li><a class="buttonNav dropDownButton" href="#bookingStart">Create / Modify Booking</a></li>
                             <!-- <li><a class="buttonNav dropDownButton" href="#modRide">Modify Bookings</a> -->
-                            <li><a class="buttonNav dropDownButton" href="#">Feedback</a></li>
+                            <li><a class="buttonNav dropDownButton" href="feedback.html">Feedback</a></li>
                         </ul>
                         <button id="menuButton" onclick="toggleMenu()">Menu</button>
 
@@ -37,7 +37,9 @@
 
                 </div> <!-- ./navBar -->
             </div> <!-- ./centered-nav-container -->
-            <div id="fullscreenMenuContainer"></div>
+            <div id="fullscreenMenuContainer">
+
+            </div>
             <div class="floatClear"></div>
         </nav>
         <div class="everythingContainer earthBG">
@@ -101,7 +103,7 @@
                 </div>
             </article>
 
-            
+			<div id="hotels" class="majorSection">
 
             <article class="featureContainer">
                 <div class="grid">
@@ -223,8 +225,8 @@
                                         <figure>
                                             <img src="img/SpaceHotel1-VacationRoom.jpg" alt="A vacation class room">
                                             <div class="listingButtonHolder">
-                                                <button class="buttonGeneric" onclick="showCallender()">calender</button>
-                                                <button class="buttonGeneric" onclick="addHotel('Citizen Vacation Class Hotel Room')">add to Planner</button>
+									<button class="buttonGeneric" onclick="showCallender()">Calender</button>
+									<button class="buttonGeneric" onclick="addEvent(this)">Add to Planner</button>
                                             </div>
                                         </figure>
                                     </div>
@@ -314,8 +316,8 @@
                                         <figure>
                                             <img src="img/SpaceHotel3-AdvancedScientistRoom.jpg" alt="A large hotel room with highly specialized equipment for doing professional research and other experiments">
                                             <div class="listingButtonHolder">
-                                                <button class="buttonGeneric" onclick="showCallender()">calender</button>
-                                                <button class="buttonGeneric" onclick="addHotel('Advanced Scientist Class Hotel Room')">add to Planner</button>
+									<button class="buttonGeneric" onclick="showCallender()">Calender</button>
+									<button class="buttonGeneric" onclick="addEvent(this)">Add to Planner</button>
                                             </div>
                                         </figure>
                                     </div>
@@ -361,7 +363,7 @@
 
 			</div>
 			
-			<div id="science">
+			<div id="science" class="majorSection">
 				<article class="featureContainer">
 					<div class="grid">
 						<div class="col-2of3">
@@ -399,8 +401,8 @@
 							<figure>
 								<img src="img/Telescope.jpg" alt="The Orbitar Telescope">
 								<div class="listingButtonHolder">
-									<button class="buttonGeneric" onclick="showCallender()">calender</button>
-									<button class="buttonGeneric" onclick="addEvent(this)">add to Planner</button>
+									<button class="buttonGeneric" onclick="showCallender()">Calender</button>
+									<button class="buttonGeneric" onclick="addEvent(this)">Add to Planner</button>
 								</div>
 								<figcaption class="ondark">Orbitar Telescope</figcaption>
 							</figure>
@@ -451,8 +453,8 @@
 							<figure>
 								<img src="img/AstrochemistryLab.jpg" alt="Image of the Astrochemistry Lab. There are floating bottles and lots of technology attached to the wall">
 								<div class="listingButtonHolder">
-									<button class="buttonGeneric" onclick="showCallender()">calender</button>
-									<button class="buttonGeneric" onclick="addEvent(this)">add to Planner</button>
+									<button class="buttonGeneric" onclick="showCallender()">Calender</button>
+									<button class="buttonGeneric" onclick="addEvent(this)">Add to Planner</button>
 								</div>
 								<figcaption class="ondark">Astrochemistry Lab</figcaption>
 							</figure>
@@ -496,8 +498,8 @@
 							<figure>
 								<img src="img/ParticleAccelerator.jpg" alt="Image of the Orbitar Collider, which is a long tube in a circular tunnel.">
 								<div class="listingButtonHolder">
-									<button class="buttonGeneric" onclick="showCallender()">calender</button>
-									<button class="buttonGeneric" onclick="addEvent(this)">add to Planner</button>
+									<button class="buttonGeneric" onclick="showCallender()">Calender</button>
+									<button class="buttonGeneric" onclick="addEvent(this)">Add to Planner</button>
 								</div>
 								<figcaption class="ondark">Orbitar Collider</figcaption>
 							</figure>
@@ -544,8 +546,8 @@
 							<figure>
 								<img src="img/LaunchPad.jpg" alt="Photo of the launch pad: Hole in the middle of the space station to allow for ships to enter and leave">
 								<div class="listingButtonHolder">
-									<button class="buttonGeneric" onclick="showCallender()">calender</button>
-									<button class="buttonGeneric" onclick="addEvent(this)">add to Planner</button>
+									<button class="buttonGeneric" onclick="showCallender()">Calender</button>
+									<button class="buttonGeneric" onclick="addEvent(this)">Add to Planner</button>
 								</div>
 								<figcaption class="ondark">Space dock / launch pad</figcaption>
 							</figure>
@@ -555,7 +557,7 @@
 				
 			</div>
 			
-			<article class="featureContainer" id="rideGenFind">
+            <article class="featureContainer">
                 <div class="grid">
                     <div class="col-2of3">
                         <h2 class="ondark">Event Based Elevator Ride Generator</h2>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Orbitar: The Orbital Space Elevator</title>
+
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/grid.css" rel="stylesheet">
+        <link href="css/style-guide.css" rel="stylesheet">
+        <link href="css/font-embeds.css" rel="stylesheet">
+        <!-- <link href="css/transitions.css" rel="stylesheet"> -->
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/homepage.js"></script>
+    </head>
+
+    <body>
+        <nav id="navHeader"> <!-- banner-->
+            <div id="centeredNavContainer">
+                <div id="navBar">
+                    <div id="navBarLeft">
+                        <span id="siteName"><a href="mainpage.html">Orbitar</a></span>
+                    </div> <!-- ./navBarLeft -->
+                    <div id="navBarRight">
+                        <ul class="dropDownContainer">
+                            <li class="buttonListElement"><a class="buttonNav dropDownButton" href="#aboutOrbitar">About</a></li>
+                            <li><a class="buttonNav dropDownButton" href="#bookingStart">Bookings</a></li>
+                            <li><a class="buttonNav dropDownButton" href="#elevatorRides">Update Bookings</a>
+                            <li><a class="buttonNav dropDownButton" href="#">Feedback</a></li>
+                        </ul>
+                        <a id="menuButton" onclick="toggleMenu()" href="#">Menu</a>
+
+                    </div> <!-- ./navBarRight -->
+
+                </div> <!-- ./navBar -->
+            </div> <!-- ./centered-nav-container -->
+            <div id="fullscreenMenuContainer">
+
+            </div>
+            <div class="floatClear"></div>
+        </nav>
+
+
+        <div class="everythingContainer">
+            <div id="bodyContainerCheckout">
+                <form id="feedbackForm" action="thankyou.html" method="post">
+                    <section id="hotels" class="majorSection">
+                        <h2 class="ondark">What kind of hotel did you stay at?</h2>
+                        <div class="multiSelectOption">
+                            <input class="ondark multiSelect" type="checkbox" name="vacation"><p class="ondark multiSelect">Vacation Class Hotel</p>
+                        </div>
+                        <div class="multiSelectOption">
+                            <input class="ondark multiSelect" type="checkbox" name="citizenScience"><p class="ondark multiSelect">Citizen Scientist Class Hotel</p>
+                        </div>
+                        <div class="multiSelectOption">
+                            <input class="ondark multiSelect" type="checkbox" name="citizenScience"><p class="ondark multiSelect">Cutting Edge Scientist Class Hotel</p>
+                        </div>
+                        <div class="quantitativeFeedback">
+                            <h3 class="ondark">How was your experiance</h3>
+                            <p class="ondark">where 0 is aweful and 10 is awesome</p>
+                            <label class="ondark" for="hotelRange">0</label>
+                            <input class="ondark multiSelect" id="hotelRange" type="range" min="0" max="10" value"5" name="hotelRange">
+                            <label class="ondark" for="hotelRange">10</label>
+                        </div>
+                        <div class="quantitativeFeedback">
+                            <h3 class="ondark">Additional Comments:</h3>
+                            <textarea rows="6" cols="50" name="hotelComments"></textarea>
+                        </div>
+                    </section>
+
+                    <section id="science" class="majorSection">
+                        <h2 class="ondark">Did you book any other facilities?</h2>
+                        <div class="multiSelectOption">
+                            <input class="ondark multiSelect" type="checkbox" name="telescope"><p class="ondark multiSelect">Orbitar Telescope</p>
+                        </div>
+                        <div class="multiSelectOption">
+                            <input class="ondark multiSelect" type="checkbox" name="astrochem"><p class="ondark multiSelect">Astrochemistry Lab</p>
+                        </div>
+                        <div class="multiSelectOption">
+                            <input class="ondark multiSelect" type="checkbox" name="particleAccel"><p class="ondark multiSelect">Particle Accelerator</p>
+                        </div>
+                        <div class="multiSelectOption">
+                            <input class="ondark multiSelect" type="checkbox" name="launchPad"><p class="ondark multiSelect">Launch Pad</p>
+                        </div>
+                        <div class="quantitativeFeedback">
+                            <h3 class="ondark">How was your experiance</h3>
+                            <p class="ondark">where 0 is aweful and 10 is awesome</p>
+                            <label class="ondark" for="sciRange">0</label>
+                            <input class="ondark multiSelect" id="sciRange" type="range" min="0" max="10" value"5" name="scienceRange">
+                            <label class="ondark" for="hsciRange">10</label>
+                        </div>
+                        <div class="quantitativeFeedback">
+                            <h3 class="ondark">Additional Comments:</h3>
+                            <textarea rows="6" cols="50" name="sciComments"></textarea>
+                        </div>
+                    </section>
+
+                    <input type="submit" class="buttonGenericOnDark feedbackSubmit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
