@@ -1,6 +1,11 @@
 $( window ).scroll(
 	function (){
-		var height = $(window).scrollTop(); // jquery documentations
+		scrollCheck();
+		//
+	});
+
+function scrollCheck(){
+	var height = $(window).scrollTop(); // jquery documentations
 		//console.log(height);
 		if (height > 1088){
 			$("#cableCart").css("display", "none");
@@ -24,9 +29,7 @@ $( window ).scroll(
 			$("#cableCart").css("background-color", "rgb(" + 150 + "," + 150 + "," + 150 + ")");
 			$("#elevatorCable").css("background-color", "rgb(" + 150 + "," + 150 + "," + 150 + ")");
 		}
-		
-		//
-	});
+}
 	
 $( document ).ready(function() {
 
@@ -60,6 +63,7 @@ $( document ).ready(function() {
         $(".hiddenContent").removeClass("show");
         $(".hiddenContent").addClass("hide");
     }
+    scrollCheck();
 });
 
 $( window ).resize(function() {
