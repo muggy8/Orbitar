@@ -517,6 +517,49 @@ ol li{
     visibility: hidden;
 }
 
+#footerBarLeft {
+    float: left;
+    clear: both;
+}
+
+#footerBarLeft ul {
+    float: left;
+    clear: both;
+}
+
+/* For the left side of the navigation (Browse/About Us/Contact Us) */
+#footerBarLeft ul li {
+    float: left;
+}
+
+/* Remove the bullets and margin/padding from the nav list */
+#footerBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+#footerBarLeft {
+    float: left;
+    clear: both;
+}
+
+#footerBarLeft ul {
+    float: left;
+    clear: both;
+}
+
+/* For the left side of the navigation (Browse/About Us/Contact Us) */
+#footerBarRight ul li {
+    float: left;
+}
+
+/* Float the right side of the navigation (log in/register and cart) to the right */
+#footerBarRight {
+    float: right;
+ }
+
 /* Collapse the right-hand menu options into a second row */
 @media (max-width: 39.5rem) {
     #navBarRight {
