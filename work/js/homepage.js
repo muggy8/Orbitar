@@ -115,6 +115,26 @@ function addEvent(ele){
 	elementCounter ++;
 }
 
+function addHotel(eleName){
+	var planner = document.getElementById("scheduler");
+	
+	var list;
+	if (planner.childNodes.length <= 5 ){ // nothing was added so go add the UL tag
+		list = document.createElement("ul");
+		list.id = "plannedSchedule";
+		$(list).insertAfter("#plannerHeadder");
+		planner.className = planner.className.replace(" hide", "");
+	}
+	else{
+		list = document.getElementById("plannedSchedule");
+	}
+	var entry =  document.createElement("li");
+	entry. id="item" + elementCounter;
+	entry.innerHTML = eleName + ": Feb/15/2088 <br> &nbsp;&nbsp;&nbsp;&nbsp;@1:00AM CST <br> &nbsp;&nbsp;&nbsp;&nbsp;duration: 22 hours" + " <a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
+	list.appendChild(entry);
+	elementCounter ++;
+}
+
 function generateRides(){
 	//find planner 
 	var planner = document.getElementById("scheduler");
