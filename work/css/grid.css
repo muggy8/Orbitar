@@ -17,23 +17,61 @@
 }
 
 /*
- *  3-column grid structure
+ *  General 3-column grid structure
  */
 .col-2of3 {
     width: 60%;
 }
 
-.col-1of3 {
+.col-1of3Main {
     width: 40%;
 }
 
-.col-1of3 figure {
+.col-3of3 {
+    float: none;
+}
+
+.col-1of3Service {
+    width: 33.333%;
+}
+
+.col-1of3Main figure, .serviceFigure figure {
     margin: 0;  /* remove default figure margin */
 }
 
-.col-1of3 figure img {
+.col-1of3Main figure img, .serviceFigure figure img {
     width: 100%;  /* fill as much of the width and height of the column as possible */
     height: 100%;
+}
+
+/* override the [class^='col-'] declaration above for now */
+.col-2of3ServiceDescription, .col-1of3ServiceFigure {
+    width: 100%;
+    padding: 0;
+}
+
+@media (max-width: 70rem) {
+    .hotelGrid .col-1of3Service {
+        width: 100%;
+    }
+
+    .col-2of3ServiceDescription {
+        width: 62.1%;  /* make this text section as close to the images as possible */
+        padding-right: 1.85em;  /* reduce the amount of padding compared to before */
+    }
+
+    .col-1of3ServiceFigure {
+        float: right;
+        padding-left: 1.85em;  /* reduce the amount of padding compared to before */
+        width: 37.9%;  /* make this image width as close to the images as possible */
+    }
+
+    .hotelGrid:after {
+        content: "";
+        display: block; /* in case it wasn't */
+        clear: both;
+    }
+
 }
 
 /* increase the amount of column width dedicated to the image */
@@ -42,9 +80,25 @@
         width: 55%;
         padding-right: 1.85em;  /* reduce the amount of padding compared to before */
     }
-    .col-1of3 {
+    .col-1of3Main {
         padding-left: 1.85em;  /* reduce the amount of padding compared to before */
         width: 45%;
+    }
+
+    /* fix bug with float - fixes a problem where floated items don't have a height */
+    .col-1of3Service {
+        clear: both;
+        width: 100%;
+    }
+
+    .col-2of3ServiceDescription {
+        width: 55.5%;
+        padding-right: 1.85em;  /* reduce the amount of padding compared to before */
+    }
+
+    .col-1of3ServiceFigure {
+        width: 44.5%;
+        padding-left: 1.85em;  /* reduce the amount of padding compared to before */
     }
 }
 
@@ -52,11 +106,24 @@
 @media (max-width: 50.75rem) {
     .col-2of3 {
         width: 100%;
+        padding: 1.5em 1.85em;  /* add more vertical padding */
     }
-    .col-1of3 {
-        padding: 0.5em 1.85em;
+
+    .col-1of3Main, .col-1of3Service {
+        padding: 1.5em 1.85em;
         width: 100%;
     }
+
+    .col-2of3ServiceDescription, .col-1of3ServiceFigure {
+        padding: 0;
+        width: 100%;
+    }
+
+    .col-3of3 {
+        padding: 1.5em 1.85em;
+        width: 100%;
+    }
+
 }
 
 /* left column */
@@ -73,6 +140,7 @@
     margin-left: 1.5%;
 }
 
+/* collapse form to single-column */
 @media (max-width: 48rem) {
     /* query code for both columns; collapse to single-column */
     .mainPageFormGridCol-1of2, .mainPageFormGridCol-2of2 {
@@ -90,33 +158,9 @@
     .mainPageFormGridCol-2of2 {
         margin-left: 0;
     }
+
+
 }
-
-
-/*.col-5of10 {
-    width: 50%;
-}
-
-.col-2of10 {
-    width: 20%;
-}*/
-
-/* site breaks at about 750px - 750 / 16 = ~47 */
-/*@media (max-width: 50rem) {
-    .col-2of10 {
-        width: 33.333%;
-    }
-}
-
-@media (max-width: 30rem) {
-    .col-2of10 {
-        width: 100%;
-    }
-
-    .col-5of10 {
-        width: 100%;
-    }
-}*/
 
 /* fix bug with float - fixes a problem where floated items don't have a height */
 .grid:after {

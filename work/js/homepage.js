@@ -29,13 +29,15 @@ $( window ).scroll(
 	});
 	
 $( document ).ready(function() {
+
+    manageMenu();
 	var calender = document.getElementById("callender");
 	
 	var month = document.createElement("h3");
 	month.innerHTML = "June";
 	calender.appendChild(month);
 	
-	for (var i = 0; i < 30; i++){
+	for (var i = 1; i <= 30; i++){
 		var day = document.createElement("div");
 		day.innerHTML = i;
 		day.className = "callenderDay";
@@ -44,7 +46,40 @@ $( document ).ready(function() {
 	}
 	
 	callender.className = "hide";
+
+    // For content sections that are supposed to be hidden, they are shown by default for browsers
+    // that don't support JavaScript. Since the JS code is running, hide the sections when the
+    // page loads.
+    if ($(".hiddenContent").hasClass("show")) {
+        $(".hiddenContent").removeClass("show");
+        $(".hiddenContent").addClass("hide");
+    }
 });
+
+$( window ).resize(function() {
+	manageMenu();
+});
+
+function manageMenu(){
+	if (window.matchMedia("(min-width: 39.5rem)").matches) {
+		// viewport is more than 35 rems wide
+		$(".dropDownContainer").detach().appendTo('#navBarRight');
+		$("#scheduler").detach().appendTo('.everythingContainer');
+		var scheduler = document.getElementById("scheduler")
+		if (scheduler.className.indexOf(" schedulerInMenu") > -1){
+			scheduler.className = scheduler.className.replace(" schedulerInMenu", ""); 
+		}
+	}
+	else{
+		// viewport is less than 35 rems wide
+		$(".dropDownContainer").detach().appendTo('#fullscreenMenuContainer');
+		$("#scheduler").detach().appendTo('#fullscreenMenuContainer');
+		var scheduler = document.getElementById("scheduler");
+		if (scheduler.className.indexOf(" schedulerInMenu") == -1){
+			scheduler.className += " schedulerInMenu"; 
+		}
+	}
+}
 
 function showCallender (){
 	document.getElementById("callender").className = "";
@@ -56,9 +91,9 @@ function dayUpdate(){
 
 var elementCounter = 0;
 function addEvent(ele){
-	//console.log(ele.parentElement.parentElement.parentElement.parentElement);
+	console.log(ele.parentElement.parentElement.parentElement.parentElement);
 	var selected = ele.parentElement.parentElement.parentElement.parentElement; //get which overall box the button is in
-	//temp = selected.childNodes;
+	temp = selected.childNodes;
 	var attractionSelected = selected.childNodes[1].childNodes[1].innerHTML;
 	
 	var planner = document.getElementById("scheduler");
@@ -67,7 +102,8 @@ function addEvent(ele){
 	if (planner.childNodes.length <= 5 ){ // nothing was added so go add the UL tag
 		list = document.createElement("ul");
 		list.id = "plannedSchedule";
-		planner.appendChild(list);
+		$(list).insertAfter("#plannerHeadder");
+		planner.className = planner.className.replace(" hide", "");
 	}
 	else{
 		list = document.getElementById("plannedSchedule");
@@ -75,6 +111,26 @@ function addEvent(ele){
 	var entry =  document.createElement("li");
 	entry. id="item" + elementCounter;
 	entry.innerHTML = attractionSelected + ": Feb/15/2088 <br> &nbsp;&nbsp;&nbsp;&nbsp;@1:00AM CST <br> &nbsp;&nbsp;&nbsp;&nbsp;duration: 22 hours" + " <a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
+	list.appendChild(entry);
+	elementCounter ++;
+}
+
+function addHotel(eleName){
+	var planner = document.getElementById("scheduler");
+	
+	var list;
+	if (planner.childNodes.length <= 5 ){ // nothing was added so go add the UL tag
+		list = document.createElement("ul");
+		list.id = "plannedSchedule";
+		$(list).insertAfter("#plannerHeadder");
+		planner.className = planner.className.replace(" hide", "");
+	}
+	else{
+		list = document.getElementById("plannedSchedule");
+	}
+	var entry =  document.createElement("li");
+	entry. id="item" + elementCounter;
+	entry.innerHTML = eleName + ": Feb/15/2088 <br> &nbsp;&nbsp;&nbsp;&nbsp;@1:00AM CST <br> &nbsp;&nbsp;&nbsp;&nbsp;duration: 22 hours" + " <a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
 	list.appendChild(entry);
 	elementCounter ++;
 }
@@ -119,6 +175,7 @@ function nuke(ele, event){//remove the element from the UL in the planner
 	event.preventDefault();
 	
 	if (list.childNodes.length == 1){ // there are no other items in the list then remove the list element
+		list.parentElement.className = list.parentElement.className + " hide";
 		list.parentElement.removeChild(list);
 	}
 	else{ // or else just remove this element
@@ -217,9 +274,10 @@ function addToPlanner(ele, e){
 		var planner = document.getElementById("scheduler");
 		var list;
 		if (planner.childNodes.length <= 5 ){ // nothing was added so go add the UL tag
+			planner.className = planner.className.replace(" hide", "");
 			list = document.createElement("ul");
 			list.id = "plannedSchedule";
-			planner.appendChild(list);
+			$(list).insertAfter("#plannerHeadder");
 		}
 		else{
 			list = document.getElementById("plannedSchedule");
@@ -233,7 +291,7 @@ function addToPlanner(ele, e){
 		
 		//make the li and add it to the planner's list
 		var li = document.createElement("li");
-		li.innerHTML = tripType + ": " + ele.innerHTML.replace("@", "<br> &nbsp;&nbsp;&nbsp;&nbsp;@") + " CST " + "<a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
+		li.innerHTML = tripType + ": " + ele.innerHTML.replace("@", "<br> &nbsp;&nbsp;&nbsp;&nbsp;@") + " CST " + "<br> &nbsp;&nbsp;&nbsp;&nbsp;duration: 12 hours <a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
 		li.id=ele.innerHTML;
 		list.appendChild(li);
 	}
@@ -264,7 +322,7 @@ function toggleMenu() {
 
     // get current visibility value
     var visibilityValue = $('#fullscreenMenuContainer').css("visibility");
-    console.log("old visibility = " + visibilityValue);
+    // console.log("old visibility = " + visibilityValue);
 
     // if visibility is visible, toggle to hidden
     if (visibilityValue == "visible") {
@@ -276,5 +334,19 @@ function toggleMenu() {
         visibilityValue = $('#fullscreenMenuContainer').css("visibility", "visible");
     }
     
-    console.log("new visibility = " + visibilityValue);
+    // console.log("new visibility = " + visibilityValue);
+}
+
+function displayHiddenContent(button, currentID) {
+    $(currentID).toggleClass("show");
+
+    // show "Hide Details..." as the button text if details are currently expanded
+    if ($(currentID).hasClass("show")) {
+    	$(button).html("Hide Details&hellip;");
+    }
+
+    // show "View More Details..." as the button text if details are currently hidden
+    else {
+    	$(button).html("View More Details&hellip;");
+    }
 }
