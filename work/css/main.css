@@ -139,6 +139,29 @@ p a {
     font-style:italic;
 }
 
+.showHiddenContentButton, .showHiddenContentButton:visited{
+  font-style: normal;
+  background-color: rgb(0, 0, 0);
+  color:rgb(255, 255, 255);
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  border: 0.125em solid rgb(60, 60, 60);
+  border-radius:0.4rem;
+  cursor: pointer;
+  cursor: hand;
+  font-family: franklin_gothic_fsdemi, sans-serif;
+  width: 100%;
+  margin: 1.25em 0;
+}
+
+.showHiddenContentButton:focus {
+  outline: 0; /* hide blue border when clicked*/
+}
+
+.showHiddenContentButton:hover {
+  background-color: rgb(60, 60, 60);
+}
+
 /*
  *  Styling for submit button on a lighter background.
  *  The :active selector is here so that the button will remain the lighter shade of blue even
@@ -845,28 +868,4 @@ ol li{
 /* bold version of the font */
 .fontDemi {
   font-family: franklin_gothic_fsdemi, sans-serif;
-}
-
-.showHiddenContentButton, .showHiddenContentButton:visited,
-    .showHiddenContentButton:active, .showHiddenContentButton:focus {
-  font-style: normal;
-  background-color: rgb(0, 0, 0);
-  color:rgb(255, 255, 255);
-  padding: 0.5em 1em;
-  font-size: 1rem;
-  border: 0.125em solid rgb(60, 60, 60);
-  border-radius:0.4rem;
-  cursor: pointer;
-  cursor: hand;
-  font-family: franklin_gothic_fsdemi, sans-serif;
-  width: 100%;
-  margin: 1.25em 0;
-}
-
-.showHiddenContentButton:focus {
-  outline: 0; /* hide blue border when clicked*/
-}
-
-.showHiddenContentButton:hover {
-  background-color: rgb(60, 60, 60);
 }
