@@ -1,9 +1,11 @@
 footer{
-	position:fixed;
+	position:absolute;
 	bottom:0;
 	width:100%
 }
 
 .everythingContainer{
-	margin-bottom: 4rem;
+	padding-bottom: 4rem;
+	position:relative;
+	height:100%;
 }
