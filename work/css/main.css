@@ -736,10 +736,10 @@ ol li{
 
 @media(max-width: 59rem){
   #elevatorCable{
-    margin-left:29.28125rem;
+    margin-left:28.5rem;
   }
   #cablePusher{
-    margin-left:29.28125rem;
+    margin-left:28.5rem;
   }
   #basePad{
     left:23.3rem;
@@ -760,11 +760,11 @@ ol li{
     
     #elevatorCable{
         margin-left:auto;
-        margin-right:5.96875rem;
+        margin-right:5.2rem;
     }
     #cablePusher{
         margin-left:auto;
-        margin-right:5.96875rem;
+        margin-right:5.2rem;
     }
     #basePad{
         left:auto;
