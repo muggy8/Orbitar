@@ -725,12 +725,12 @@ ol li{
 }
 
 #callender{
-  width: 30rem;
+  width: 25rem;
   height: 20rem;
   background-color: #FFFFFF;
   position: fixed;
   left: 50%;
-  margin-left:-15rem;
+  margin-left:-12.5rem;
   top: 50%;
   margin-top:-10rem;
   z-index:15;
@@ -751,6 +751,18 @@ ol li{
 
 .callenderDay:hover{
   background-color:rgb(200,200,200)
+}
+
+@media(max-width: 31rem){
+	#callender{
+		width:100%;
+		left:0;
+		margin-left:0;
+	}
+	
+	.callenderDay{
+		width:12%;
+	}
 }
 
 .hide {
