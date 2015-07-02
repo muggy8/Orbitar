@@ -2,8 +2,6 @@
   STYLE GUIDE STYLING 
   Default styling for the style guide 
 */
-
-
 body {
   font-family: franklin_gothic_fsbook, sans-serif;
   margin:0;
@@ -240,6 +238,19 @@ p a {
     margin: 0.25rem 0;
     padding: 0.5em 0.5em;
     font-size: 0.9rem;
+}
+
+.fieldTextarea {
+    width: 100%;
+}
+
+/* for textarea field - all properties below needed to override default css */
+.commentsTextareaFull {
+  font-family: franklin_gothic_fsbook, sans-serif;
+  font-size: 1rem;
+  padding: 0.5em 0.5em;
+  width: 100%;
+  height: 8em;
 }
 
 /* 
@@ -863,9 +874,10 @@ ol li{
 .feedbackSubmit{
   display: block;
   margin-top: 1rem;
-
+}
 
 /* bold version of the font */
 .fontDemi {
   font-family: franklin_gothic_fsdemi, sans-serif;
 }
+

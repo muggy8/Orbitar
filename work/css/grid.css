@@ -140,6 +140,14 @@
     margin-left: 1.5%;
 }
 
+.mainPageFormGridFullWidth {
+    float: left;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
 /* collapse form to single-column */
 @media (max-width: 48rem) {
     /* query code for both columns; collapse to single-column */

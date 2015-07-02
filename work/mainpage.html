@@ -590,6 +590,52 @@
                     </div> <!-- ./col-1of3Main -->
                 </div>
             </article>
+
+            <article class="featureContainer">
+                <div class="grid">
+                    <div class="col-3of3">
+                    <h2 class="ondark">Contact Us</h2>
+
+                    <p class="ondark">
+                        You can use this form to send us any questions or comments about Orbitar. We will respond to you as soon as possible.
+                    </p>
+
+                    <p class="ondark">
+                        Want to send feedback about a trip, or leave a review? Please fill out the <a href="feedback.html">feedback form</a>.
+                    </p>
+
+                    <p class="ondark">
+                        <span class="fontDemi">* = required</span>
+                    </p>
+
+                    <form action="contact-us-submitted.html" method="post" id="commentsForm" onsubmit="return false">
+                        <div class="grid">
+                            
+                                <div class="mainPageFormGridCol-1of2">
+                                    <input class="fieldHalf" type="text" name="departureDate" placeholder="* First Name">
+                                </div>
+                                <div class="mainPageFormGridCol-2of2">
+                                    <input class="fieldHalf" type="text" name="returnDate" placeholder="* Last Name">
+                                </div>
+                                <div class="mainPageFormGridCol-1of2">
+                                    <input class="fieldHalf" type="text" name="departureDate" placeholder="* Email">
+                                </div>
+                                <div class="mainPageFormGridCol-2of2">
+                                    <input class="fieldHalf" type="text" name="returnDate" placeholder="Booking Confirmation # (If Applicable)">
+                                </div>
+
+                                <div class="mainPageFormGridFullWidth">
+                                    <textarea class="commentsTextareaFull" placeholder="* Write your questions or comments here"></textarea>
+                                </div>
+
+                                <button class="buttonGenericOnDark" onclick="location.href='comments-submitted.html'">Send</button>
+                            
+                        </div>
+                        
+                    </form>
+                    </div>
+                </div>
+            </article>
         </div>
     </body>
 
