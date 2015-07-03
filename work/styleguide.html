@@ -352,91 +352,91 @@
             </div>
         </section>
 
-      <section>
-        <h2>Numbered Lists</h2>
-        
-        <h3>CSS selectors</h3>
-        
-        <p>ol</p>
-        <p>ol li</p>
-        
-        <h3>Sample Code</h3>
-        
-        <pre><code>
+        <section>
+            <h2>Numbered Lists</h2>
+            
+            <h3>CSS selectors</h3>
+            
+            <p>ol</p>
+            <p>ol li</p>
+            
+            <h3>Sample Code</h3>
+            
+            <pre><code>
 &lt;ol&gt;
     &lt;li&gt;ele1&lt;/li&gt;
     &lt;li&gt;ele2&lt;/li&gt;
     &lt;li&gt;ele3&lt;/li&gt;
     &lt;li&gt;ele4&lt;/li&gt;
 &nbsp;&lt;/ol&gt;
-        </code></pre>
-        
-        <h3>Rendered Element:</h3>
-        
-        <ol>
-            <li>ele1</li>
-            <li>ele2</li>
-            <li>ele3</li>
-            <li>ele4</li>
-        </ol>
-        
-        <div class="blackBG">
-            <h3>Sample code for paragraphs on dark backgrounds:</h3>
-            <pre><code>
+            </code></pre>
+            
+            <h3>Rendered Element:</h3>
+            
+            <ol>
+                <li>ele1</li>
+                <li>ele2</li>
+                <li>ele3</li>
+                <li>ele4</li>
+            </ol>
+            
+            <div class="blackBG">
+                <h3>Sample code for paragraphs on dark backgrounds:</h3>
+                <pre><code>
 &lt;ol class="onDark"&gt;
     &lt;li&gt;ele1&lt;/li&gt;
     &lt;li&gt;ele2&lt;/li&gt;
     &lt;li&gt;ele3&lt;/li&gt;
     &lt;li&gt;ele4&lt;/li&gt;
 &lt;/ol&gt;
-            </code></pre>
-            
-            <h3>Rendered Element:</h3>
-            <ol class="onDark">
-                <li>ele1</li>
-                <li>ele2</li>
-                <li>ele3</li>
-                <li>ele4</li>
-            </ol>
-        </div>
-    </section>
+                </code></pre>
+                
+                <h3>Rendered Element:</h3>
+                <ol class="onDark">
+                    <li>ele1</li>
+                    <li>ele2</li>
+                    <li>ele3</li>
+                    <li>ele4</li>
+                </ol>
+            </div>
+        </section>
 
     </section>
     <!-- // TEXT ELEMENTS SECTION -->
     <section id="other_stuff">
-      <section>
-        <h2>Color Scheme</h2>
-        
-        <h3>Dark Blue</h3>
-        <p>#1D1D99 or rgb(29,29,153)</p>
-        
-        <h3>Rendered Color</h3>
-        <div class="dark-blue color-block"></div>
-        
-        <h3>Light Blue</h3>
-        <p>#2C2CE6 or rgb(44,44,230)</p>
-        
-        <h3>Rendered Color</h3>
-        <div class="light-blue color-block"></div>
-        
-        <h3>Lighter Gray</h3>
-        <p>#EFEFEF or rgb(239,239,239)</p>
-        
-        <h3>Rendered Color</h3>
-        <div class="dark-gray color-block"></div>
-        
-        <h3>Darker Gray</h3>
-        <p>#CFCFCF or rgb(207,207,207)</p>
-        
-        <h3>Rendered Color</h3>
-        <div class="light-gray color-block"></div>
-      </section>
+        <section>
+            <h2>Color Scheme</h2>
+            
+            <h3>Dark Blue</h3>
+            <p>#1D1D99 or rgb(29,29,153)</p>
+            
+            <h3>Rendered Color</h3>
+            <div class="dark-blue color-block"></div>
+            
+            <h3>Light Blue</h3>
+            <p>#2C2CE6 or rgb(44,44,230)</p>
+            
+            <h3>Rendered Color</h3>
+            <div class="light-blue color-block"></div>
+            
+            <h3>Lighter Gray</h3>
+            <p>#EFEFEF or rgb(239,239,239)</p>
+            
+            <h3>Rendered Color</h3>
+            <div class="dark-gray color-block"></div>
+            
+            <h3>Darker Gray</h3>
+            <p>#CFCFCF or rgb(207,207,207)</p>
+            
+            <h3>Rendered Color</h3>
+            <div class="light-gray color-block"></div>
+        </section>
     </section>
     <!-- COMBINED ELEMENTS SECTION // -->
     <section id="combined_elements">
 
         <section>
-            <h2>Main Navigation</h2>
+            <h2>Main Header Navigation</h2>
             
             <h3>CSS selectors</h3>
             <p>#navHeader</p>
@@ -447,11 +447,11 @@
             <p>
                 The navigation bar on the actual site has its position set as fixed, so it will always be at the top of the browser window / screen. For readability, the example below has its CSS overridden to position: static. In addition, the grid breakpoints that enable this nav bar to be responsive on the actual site causes it to behave slightly differently on this style guide's stylesheet.
             </p>
-        </section>
+        
       
-        <h3>Sample Code:</h3>
-      
-        <pre><code>
+            <h3>Sample Code:</h3>
+          
+            <pre><code>
 &lt;nav id="navHeader"&gt; &lt;!-- banner --&gt;
     &lt;div id="centeredNavContainer"&gt;
         &lt;div id="navBar"&gt;
@@ -469,39 +469,83 @@
         &lt;/div&gt; &lt;!-- ./navBar --&gt;
     &lt;/div&gt; &lt;!-- ./centered-nav-container --&gt;
 &lt;/nav&gt;
-        </code></pre>
-        
-        <h3>Rendered Element</h3>
-        
-        <nav id="navHeader"> <!-- banner -->
-            <div id="centeredNavContainer">
-                <div id="navBar">
-                    <div id="navBarLeft">
-                        <span id="siteName"><a href="mainpage.html">Orbitar</a></span>
-                    </div> <!-- ./navBarLeft -->
-                    <div id="navBarRight">
-                        <ul class="dropDownContainer">
-                            <!-- when any of these buttons are clicked, close the menu -->
-                            <li><a class="buttonNav dropDownButton" href="#">About</a></li>
-                            <li><a class="buttonNav dropDownButton" href="#">Create / Modify Booking</a></li>
-                            <li><a class="buttonNav dropDownButton" href="#">Feedback</a></li>
-                        </ul>
-                    </div> <!-- ./navBarRight -->
-                </div> <!-- ./navBar -->
-            </div> <!-- ./centered-nav-container -->
-        </nav>
+            </code></pre>
+            
+            <h3>Rendered Element</h3>
+            
+            <nav id="navHeader"> <!-- banner -->
+                <div id="centeredNavContainer">
+                    <div id="navBar">
+                        <div id="navBarLeft">
+                            <span id="siteName"><a href="mainpage.html">Orbitar</a></span>
+                        </div> <!-- ./navBarLeft -->
+                        <div id="navBarRight">
+                            <ul class="dropDownContainer">
+                                <!-- when any of these buttons are clicked, close the menu -->
+                                <li><a class="buttonNav dropDownButton" href="#">About</a></li>
+                                <li><a class="buttonNav dropDownButton" href="#">Create / Modify Booking</a></li>
+                                <li><a class="buttonNav dropDownButton" href="#">Feedback</a></li>
+                            </ul>
+                        </div> <!-- ./navBarRight -->
+                    </div> <!-- ./navBar -->
+                </div> <!-- ./centered-nav-container -->
+            </nav>
+        </section>
+
+        <section>
+            <h2>Footer Navigation</h2>
+            <h3>CSS selectors:</h3>
+            <p>#footerBar</p>
+
+            <p>For consistency with the rest of our site, it has a look that is very similar to the header navigation bar.</p>
+
+            <h3>Sample Code</h3>
+            <pre><code>
+&lt;footer&gt;
+    &lt;div id="centeredFooterContainer"&gt;
+        &lt;div id="footerBar"&gt;
+            &lt;div id="footerBarLeft"&gt;
+            &lt;/div&gt; &lt;!-- ./footerBarLeft --&gt;
+            &lt;div id="footerBarRight"&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a class="buttonNav" href="contents-and-citations.html"&gt;Citations&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a class="buttonNav" href="styleguide.html"&gt;Style Guide&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt; &lt;!-- ./footerBarRight --&gt;
+
+        &lt;/div&gt; &lt;!-- ./navBar --&gt;
+    &lt;/div&gt;
+&lt;/footer&gt;
+            </code></pre>
+
+            <h3>Rendered Element</h3>
+            <footer>
+                <div id="centeredFooterContainer">
+                    <div id="footerBar">
+                        <div id="footerBarLeft">
+                        </div> <!-- ./footerBarLeft -->
+                        <div id="footerBarRight">
+                            <ul>
+                                <li><a class="buttonNav" href="contents-and-citations.html">Citations</a></li>
+                                <li><a class="buttonNav" href="styleguide.html">Style Guide</a></li>
+                            </ul>
+                        </div> <!-- ./footerBarRight -->
+
+                    </div> <!-- ./navBar -->
+                </div>
+            </footer>
 
 
+        </section>
+        <section>
+            <h2>Product Listing</h2>
+            <p>Orbitar provides space transportation, accommodation, and research services, so this is more of a service listing.</p>
 
-      <section>
-        <h2>Product Listing</h2>
-        <p>Orbitar provides space transportation, accommodation, and research services, so this is more of a service listing.</p>
-
-        <h3>Composition:</h3>
-        <p>The listing is contained within a 3-column grid. In desktop view, the text description section on the left side takes up two columns, while an image, its caption, and a series of buttons takes up the other one-third. It is responsive, so for mobile devices, it will collapse into a single-column view, with text and images stacked vertically.</p>
-        
-        <h3>Sample code for product listing</h3>
-        <pre><code>
+            <h3>Composition:</h3>
+            <p>The listing is contained within a 3-column grid. In desktop view, the text description section on the left side takes up two columns, while an image, its caption, and a series of buttons takes up the other one-third. It is responsive, so for mobile devices, it will collapse into a single-column view, with text and images stacked vertically.</p>
+            
+            <h3>Sample code for product listing</h3>
+            <pre><code>
 &lt;article class="featureContainer"&gt;
     &lt;div class="grid"&gt;
         &lt;div class="col-2of3"&gt;
@@ -542,52 +586,52 @@
         &lt;/div&gt; &lt;!-- ./col-1of3Main --&gt;
     &lt;/div&gt;
 &lt;/article&gt;
-        </code></pre>
-            
-        <h2>Rendered element:</h2>
+            </code></pre>
+                
+            <h2>Rendered element:</h2>
 
-        <article class="featureContainer">
-            <div class="grid">
-                <div class="col-2of3">
-                    <h2 class="ondarkContrast">Launch Pad</h2>
-                    
-                    <p class="ondark">
-                        Our launch pad on board the space station allows scientists to launch and dock small space probes, satellites, and manned capsules. Its state of the art technology design allows for multiple launches per day. Bookings may be made while booking the trip, or while at the space station.
-                    </p>
+            <article class="featureContainer">
+                <div class="grid">
+                    <div class="col-2of3">
+                        <h2 class="ondarkContrast">Launch Pad</h2>
+                        
+                        <p class="ondark">
+                            Our launch pad on board the space station allows scientists to launch and dock small space probes, satellites, and manned capsules. Its state of the art technology design allows for multiple launches per day. Bookings may be made while booking the trip, or while at the space station.
+                        </p>
 
-                    <p class="ondark fontDemi">Operational cost: $4600 per 24 hours</p>
+                        <p class="ondark fontDemi">Operational cost: $4600 per 24 hours</p>
 
-                    <p class="ondark">
-                        To use the launch pad, users must be affiliated with a professional research or engeneering organization or be in the posession of a space launch permit.
-                    </p>
+                        <p class="ondark">
+                            To use the launch pad, users must be affiliated with a professional research or engeneering organization or be in the posession of a space launch permit.
+                        </p>
 
-                    <h3 class="ondarkContrast">Specifications</h3>
-                    <ul>
-                        <li class="ondark">Room size: 25m wide x 7.5 meters tall x 30 meters deep</li>
-                        <li class="ondark">Non-pressurized (space suit required)</li>
-                        <li class="ondark">12 mechanical arms up to 15 meters long each</li>
-                        <li class="ondark">Observation deck for visitors to observe work within the pad</li>
-                        <li class="ondark">Unintended space drift protecting system</li>
-                        <li class="ondark">Unmanned rescue pods</li>
-                        <li class="ondark">Space launch support system</li>
-                        <li class="ondark">Space vehicle return guidance system</li>
-                    </ul>
-                </div> <!-- ./col-2of3 -->
+                        <h3 class="ondarkContrast">Specifications</h3>
+                        <ul>
+                            <li class="ondark">Room size: 25m wide x 7.5 meters tall x 30 meters deep</li>
+                            <li class="ondark">Non-pressurized (space suit required)</li>
+                            <li class="ondark">12 mechanical arms up to 15 meters long each</li>
+                            <li class="ondark">Observation deck for visitors to observe work within the pad</li>
+                            <li class="ondark">Unintended space drift protecting system</li>
+                            <li class="ondark">Unmanned rescue pods</li>
+                            <li class="ondark">Space launch support system</li>
+                            <li class="ondark">Space vehicle return guidance system</li>
+                        </ul>
+                    </div> <!-- ./col-2of3 -->
 
-                <div class="col-1of3Main">
-                    <figure>
-                        <img src="img/LaunchPad.jpg" alt="Photo of the launch pad: hole in the middle of the space station to allow for ships to enter and leave">
-                        <div class="listingButtonHolder">
-                            <button class="buttonGeneric">Calender</button>
-                            <button class="buttonGeneric">Add to Planner</button>
-                        </div>
-                        <figcaption class="ondark">Space dock / launch pad</figcaption>
-                    </figure>
-                </div> <!-- ./col-1of3Main -->
-            </div>
-        </article>
+                    <div class="col-1of3Main">
+                        <figure>
+                            <img src="img/LaunchPad.jpg" alt="Photo of the launch pad: hole in the middle of the space station to allow for ships to enter and leave">
+                            <div class="listingButtonHolder">
+                                <button class="buttonGeneric">Calender</button>
+                                <button class="buttonGeneric">Add to Planner</button>
+                            </div>
+                            <figcaption class="ondark">Space dock / launch pad</figcaption>
+                        </figure>
+                    </div> <!-- ./col-1of3Main -->
+                </div>
+            </article>
         
-      </section>
+        </section>
 
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
