@@ -45,53 +45,59 @@
             <div id="bodyContainerCheckout">
                 <form id="feedbackForm" action="feedback-submitted.html" method="post">
                     <section id="hotels" class="majorSection">
-                        <h2 class="ondark">What type of hotel did you stay at?</h2>
+                        <h2 class="ondark">What type of hotel(s) did you stay at?</h2>
                         <div class="multiSelectOption">
-                            <input class="ondark multiSelect" type="checkbox" name="vacation"><p class="ondark multiSelect">Vacation Class Hotel</p>
+                            <input class="ondark multiSelect" type="checkbox" name="vacation" id="vacation"><label class="ondark multiSelect" for="vacation">Vacation Class Hotel</label>
                         </div>
                         <div class="multiSelectOption">
-                            <input class="ondark multiSelect" type="checkbox" name="citizenScience"><p class="ondark multiSelect">Citizen Scientist Class Hotel</p>
+                            <input class="ondark multiSelect" type="checkbox" name="citizenScience" id="citizenScience"><label class="ondark multiSelect" for="citizenScience">Citizen Scientist Class Hotel</label>
                         </div>
                         <div class="multiSelectOption">
-                            <input class="ondark multiSelect" type="checkbox" name="citizenScience"><p class="ondark multiSelect">Cutting Edge Scientist Class Hotel</p>
+                            <input class="ondark multiSelect" type="checkbox" name="advancedScience" id="advancedScience"><label class="ondark multiSelect" for="advancedScience">Advanced Scientist Class Hotel</label>
                         </div>
                         <div class="quantitativeFeedback">
                             <h3 class="ondark">How was your experience?</h3>
                             <p class="ondark">(Where 0 is awful and 10 is perfect)</p>
                             <label class="ondark" for="hotelRange">0</label>
-                            <input class="ondark multiSelect" id="hotelRange" type="range" min="0" max="10" value"5" name="hotelRange">
+                            <input class="ondark multiSelect" id="hotelRange" type="range" min="0" max="10" value="5" name="hotelRange">
                             <label class="ondark" for="hotelRange">10</label>
                         </div>
                         <div class="quantitativeFeedback">
                             <h3 class="ondark">Additional comments:</h3>
-                            <textarea rows="6" cols="50" name="hotelComments"></textarea>
+                            <div class="mainPageFormGridFullWidth">
+                                <textarea class="feedbackTextareaFull" name="hotelComments"></textarea>
+                            </div>
+                            <!-- <textarea rows="6" cols="50" name="hotelComments"></textarea> -->
                         </div>
                     </section>
 
                     <section id="science" class="majorSection">
                         <h2 class="ondark">Did you book any other facilities?</h2>
                         <div class="multiSelectOption">
-                            <input class="ondark multiSelect" type="checkbox" name="telescope"><p class="ondark multiSelect">Orbitar Telescope</p>
+                            <input class="ondark multiSelect" type="checkbox" name="telescope" id="telescope"><label class="ondark multiSelect" for="telescope">Orbitar Telescope</label>
                         </div>
                         <div class="multiSelectOption">
-                            <input class="ondark multiSelect" type="checkbox" name="astrochem"><p class="ondark multiSelect">Astrochemistry Lab</p>
+                            <input class="ondark multiSelect" type="checkbox" name="astrochem" id="astrochem"><label class="ondark multiSelect" for="astrochem">Astrochemistry Lab</label>
                         </div>
                         <div class="multiSelectOption">
-                            <input class="ondark multiSelect" type="checkbox" name="particleAccel"><p class="ondark multiSelect">Particle Accelerator</p>
+                            <input class="ondark multiSelect" type="checkbox" name="particleAccel" id="particleAccel"><label class="ondark multiSelect" for="particleAccel">Particle Accelerator</label>
                         </div>
                         <div class="multiSelectOption">
-                            <input class="ondark multiSelect" type="checkbox" name="launchPad"><p class="ondark multiSelect">Launch Pad</p>
+                            <input class="ondark multiSelect" type="checkbox" name="launchPad" id="launchPad"><label class="ondark multiSelect" for="launchPad">Launch Pad</label>
                         </div>
                         <div class="quantitativeFeedback">
                             <h3 class="ondark">How was your experience?</h3>
                             <p class="ondark">(Where 0 is awful and 10 is perfect)</p>
                             <label class="ondark" for="sciRange">0</label>
-                            <input class="ondark multiSelect" id="sciRange" type="range" min="0" max="10" value"5" name="scienceRange">
-                            <label class="ondark" for="hsciRange">10</label>
+                            <input class="ondark multiSelect" id="sciRange" type="range" min="0" max="10" value="5" name="scienceRange">
+                            <label class="ondark" for="sciRange">10</label>
                         </div>
                         <div class="quantitativeFeedback">
                             <h3 class="ondark">Additional comments:</h3>
-                            <textarea rows="6" cols="50" name="sciComments"></textarea>
+                            <div class="mainPageFormGridFullWidth">
+                                <textarea class="feedbackTextareaFull" name="sciComments"></textarea>
+                            </div>
+                            <!-- <textarea rows="6" cols="50" name="sciComments"></textarea> -->
                         </div>
                     </section>
 

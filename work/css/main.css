@@ -262,6 +262,22 @@ p a {
   height: 8em;
 }
 
+/* for feedback page's textarea fields */
+.feedbackTextareaFull {
+  font-family: franklin_gothic_fsbook, sans-serif;
+  font-size: 1rem;
+  padding: 0.5em 0.5em;
+  width: 31rem;
+  height: 8em;
+  margin-bottom: 2em;
+}
+
+@media(max-width: 35rem) {
+    .feedbackTextareaFull {
+        width: 95%;
+    }
+}
+
 /* add extra vertical spacing after the form */
 .mainPageFormGridFullWidth .commentsTextareaFull {
     margin-bottom: 0.8em;
@@ -729,6 +745,7 @@ ol li{
   margin-right:auto;
   padding:0.75rem;
   margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 @media(max-width: 71rem){ /*media query for if the page width became too smaller than the max possible width of the content*/
@@ -981,9 +998,13 @@ ol li{
     margin-left: 1rem;
 }
 
+.quantitativeFeedback h3 {
+    margin-top: 1rem;
+}
+
 .multiSelectOption{
   display: block;
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
   margin-bottom: 0;
 }
 
