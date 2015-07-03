@@ -46,7 +46,7 @@
                 <section id="youLame" class="dialogueBox">
                     <h2>This is you on Earth.</h2>
                     <p>
-                        It's pretty lame, right? Earth can get boring after a while. Time to explore somewhere completely different&hellip;
+                        It's pretty lame, right? Earth can get boring after a while. It's time to explore somewhere completely different&hellip;
                     </p>
                 </section>
                 <img id="dude" src="img/dude.png" alt="a stick figure of a dude upside down">
@@ -129,7 +129,7 @@
                             <button class="ondark showHiddenContentButton" onclick="displayHiddenContent(this, elevatorHiddenContent)">View More Details&hellip;</button>
 
                             <div class="show hiddenContent" id="elevatorHiddenContent">
-                                <h4 class="ondark">Elevator Amenities</h4>
+                                <h4 class="ondarkContrast">Elevator Amenities</h4>
                                 <ul class="ondark">
                                     <li>Lounge with recliners, televisions, wireless internet access, and large windows</li>
                                     <li>Snacks and two meals included, with the ability to upgrade or purchase more meals on board</li>
@@ -564,7 +564,7 @@
                         <p class="ondark">
                             If you have a very rigid schedule and your elevator ride times needs to be very specific, please select this option. Our system will look through our database and find an elevator ride that suits you best.
                         </p>
-                        
+
                         <form action="checkout.html" method="post" id="startBooking" onsubmit="return false">
                             <div class="grid">
                                 <div class="mainPageFormGridCol-1of2">
@@ -603,28 +603,24 @@
 							Want to send feedback about a trip, or leave a review? Please fill out the <a href="feedback.html">feedback form</a> instead.
 						</p>
 
-						<p class="ondark">
-							<span class="fontDemi">* = required field</span>
-						</p>
-
 						<form action="contact-us-submitted.html" method="post" id="commentsForm">
 							<div class="grid">
 								
 									<div class="mainPageFormGridCol-1of2">
-										<input class="fieldHalf" type="text" name="departureDate" placeholder="* First Name" required>
+										<input class="fieldHalf" type="text" name="departureDate" placeholder="First Name" required>
 									</div>
 									<div class="mainPageFormGridCol-2of2">
-										<input class="fieldHalf" type="text" name="returnDate" placeholder="* Last Name" required>
+										<input class="fieldHalf" type="text" name="returnDate" placeholder="Last Name" required>
 									</div>
 									<div class="mainPageFormGridCol-1of2">
-										<input class="fieldHalf" type="text" name="departureDate" placeholder="* Email" required>
+										<input class="fieldHalf" type="text" name="departureDate" placeholder="Email" required>
 									</div>
 									<div class="mainPageFormGridCol-2of2">
 										<input class="fieldHalf" type="text" name="returnDate" placeholder="Booking Confirmation # (If Applicable)">
 									</div>
 
 									<div class="mainPageFormGridFullWidth">
-										<textarea class="commentsTextareaFull" placeholder="* Write your questions or comments here" required></textarea>
+										<textarea class="commentsTextareaFull" placeholder="Write your questions or comments here" required></textarea>
 									</div>
 
 									<button class="buttonGeneric" type="submit">Send Questions / Comments</button>

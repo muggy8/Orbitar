@@ -50,6 +50,11 @@
     padding: 0;
 }
 
+.col-1of3Service {
+    padding-top: 0.25em;
+}
+
+
 @media (max-width: 70rem) {
     .hotelGrid .col-1of3Service {
         width: 100%;
@@ -73,6 +78,7 @@
     }
 
 }
+
 
 /* increase the amount of column width dedicated to the image */
 @media (max-width: 59rem) {
