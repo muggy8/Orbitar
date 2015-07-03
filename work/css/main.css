@@ -442,8 +442,6 @@ ol li{
 /* Container for header navigation menu, which is centered and has padding on both sides for
    whitespace */
 #centeredNavContainer {
-/*    padding-left: 15%;
-    padding-right: 15%;*/
     background-color: rgb(29, 29, 153);
     clear: both;
     position:fixed;
@@ -453,16 +451,27 @@ ol li{
     z-index:+9001;
 }
 
+/* Container for footer navigation menu, which is centered and has padding on both sides for
+   whitespace. Identical to header nav menu, but the positioning isn't set as fixed. */
+#centeredFooterContainer {
+    background-color: rgb(29, 29, 153);
+    clear: both;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index:+9001;
+}
+
 /* Reduce the padding */
 @media (max-width: 80rem) {
-    #centeredNavContainer {
+    #centeredNavContainer, #centeredFooterContainer {
         padding-left: 5%;
         padding-right: 5%;
     }
 }
 
 /* The actual centered navigation bar itself */
-#navBar {
+#navBar, #footerBar {
     clear: both;
     background-color: rgb(29, 29, 153);
     width: 70rem;
@@ -479,7 +488,7 @@ ol li{
 }
 
 @media (max-width: 75rem) {
-    #navBar {
+    #navBar, #footerBar {
         width: 100%;
     }   
 }
@@ -642,9 +651,9 @@ ol li{
   background-repeat: no-repeat;
 }
 
-@media(max-width: 1876px){ 
+@media(max-width: 117.3rem){ 
   .earthBG{
-    background-size: 1876.5px;
+    background-size: 117.3rem;
   }
 }
 
