@@ -140,6 +140,10 @@ p a {
   font-family: franklin_gothic_fsdemi, sans-serif;
   width: 100%;
   margin: 1.25em 0;
+
+  /* when hovering over the button with a mouse, change to the "pointer" icon. not all browsers seem to support
+     showing the pointer when mousing over a button element without declaring this */
+  cursor: pointer;
 }
 
 .showHiddenContentButton:focus {
@@ -163,6 +167,7 @@ p a {
     border-radius:0.4rem;
     border: 0.125em solid #000000;
     font-family: franklin_gothic_fsbook, sans-serif;
+    cursor: pointer;
 }
 
 /* Styling for submit button on a dark background. */
@@ -174,6 +179,7 @@ p a {
     border-radius:0.4rem;
     border: 0.125em solid #ffffff;
     font-family: franklin_gothic_fsbook, sans-serif;
+    cursor: pointer;
 }
 
 /* Display a lighter shade of blue for both versions of the button */
@@ -583,7 +589,7 @@ ol li{
         font-size:1.125rem;
         border-radius:0.4rem;
         border: 0.125em solid #ffffff;
-        /*cursor: pointer; cursor: hand;*/
+        cursor: pointer;
         margin-top: 0.3rem;
         font-family: franklin_gothic_fsdemi, sans-serif;
         font-variant: small-caps;
