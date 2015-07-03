@@ -131,7 +131,9 @@
                 
                 <h3>CSS selector:</h3>
                 <p>
-                    .fieldHalf
+                    .fieldHalf (for input field)<br>
+                    .commentsTextareaFull (for textarea field)<br>
+                    .formLabel (for label)
                 </p>
                 
                 <h3>Sample code:</h3>
@@ -139,7 +141,7 @@
 &lt;form action="reciept.html" method="post" id="startBooking"&gt;
     &lt;div class="grid"&gt;
         &lt;div class="mainPageFormGridCol-1of2"&gt;
-            &lt;label for="FirstName" class="ondark"&gt;First Name:&lt;/label&gt;
+            &lt;label for="FirstName" class="formLabel"&gt;First Name:&lt;/label&gt;
             &lt;input class="fieldHalf" type="text" id="FirstName" name="FirstName"&gt;
         &lt;/div&gt;
         &lt;div class="mainPageFormGridCol-2of2"&gt;
@@ -159,7 +161,7 @@
                 <form action="reciept.html" method="post" id="startBooking">
                     <div class="grid">
                         <div class="mainPageFormGridCol-1of2">
-                            <label for="FirstName" class="ondark">First Name:</label>
+                            <label for="FirstName" class="formLabel">First Name:</label>
                             <input class="fieldHalf" type="text" id="FirstName" name="FirstName">
                         </div>
                         <div class="mainPageFormGridCol-2of2">
@@ -170,7 +172,7 @@
                         <input class="fieldHalf" type="text" id="creditCard" name="creditCard">
 
                         <label for="comments" class="formLabel">Comments</label>
-                        <textarea class="commentsTextareaFull" placeholder="* Write your questions or comments here" required></textarea>
+                        <textarea class="commentsTextareaFull" placeholder="Write your questions or comments here" required></textarea>
                     </div>
                 </form>
             </section>
