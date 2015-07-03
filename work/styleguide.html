@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+    <head>
 
-    <meta charset="utf-8">
-    <title>Orbitar Style Guide</title>
+        <meta charset="utf-8">
+        <title>Orbitar Style Guide</title>
 
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/style-guide.css" rel="stylesheet">
-    <link href="css/font-embeds.css" rel="stylesheet">
-  </head>
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/style-guide.css" rel="stylesheet">
+        <link href="css/font-embeds.css" rel="stylesheet">
+    </head>
 
-  <body id="styleguideBody">
+    <body id="styleguideBody">
 
-    <h1 id="styleGuideHeader">Orbitar Style Guide</h1>
+        <h1 id="styleGuideHeader">Orbitar Style Guide</h1>
 
-	<p>Orbitar Style Guide for referencing when a button or something is needed</p>
-	
-    <nav>
-      
-      <p>
-        Go to: <br>
-        <a href="#interactive_elements" class="buttonNavL">Interactive Elements</a><a href="#text_elements" class="buttonNavM">Text Elements</a><a href="#other_stuff" class="buttonNavM">Other stuff</a><a href="#combined_elements" class="buttonNavR">Combined Elements</a>
-      </p>
+        <p>Orbitar Style Guide for referencing when a button or something is needed</p>
+    
+        <nav>
+          
+          <p>
+            Go to: <br>
+            <a href="#interactive_elements" class="buttonNavL">Interactive Elements</a><a href="#text_elements" class="buttonNavM">Text Elements</a><a href="#other_stuff" class="buttonNavM">Other stuff</a><a href="#combined_elements" class="buttonNavR">Combined Elements</a>
+          </p>
 
-    </nav>
+        </nav>
 
 
 
@@ -37,109 +37,109 @@
         <h2>Navigation Button</h2>
 
         <h3>CSS selector:</h3>
-        <p>.buttonNavM</p>
-		<p>.buttonNavR</p>
-		<p>.buttonNavL</p>
+        <p>.buttonNav</p>
 
         <h3>Sample code:</h3>
-        <code>&lt;a href="#" class="buttonNavM"&gt;Default Button&lt;/a&gt;</code>
+        <pre><code> <!-- code inside the pre tag must be formatted like this to display c -->
+&lt;a href="#" class="buttonNavM"&gt;Default Button&lt;/a&gt;
+        </code></pre>
 
-        <h3>Rendered element for buttonNavM:</h3>
+        <h3>Rendered element for buttonNav:</h3>
 
         <a class="buttonNav" href="#">About Us</a>
 
         <!--
         <a class="buttonNavM" href="#">Middle Buttons</a>
-		
-		<h3>Rendered element for buttonNavL:</h3>
+        
+        <h3>Rendered element for buttonNavL:</h3>
         <a class="buttonNavL" href="#">Left Most Button</a>
-		
-		<h3>Rendered element for buttonNavR:</h3>
+        
+        <h3>Rendered element for buttonNavR:</h3>
         <a class="buttonNavR" href="#">Right Most Button</a>
-		
-		<h3>In a row:</h3>
-		<a class="buttonNavL" href="#">Left Button</a><a class="buttonNavM" href="#">Middle Button</a><a class="buttonNavR" href="#">Right Button</a>
-		-->
+        
+        <h3>In a row:</h3>
+        <a class="buttonNavL" href="#">Left Button</a><a class="buttonNavM" href="#">Middle Button</a><a class="buttonNavR" href="#">Right Button</a>
+        -->
 
-		
-		<h3>Additional Info:</h3>
-		
-		<p>The nav bar is always at the top inside the banner.</p>
+        
+        <h3>Additional Info:</h3>
+        
+        <p>The nav bar is always at the top inside the banner.</p>
       </section>
 
       <section>
         <h2>In-text link</h2>
-		
-		<h3>CSS selectors</h3>
-		
-		<p>p a</p>
-		
-		<h3>Sample Code</h3>
-		
-		<code>&lt;p&gt;This is a link to &lt;a href="#"&gt;somewhere else on the page&lt;/a&gt; so you should click it.&lt;/p&gt;</code>
-		
-		<h3>Rendered Element</h3>
-		
-		<p>This is a link to <a href="#">somewhere else on the page</a> so you should click it.</p>
-		
-		<h3>Additional Info:</h3>
-		
-		<p>The links in a paragraph is italics and underlined. The colour of the links will always inherit the parent's colour</p>
+        
+        <h3>CSS selectors</h3>
+        
+        <p>p a</p>
+        
+        <h3>Sample Code</h3>
+        
+        <code>&lt;p&gt;This is a link to &lt;a href="#"&gt;somewhere else on the page&lt;/a&gt; so you should click it.&lt;/p&gt;</code>
+        
+        <h3>Rendered Element</h3>
+        
+        <p>This is a link to <a href="#">somewhere else on the page</a> so you should click it.</p>
+        
+        <h3>Additional Info:</h3>
+        
+        <p>The links in a paragraph is italics and underlined. The colour of the links will always inherit the parent's colour</p>
       </section>
 
       <section>
         <h2>Submit/Reset Buttons</h2>
-		
-		<h3>CSS selector</h3>
-		
-		<p>.buttonGeneric</p>
-		
-		<h3>Sample code:</h3>
-		
+        
+        <h3>CSS selector</h3>
+        
+        <p>.buttonGeneric</p>
+        
+        <h3>Sample code:</h3>
+        
         <code>&lt;button onclick="validateForm(this)" class="buttonGeneric"&gt;Generic Button&lt;/button&gt;</code>
-		
-		<h3>Rendered Element:</h3>
-		
-		<button onclick="alert('you have clicked the button')" class="buttonGeneric">Generic Button</button>
-		
-		<div class="blackBG">
-			<h3>Buttons on darker background</h3>
-			
-			<h3>CSS selector</h3>
-		
-			<p>.buttonGenericOnDark</p>
-			
-			<h3>Sample code:</h3>
-		
-			<code>&lt;button onclick="validateForm(this)" class="buttonGenericOnDark"&gt;Generic Button&lt;/button&gt;</code>
-			
-			<h3>Rendered Element:</h3>
-			
-			<button onclick="validateForm(this)" class="buttonGenericOnDark">Generic Button</button>
-		</div>
+        
+        <h3>Rendered Element:</h3>
+        
+        <button onclick="alert('you have clicked the button')" class="buttonGeneric">Generic Button</button>
+        
+        <div class="blackBG">
+            <h3>Buttons on darker background</h3>
+            
+            <h3>CSS selector</h3>
+        
+            <p>.buttonGenericOnDark</p>
+            
+            <h3>Sample code:</h3>
+        
+            <code>&lt;button onclick="validateForm(this)" class="buttonGenericOnDark"&gt;Generic Button&lt;/button&gt;</code>
+            
+            <h3>Rendered Element:</h3>
+            
+            <button onclick="validateForm(this)" class="buttonGenericOnDark">Generic Button</button>
+        </div>
       </section>
 
       <section>
         <h2>Text Input Field</h2>
-		
-		<h3>CSS selector:</h3>
-		<p>.fieldFull</p>
-		<p>.fieldHalfL</p>
-		<p>.fieldHalfR</p>
-		
-		<h3>Sample code:</h3>
-		<code>&lt;form action="action-page.php" method="post" id="newAccount"&gt;<br>
-			  &nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="fieldFull" type="text" name="username" placeholder="Username"&gt;&lt;br&gt;<br>
-			  &nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="fieldHalfL" type="password" name="pass1" placeholder="Password"&gt;<br>
-			  &nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="fieldHalfR" type="password" name="pass2" placeholder="Re-Type Password"&gt;<br>
-			  &nbsp;&lt;/form&gt;</code>
-		
-		<h3>Rendered Element:</h3>
-		<form action="action_page.php" method="post" id="newAccount">
-			<input class="fieldFull" type="text" name="username" placeholder="Username"><br>
-			<input class="fieldHalfL" type="password" name="pass1" placeholder="Password">
-			<input class="fieldHalfR" type="password" name="pass2" placeholder="Re-Type Password">
-		</form>
+        
+        <h3>CSS selector:</h3>
+        <p>.fieldFull</p>
+        <p>.fieldHalfL</p>
+        <p>.fieldHalfR</p>
+        
+        <h3>Sample code:</h3>
+        <code>&lt;form action="action-page.php" method="post" id="newAccount"&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="fieldFull" type="text" name="username" placeholder="Username"&gt;&lt;br&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="fieldHalfL" type="password" name="pass1" placeholder="Password"&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="fieldHalfR" type="password" name="pass2" placeholder="Re-Type Password"&gt;<br>
+              &nbsp;&lt;/form&gt;</code>
+        
+        <h3>Rendered Element:</h3>
+        <form action="action_page.php" method="post" id="newAccount">
+            <input class="fieldFull" type="text" name="username" placeholder="Username"><br>
+            <input class="fieldHalfL" type="password" name="pass1" placeholder="Password">
+            <input class="fieldHalfR" type="password" name="pass2" placeholder="Re-Type Password">
+        </form>
       </section>
 
     </section>
@@ -152,359 +152,359 @@
 
       <section>
         <h2>Headings</h2>
-		
-		<h3>CSS selectors</h3>
-		<p>H1</p>
-		<p>H2</p>
-		<p>H3</p>
-		<p>H4</p>
-		
-		<H3>About headings:</h3>
-		<p>There are 4 lairs of headings are used: h1, h2, h3, h4. H1 will lable different modules of the main site, H2 generally highlights the major sections of the site and major subsections of modules. H3 is used to highlight divisions in the subs sections such as what's a form what's a picture and so on. H4 is for other miscellaneous sections that would require bitter titles. For sections smaller than h4, use the em or strong tag to bold elements</p>
-		
-		<H3>Sample code for h1:</h3>
-		<code>&lt;div class=banner&gt;&lt;h1&gt;Orbitar&lt;/h1&gt;&lt;/div&gt;</code>
-		
-		<h3>Rendered Element:</h3>
-		<div class=banner><h1>Orbitar</h1></div>
-		
-		<H3>Sample code for h2:</h3>
-		<code>&lt;h2&gt;This is an H2 header&lt;/h2&gt;</code>
-		
-		<h3>Rendered Element:</h3>
-		<h2>This is an H2 header</h2>
-		
-		<div class="blackBG">
-			<H3>Sample code for h2 on dark backgrounds:</h3>
-			<code>&lt;h2 class="onDark"&gt;This is an H2 header on dark backgrounds&lt;/h2&gt;</code>
-			
-			<h3>Rendered Element:</h3>
-			<h2 class="onDark">This is an H2 header</h2>
-			
-			<h3>Information:</h3>
-			<p>Sometimes the parent element will take care of coloring the child elements such as this example but for in-case the parent element doesn't, the onDark class makes the element's font color white. </p>
-		</div>
-		
-		<H3>Sample code for h3:</h3>
-		<code>&lt;h3&gt;This is an H3 header&lt;/h3&gt;</code>
-		
-		<h3>Rendered Element:</h3>
-		<h3>This is an H3 header</h3>
-		
-		<div class="blackBG">
-			<H3>Sample code for h3 on dark backgrounds:</h3>
-			<code>&lt;h3 class="onDark"&gt;This is an H3 header on dark backgrounds&lt;/h3&gt;</code>
-			
-			<h3>Rendered Element:</h3>
-			<h3 class="onDark">This is an H3 header</h3>
-		</div>
-		
-		<H3>Sample code for H4:</h3>
-		<code>&lt;h3&gt;This is an H4 header&lt;/h3&gt;</code>
-		
-		<h3>Rendered Element:</h3>
-		<h4>This is an H4 header</h4>
-		
-		<div class="blackBG">
-			<H3>Sample code for h4 on dark backgrounds:</h3>
-			<code>&lt;h4 class="onDark"&gt;This is an H4 header on dark backgrounds&lt;/h4&gt;</code>
-			
-			<h3>Rendered Element:</h3>
-			<h4 class="onDark">This is an H4 header</h4>
-		</div>
+        
+        <h3>CSS selectors</h3>
+        <p>H1</p>
+        <p>H2</p>
+        <p>H3</p>
+        <p>H4</p>
+        
+        <H3>About headings:</h3>
+        <p>There are 4 lairs of headings are used: h1, h2, h3, h4. H1 will lable different modules of the main site, H2 generally highlights the major sections of the site and major subsections of modules. H3 is used to highlight divisions in the subs sections such as what's a form what's a picture and so on. H4 is for other miscellaneous sections that would require bitter titles. For sections smaller than h4, use the em or strong tag to bold elements</p>
+        
+        <H3>Sample code for h1:</h3>
+        <code>&lt;div class=banner&gt;&lt;h1&gt;Orbitar&lt;/h1&gt;&lt;/div&gt;</code>
+        
+        <h3>Rendered Element:</h3>
+        <div class=banner><h1>Orbitar</h1></div>
+        
+        <H3>Sample code for h2:</h3>
+        <code>&lt;h2&gt;This is an H2 header&lt;/h2&gt;</code>
+        
+        <h3>Rendered Element:</h3>
+        <h2>This is an H2 header</h2>
+        
+        <div class="blackBG">
+            <H3>Sample code for h2 on dark backgrounds:</h3>
+            <code>&lt;h2 class="onDark"&gt;This is an H2 header on dark backgrounds&lt;/h2&gt;</code>
+            
+            <h3>Rendered Element:</h3>
+            <h2 class="onDark">This is an H2 header</h2>
+            
+            <h3>Information:</h3>
+            <p>Sometimes the parent element will take care of coloring the child elements such as this example but for in-case the parent element doesn't, the onDark class makes the element's font color white. </p>
+        </div>
+        
+        <H3>Sample code for h3:</h3>
+        <code>&lt;h3&gt;This is an H3 header&lt;/h3&gt;</code>
+        
+        <h3>Rendered Element:</h3>
+        <h3>This is an H3 header</h3>
+        
+        <div class="blackBG">
+            <H3>Sample code for h3 on dark backgrounds:</h3>
+            <code>&lt;h3 class="onDark"&gt;This is an H3 header on dark backgrounds&lt;/h3&gt;</code>
+            
+            <h3>Rendered Element:</h3>
+            <h3 class="onDark">This is an H3 header</h3>
+        </div>
+        
+        <H3>Sample code for H4:</h3>
+        <code>&lt;h3&gt;This is an H4 header&lt;/h3&gt;</code>
+        
+        <h3>Rendered Element:</h3>
+        <h4>This is an H4 header</h4>
+        
+        <div class="blackBG">
+            <H3>Sample code for h4 on dark backgrounds:</h3>
+            <code>&lt;h4 class="onDark"&gt;This is an H4 header on dark backgrounds&lt;/h4&gt;</code>
+            
+            <h3>Rendered Element:</h3>
+            <h4 class="onDark">This is an H4 header</h4>
+        </div>
       </section>
 
       <section>
         <h2>Paragraphs</h2>
-		
-		<h3>CSS selectors</h3>
-		
-		<p>p</p>
-		
-		<h3>Sample Code</h3>
-		
-		<code>&lt;p&gt;This is a paragraph&lt;/p&gt;</code>
-		
-		<h3>Rendered Element:</h3>
-		
-		<p>This is a paragraph</p>
-		
-		<div class="blackBG">
-			<H3>Sample code for paragraphs on dark backgrounds:</h3>
-			<code>&lt;p class="onDark"&gt;This is a paragraph on dark backgrounds&lt;/p&gt;</code>
-			
-			<h3>Rendered Element:</h3>
-			<p class="onDark">This is a paragraph on dark backgrounds</p>
-		</div>
+        
+        <h3>CSS selectors</h3>
+        
+        <p>p</p>
+        
+        <h3>Sample Code</h3>
+        
+        <code>&lt;p&gt;This is a paragraph&lt;/p&gt;</code>
+        
+        <h3>Rendered Element:</h3>
+        
+        <p>This is a paragraph</p>
+        
+        <div class="blackBG">
+            <H3>Sample code for paragraphs on dark backgrounds:</h3>
+            <code>&lt;p class="onDark"&gt;This is a paragraph on dark backgrounds&lt;/p&gt;</code>
+            
+            <h3>Rendered Element:</h3>
+            <p class="onDark">This is a paragraph on dark backgrounds</p>
+        </div>
       </section>
 
       <section>
         <h2>Bulleted Lists</h2>
-		
-		<h3>CSS selectors</h3>
-		
-		<p>ul</p>
-		<p>ul li</p>
-		
-		<h3>Sample Code</h3>
-		
-		<code>&lt;ul&gt;<br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele1&lt;/li&gt;<br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele2&lt;/li&gt;<br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele3&lt;/li&gt;<br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele4&lt;/li&gt;<br>
-		&nbsp;&lt;/ul&gt;</code>
-		
-		<h3>Rendered Element:</h3>
-		
-		<ul>
-			<li>ele1</li>
-			<li>ele2</li>
-			<li>ele3</li>
-			<li>ele4</li>
-		</ul>
-		
-		<div class="blackBG">
-			<H3>Sample code for paragraphs on dark backgrounds:</h3>
-			<code>&lt;ul class="onDark"&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele1&lt;/li&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele2&lt;/li&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele3&lt;/li&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele4&lt;/li&gt;<br>
-			&nbsp;&lt;/ul&gt;</code>
-			
-			<h3>Rendered Element:</h3>
-			<ul class="onDark">
-				<li>ele1</li>
-				<li>ele2</li>
-				<li>ele3</li>
-				<li>ele4</li>
-			</ul>
-		</div>
+        
+        <h3>CSS selectors</h3>
+        
+        <p>ul</p>
+        <p>ul li</p>
+        
+        <h3>Sample Code</h3>
+        
+        <code>&lt;ul&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele1&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele2&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele3&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele4&lt;/li&gt;<br>
+        &nbsp;&lt;/ul&gt;</code>
+        
+        <h3>Rendered Element:</h3>
+        
+        <ul>
+            <li>ele1</li>
+            <li>ele2</li>
+            <li>ele3</li>
+            <li>ele4</li>
+        </ul>
+        
+        <div class="blackBG">
+            <H3>Sample code for paragraphs on dark backgrounds:</h3>
+            <code>&lt;ul class="onDark"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele1&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele2&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele3&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele4&lt;/li&gt;<br>
+            &nbsp;&lt;/ul&gt;</code>
+            
+            <h3>Rendered Element:</h3>
+            <ul class="onDark">
+                <li>ele1</li>
+                <li>ele2</li>
+                <li>ele3</li>
+                <li>ele4</li>
+            </ul>
+        </div>
       </section>
 
       <section>
         <h2>Numbered Lists</h2>
-		
-		<h3>CSS selectors</h3>
-		
-		<p>ol</p>
-		<p>ol li</p>
-		
-		<h3>Sample Code</h3>
-		
-		<code>&lt;ol&gt;<br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele1&lt;/li&gt;<br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele2&lt;/li&gt;<br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele3&lt;/li&gt;<br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele4&lt;/li&gt;<br>
-		&nbsp;&lt;/ol&gt;</code>
-		
-		<h3>Rendered Element:</h3>
-		
-		<ol>
-			<li>ele1</li>
-			<li>ele2</li>
-			<li>ele3</li>
-			<li>ele4</li>
-		</ol>
-		
-		<div class="blackBG">
-			<H3>Sample code for paragraphs on dark backgrounds:</h3>
-			<code>&lt;ol class="onDark"&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele1&lt;/li&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele2&lt;/li&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele3&lt;/li&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele4&lt;/li&gt;<br>
-			&nbsp;&lt;/ol&gt;</code>
-			
-			<h3>Rendered Element:</h3>
-			<ol class="onDark">
-				<li>ele1</li>
-				<li>ele2</li>
-				<li>ele3</li>
-				<li>ele4</li>
-			</ol>
-		</div>
+        
+        <h3>CSS selectors</h3>
+        
+        <p>ol</p>
+        <p>ol li</p>
+        
+        <h3>Sample Code</h3>
+        
+        <code>&lt;ol&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele1&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele2&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele3&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele4&lt;/li&gt;<br>
+        &nbsp;&lt;/ol&gt;</code>
+        
+        <h3>Rendered Element:</h3>
+        
+        <ol>
+            <li>ele1</li>
+            <li>ele2</li>
+            <li>ele3</li>
+            <li>ele4</li>
+        </ol>
+        
+        <div class="blackBG">
+            <H3>Sample code for paragraphs on dark backgrounds:</h3>
+            <code>&lt;ol class="onDark"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele1&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele2&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele3&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;ele4&lt;/li&gt;<br>
+            &nbsp;&lt;/ol&gt;</code>
+            
+            <h3>Rendered Element:</h3>
+            <ol class="onDark">
+                <li>ele1</li>
+                <li>ele2</li>
+                <li>ele3</li>
+                <li>ele4</li>
+            </ol>
+        </div>
       </section>
 
     </section>
     <!-- // TEXT ELEMENTS SECTION -->
-	<section id="other_stuff">
-	  <section>
-		<h2>color scheme</h2>
-		
-		<h3>Dark Blue</h3>
-		<p>#1D1D99 or rgb(29,29,153)</p>
-		
-		<h3>Rendered Color</h3>
-		<div class="dark-blue color-block"></div>
-		
-		<h3>Light Blue</h3>
-		<p>#2C2CE6 or rgb(44,44,230)</p>
-		
-		<h3>Rendered Color</h3>
-		<div class="light-blue color-block"></div>
-		
-		<h3>Lighter Gray</h3>
-		<p>#EFEFEF or rgb(239,239,239)</p>
-		
-		<h3>Rendered Color</h3>
-		<div class="dark-gray color-block"></div>
-		
-		<h3>Darker Gray</h3>
-		<p>#cfcfcf or rgb(207,207,207)</p>
-		
-		<h3>Rendered Color</h3>
-		<div class="light-gray color-block"></div>
-	  </section>
-	</section>
+    <section id="other_stuff">
+      <section>
+        <h2>color scheme</h2>
+        
+        <h3>Dark Blue</h3>
+        <p>#1D1D99 or rgb(29,29,153)</p>
+        
+        <h3>Rendered Color</h3>
+        <div class="dark-blue color-block"></div>
+        
+        <h3>Light Blue</h3>
+        <p>#2C2CE6 or rgb(44,44,230)</p>
+        
+        <h3>Rendered Color</h3>
+        <div class="light-blue color-block"></div>
+        
+        <h3>Lighter Gray</h3>
+        <p>#EFEFEF or rgb(239,239,239)</p>
+        
+        <h3>Rendered Color</h3>
+        <div class="dark-gray color-block"></div>
+        
+        <h3>Darker Gray</h3>
+        <p>#cfcfcf or rgb(207,207,207)</p>
+        
+        <h3>Rendered Color</h3>
+        <div class="light-gray color-block"></div>
+      </section>
+    </section>
     <!-- COMBINED ELEMENTS SECTION // -->
     <section id="combined_elements">
 
       <section>
         <h2>Main Navigation</h2>
-		
-		<h3>N/A</h3>
-		
-		<p>The main navigation for this website is always in the banner and can be accessed easily from there (see navigation button). There aren't other navigation buttons on the site as the site will react and change in shape in accordance to user clicks. There will be windows on the site which will expand and collaps when another window is clicked. this means that the user has access to all other parts of the site at any time</p>
+        
+        <h3>N/A</h3>
+        
+        <p>The main navigation for this website is always in the banner and can be accessed easily from there (see navigation button). There aren't other navigation buttons on the site as the site will react and change in shape in accordance to user clicks. There will be windows on the site which will expand and collaps when another window is clicked. this means that the user has access to all other parts of the site at any time</p>
       </section>
-	  
-	  <H3>Sample Code:</h3>
-	  
-	  <textarea rows="18" cols="100">
+      
+      <H3>Sample Code:</h3>
+      
+      <textarea rows="18" cols="100">
 <nav id="nav-header">
-	<div id="centeredNavContainer">
-		<div id="navBar">
-			<div id="navBarLeft">
-				<span id="siteName">Orbitar</span>
-			</div> <!-- ./navBarLeft -->
-			<div id="navBarRight">
-				<ul>
-					<li><a class="buttonNav" href="#">Account</a></li>
-					<li><a class="buttonNav" href="#">Community</a></li>
-					<li><a class="buttonNav" href="#">Feedback</a></li>
-				</ul>
-			</div> <!-- ./navBarRight -->
-		</div> <!-- ./navBar -->
-	</div> <!-- ./centered-nav-container -->
+    <div id="centeredNavContainer">
+        <div id="navBar">
+            <div id="navBarLeft">
+                <span id="siteName">Orbitar</span>
+            </div> <!-- ./navBarLeft -->
+            <div id="navBarRight">
+                <ul>
+                    <li><a class="buttonNav" href="#">Account</a></li>
+                    <li><a class="buttonNav" href="#">Community</a></li>
+                    <li><a class="buttonNav" href="#">Feedback</a></li>
+                </ul>
+            </div> <!-- ./navBarRight -->
+        </div> <!-- ./navBar -->
+    </div> <!-- ./centered-nav-container -->
 </nav>
-	  </textarea>
-		
-		<h3>Rendered Element</h3>
-		
+      </textarea>
+        
+        <h3>Rendered Element</h3>
+        
         <nav id="nav-header">
-	        <div id="centeredNavContainer">
-	            <div id="navBar">
-	                <div id="navBarLeft">
-	                    <span id="siteName">Orbitar</span>
-	                </div> <!-- ./navBarLeft -->
-	                <div id="navBarRight">
-	                    <ul>
-	                        <li><a class="buttonNav" href="#">Account</a></li>
-	                        <li><a class="buttonNav" href="#">Community</a></li>
-							<li><a class="buttonNav" href="#">Feedback</a></li>
-	                    </ul>
-	                </div> <!-- ./navBarRight -->
-	            </div> <!-- ./navBar -->
-	        </div> <!-- ./centered-nav-container -->
-	    </nav>
+            <div id="centeredNavContainer">
+                <div id="navBar">
+                    <div id="navBarLeft">
+                        <span id="siteName">Orbitar</span>
+                    </div> <!-- ./navBarLeft -->
+                    <div id="navBarRight">
+                        <ul>
+                            <li><a class="buttonNav" href="#">Account</a></li>
+                            <li><a class="buttonNav" href="#">Community</a></li>
+                            <li><a class="buttonNav" href="#">Feedback</a></li>
+                        </ul>
+                    </div> <!-- ./navBarRight -->
+                </div> <!-- ./navBar -->
+            </div> <!-- ./centered-nav-container -->
+        </nav>
 
 
 
       <section>
         <h2>Product Listing</h2>
-		
-		<h3>Composition:</h3>
-		
-		<p>the product listing consists of a div that contains everything within. inside the div at the top is an H3 naming the thing. Sfter that is a picture which can be enlarged, a paragraph that somewhat explains the service at question and finally a read more button and a buy now button.</p>
-		
-		<H3>Sample code for product listing (pro tip: inspect element and copy instead):</h3>
-		
-		<code>
-			&lt;div id="listingContainer"&gt;<br />
-			&lt;div id="listing1" class="listing"&gt;<br />
-				&lt;h3&gt;Particle Accelerator&lt;/h3&gt;<br />
-				&lt;img src="img/placeholder.png" width="368" height="258" alt="(╯°□°)╯︵ ┻━┻"&gt;<br />
-				&lt;div class="listingButtonHolder"&gt;<br />
-					&lt;button onclick="biggify(this.parentElement.parentElement)" class="buttonGeneric"&gt;view details&lt;/button&gt;<br />
-					&lt;button onclick="validateForm(this)" class="buttonGeneric"&gt;book&lt;/button&gt;<br />
-				&lt;/div&gt;<br />
-				&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at auctor lectus. In gravida bibendum posuere. Vivamus placerat nibh in nisl lacinia, sed eleifend urna dictum. Nunc iaculis mollis sagittis. Proin vel ultrices est. Duis posuere elementum sapien. Morbi euismod vehicula rutrum. Donec vitae arcu quis risus lacinia tristique vel at elit. Suspendisse euismod vitae dui ac molestie. Donec ac tortor felis. Nunc maximus libero ut elit dapibus, at tristique erat convallis.&lt;/p&gt;<br />
-				<br />
-			&lt;/div&gt;<br />
-			<br />
-			&lt;div id="listing2" class="listing"&gt;<br />
-				&lt;h3&gt;Chemistry Lab&lt;/h3&gt;<br />
-				&lt;img src="img/placeholder.png" width="368" height="258" alt="(╯°□°)╯︵ ┻━┻"&gt;<br />
-				&lt;div class="listingButtonHolder"&gt;<br />
-					&lt;button onclick="biggify(this.parentElement.parentElement)" class="buttonGeneric"&gt;view details&lt;/button&gt;<br />
-					&lt;button onclick="validateForm(this)" class="buttonGeneric"&gt;book&lt;/button&gt;<br />
-				&lt;/div&gt;<br />
-				&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at auctor lectus. In gravida bibendum posuere. Vivamus placerat nibh in nisl lacinia, sed eleifend urna dictum. Nunc iaculis mollis sagittis. Proin vel ultrices est. Duis posuere elementum sapien. Morbi euismod vehicula rutrum. Donec vitae arcu quis risus lacinia tristique vel at elit. Suspendisse euismod vitae dui ac molestie. Donec ac tortor felis. Nunc maximus libero ut elit dapibus, at tristique erat convallis.&lt;/p&gt;<br />
-				<br />
-			&lt;/div&gt;<br />
-			<br />
-			&lt;div id="listing3" class="listing"&gt;<br />
-				&lt;h3&gt;Engine Room&lt;/h3&gt;<br />
-				&lt;img src="img/placeholder.png" width="368" height="258" alt="(╯°□°)╯︵ ┻━┻"&gt;<br />
-				&lt;div class="listingButtonHolder"&gt;<br />
-					&lt;button onclick="biggify(this.parentElement.parentElement)" class="buttonGeneric"&gt;view details&lt;/button&gt;<br />
-					&lt;button onclick="validateForm(this)" class="buttonGeneric"&gt;book&lt;/button&gt;<br />
-				&lt;/div&gt;<br />
-				&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at auctor lectus. In gravida bibendum posuere. Vivamus placerat nibh in nisl lacinia, sed eleifend urna dictum. Nunc iaculis mollis sagittis. Proin vel ultrices est. Duis posuere elementum sapien. Morbi euismod vehicula rutrum. Donec vitae arcu quis risus lacinia tristique vel at elit. Suspendisse euismod vitae dui ac molestie. Donec ac tortor felis. Nunc maximus libero ut elit dapibus, at tristique erat convallis.&lt;/p&gt;<br />
-				<br />
-			&lt;/div&gt;<br />
-		&lt;/div&gt;
-		</code>
-			
-		<h2>Rendered element:</h2>
+        
+        <h3>Composition:</h3>
+        
+        <p>the product listing consists of a div that contains everything within. inside the div at the top is an H3 naming the thing. Sfter that is a picture which can be enlarged, a paragraph that somewhat explains the service at question and finally a read more button and a buy now button.</p>
+        
+        <H3>Sample code for product listing (pro tip: inspect element and copy instead):</h3>
+        
+        <code>
+            &lt;div id="listingContainer"&gt;<br />
+            &lt;div id="listing1" class="listing"&gt;<br />
+                &lt;h3&gt;Particle Accelerator&lt;/h3&gt;<br />
+                &lt;img src="img/placeholder.png" width="368" height="258" alt="(╯°□°)╯︵ ┻━┻"&gt;<br />
+                &lt;div class="listingButtonHolder"&gt;<br />
+                    &lt;button onclick="biggify(this.parentElement.parentElement)" class="buttonGeneric"&gt;view details&lt;/button&gt;<br />
+                    &lt;button onclick="validateForm(this)" class="buttonGeneric"&gt;book&lt;/button&gt;<br />
+                &lt;/div&gt;<br />
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at auctor lectus. In gravida bibendum posuere. Vivamus placerat nibh in nisl lacinia, sed eleifend urna dictum. Nunc iaculis mollis sagittis. Proin vel ultrices est. Duis posuere elementum sapien. Morbi euismod vehicula rutrum. Donec vitae arcu quis risus lacinia tristique vel at elit. Suspendisse euismod vitae dui ac molestie. Donec ac tortor felis. Nunc maximus libero ut elit dapibus, at tristique erat convallis.&lt;/p&gt;<br />
+                <br />
+            &lt;/div&gt;<br />
+            <br />
+            &lt;div id="listing2" class="listing"&gt;<br />
+                &lt;h3&gt;Chemistry Lab&lt;/h3&gt;<br />
+                &lt;img src="img/placeholder.png" width="368" height="258" alt="(╯°□°)╯︵ ┻━┻"&gt;<br />
+                &lt;div class="listingButtonHolder"&gt;<br />
+                    &lt;button onclick="biggify(this.parentElement.parentElement)" class="buttonGeneric"&gt;view details&lt;/button&gt;<br />
+                    &lt;button onclick="validateForm(this)" class="buttonGeneric"&gt;book&lt;/button&gt;<br />
+                &lt;/div&gt;<br />
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at auctor lectus. In gravida bibendum posuere. Vivamus placerat nibh in nisl lacinia, sed eleifend urna dictum. Nunc iaculis mollis sagittis. Proin vel ultrices est. Duis posuere elementum sapien. Morbi euismod vehicula rutrum. Donec vitae arcu quis risus lacinia tristique vel at elit. Suspendisse euismod vitae dui ac molestie. Donec ac tortor felis. Nunc maximus libero ut elit dapibus, at tristique erat convallis.&lt;/p&gt;<br />
+                <br />
+            &lt;/div&gt;<br />
+            <br />
+            &lt;div id="listing3" class="listing"&gt;<br />
+                &lt;h3&gt;Engine Room&lt;/h3&gt;<br />
+                &lt;img src="img/placeholder.png" width="368" height="258" alt="(╯°□°)╯︵ ┻━┻"&gt;<br />
+                &lt;div class="listingButtonHolder"&gt;<br />
+                    &lt;button onclick="biggify(this.parentElement.parentElement)" class="buttonGeneric"&gt;view details&lt;/button&gt;<br />
+                    &lt;button onclick="validateForm(this)" class="buttonGeneric"&gt;book&lt;/button&gt;<br />
+                &lt;/div&gt;<br />
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at auctor lectus. In gravida bibendum posuere. Vivamus placerat nibh in nisl lacinia, sed eleifend urna dictum. Nunc iaculis mollis sagittis. Proin vel ultrices est. Duis posuere elementum sapien. Morbi euismod vehicula rutrum. Donec vitae arcu quis risus lacinia tristique vel at elit. Suspendisse euismod vitae dui ac molestie. Donec ac tortor felis. Nunc maximus libero ut elit dapibus, at tristique erat convallis.&lt;/p&gt;<br />
+                <br />
+            &lt;/div&gt;<br />
+        &lt;/div&gt;
+        </code>
+            
+        <h2>Rendered element:</h2>
 
 
-		
-		<div id="listingContainer">
-			<div id="listing1" class="listing">
-				<h3>Particle Accelerator</h3>
-				<img src="img/placeholder.png" width="368" height="258" alt="(╯°□°)╯︵ ┻━┻">
-				<div class="listingButtonHolder">
-					<button onclick="biggify(this.parentElement.parentElement)" class="buttonGeneric">view details</button>
-					<button onclick="validateForm(this)" class="buttonGeneric">book</button>
-				</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at auctor lectus. In gravida bibendum posuere. Vivamus placerat nibh in nisl lacinia, sed eleifend urna dictum. Nunc iaculis mollis sagittis. Proin vel ultrices est. Duis posuere elementum sapien. Morbi euismod vehicula rutrum. Donec vitae arcu quis risus lacinia tristique vel at elit. Suspendisse euismod vitae dui ac molestie. Donec ac tortor felis. Nunc maximus libero ut elit dapibus, at tristique erat convallis.</p>
-				
-			</div>
-			
-			<div id="listing2" class="listing">
-				<h3>Chemistry Lab</h3>
-				<img src="img/placeholder.png" width="368" height="258" alt="(╯°□°)╯︵ ┻━┻">
-				<div class="listingButtonHolder">
-					<button onclick="biggify(this.parentElement.parentElement)" class="buttonGeneric">view details</button>
-					<button onclick="validateForm(this)" class="buttonGeneric">book</button>
-				</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at auctor lectus. In gravida bibendum posuere. Vivamus placerat nibh in nisl lacinia, sed eleifend urna dictum. Nunc iaculis mollis sagittis. Proin vel ultrices est. Duis posuere elementum sapien. Morbi euismod vehicula rutrum. Donec vitae arcu quis risus lacinia tristique vel at elit. Suspendisse euismod vitae dui ac molestie. Donec ac tortor felis. Nunc maximus libero ut elit dapibus, at tristique erat convallis.</p>
-				
-			</div>
-			
-			<div id="listing3" class="listing">
-				<h3>Engine Room</h3>
-				<img src="img/placeholder.png" width="368" height="258" alt="(╯°□°)╯︵ ┻━┻">
-				<div class="listingButtonHolder">
-					<button onclick="biggify(this.parentElement.parentElement)" class="buttonGeneric">view details</button>
-					<button onclick="validateForm(this)" class="buttonGeneric">book</button>
-				</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at auctor lectus. In gravida bibendum posuere. Vivamus placerat nibh in nisl lacinia, sed eleifend urna dictum. Nunc iaculis mollis sagittis. Proin vel ultrices est. Duis posuere elementum sapien. Morbi euismod vehicula rutrum. Donec vitae arcu quis risus lacinia tristique vel at elit. Suspendisse euismod vitae dui ac molestie. Donec ac tortor felis. Nunc maximus libero ut elit dapibus, at tristique erat convallis.</p>
-				
-			</div>
-		</div>
-	  </section>
+        
+        <div id="listingContainer">
+            <div id="listing1" class="listing">
+                <h3>Particle Accelerator</h3>
+                <img src="img/placeholder.png" width="368" height="258" alt="(╯°□°)╯︵ ┻━┻">
+                <div class="listingButtonHolder">
+                    <button onclick="biggify(this.parentElement.parentElement)" class="buttonGeneric">view details</button>
+                    <button onclick="validateForm(this)" class="buttonGeneric">book</button>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at auctor lectus. In gravida bibendum posuere. Vivamus placerat nibh in nisl lacinia, sed eleifend urna dictum. Nunc iaculis mollis sagittis. Proin vel ultrices est. Duis posuere elementum sapien. Morbi euismod vehicula rutrum. Donec vitae arcu quis risus lacinia tristique vel at elit. Suspendisse euismod vitae dui ac molestie. Donec ac tortor felis. Nunc maximus libero ut elit dapibus, at tristique erat convallis.</p>
+                
+            </div>
+            
+            <div id="listing2" class="listing">
+                <h3>Chemistry Lab</h3>
+                <img src="img/placeholder.png" width="368" height="258" alt="(╯°□°)╯︵ ┻━┻">
+                <div class="listingButtonHolder">
+                    <button onclick="biggify(this.parentElement.parentElement)" class="buttonGeneric">view details</button>
+                    <button onclick="validateForm(this)" class="buttonGeneric">book</button>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at auctor lectus. In gravida bibendum posuere. Vivamus placerat nibh in nisl lacinia, sed eleifend urna dictum. Nunc iaculis mollis sagittis. Proin vel ultrices est. Duis posuere elementum sapien. Morbi euismod vehicula rutrum. Donec vitae arcu quis risus lacinia tristique vel at elit. Suspendisse euismod vitae dui ac molestie. Donec ac tortor felis. Nunc maximus libero ut elit dapibus, at tristique erat convallis.</p>
+                
+            </div>
+            
+            <div id="listing3" class="listing">
+                <h3>Engine Room</h3>
+                <img src="img/placeholder.png" width="368" height="258" alt="(╯°□°)╯︵ ┻━┻">
+                <div class="listingButtonHolder">
+                    <button onclick="biggify(this.parentElement.parentElement)" class="buttonGeneric">view details</button>
+                    <button onclick="validateForm(this)" class="buttonGeneric">book</button>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at auctor lectus. In gravida bibendum posuere. Vivamus placerat nibh in nisl lacinia, sed eleifend urna dictum. Nunc iaculis mollis sagittis. Proin vel ultrices est. Duis posuere elementum sapien. Morbi euismod vehicula rutrum. Donec vitae arcu quis risus lacinia tristique vel at elit. Suspendisse euismod vitae dui ac molestie. Donec ac tortor felis. Nunc maximus libero ut elit dapibus, at tristique erat convallis.</p>
+                
+            </div>
+        </div>
+      </section>
 
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
-	<script>
-		function biggify(ele){
-			console.log(ele);
-		}
-	</script>
+    <script>
+        function biggify(ele){
+            console.log(ele);
+        }
+    </script>
 
   </body>
 </html>

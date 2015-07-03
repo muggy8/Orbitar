@@ -12,6 +12,12 @@
 #centeredNavContainer {
     /* position is fixed in the actual site; we don't want it fixed at the top in the style guide */
     position: static;
+
+}
+
+#navBar {
+    width: 100%;
+
 }
 
 .color-block{
@@ -58,4 +64,16 @@ h1#styleGuideHeader {
 /* fix positioning on the contents and citations page to display them statically */
 #styleguideBody #earthBackwards, #styleguideBody #basePad {
     position: static;
+}
+
+/* for styling code inside the code tag */
+section code {
+    background-color: #EEE;
+    padding: 0.5em 0.75em;
+    display: block;
+}
+
+/* preformatted code */
+section pre {
+    font-size: 1.1rem;
 }
