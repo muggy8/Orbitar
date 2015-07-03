@@ -540,96 +540,102 @@
                 
             </div>
 
-            <!-- dummy tag with an anchor placed above the actual section, so that the fixed nav bar doesn't obscure the content behind it -->
+            <div class="majorSection">
             
-            
-            <article class="featureContainer">
-                <span class="anchorLink" id="finishBooking"></span>
-                <div class="grid">
-                    <div class="col-2of3">
-                        <h2 class="ondarkContrast">Finish Booking Your Trip</h2>
+                <article class="featureContainer">
+                    <span class="anchorLink" id="finishBooking"></span>
+                    <div class="grid">
+                        <div class="col-2of3">
+                            <h2 class="ondarkContrast">Finish Booking Your Trip</h2>
 
-                        <p class="ondark">
-                            To finish booking your trip, please select one of the following options to find an orbital elevator departure and return time.
-                        </p>
+                            <p class="ondark">
+                                To finish booking your trip, please select one of the following options to find an orbital elevator departure and return time.
+                            </p>
 
-                        <h3 class="ondarkContrast">Event-Based Elevator Ride Time Generator</h3>
-                        <p class="ondark">
-                            Based on the events and bookings you selected earlier, generate elevator ride times that best suit these schedules.
-                        </p>
-                        
-                        <button class="buttonGeneric" id="ridegen" onclick="generateRides();">Ride Generator</button>
-                        
-                        <h3 class="ManualFindTitle ondarkContrast">Manually Find my Rides</h3>
-                        <p class="ondark">
-                            If you have a very rigid schedule and your elevator ride times needs to be very specific, please select this option. Our system will look through our database and find an elevator ride that suits you best.
-                        </p>
+                            <h3 class="ondarkContrast">Event-Based Elevator Ride Time Generator</h3>
+                            <p class="ondark">
+                                Based on the events and bookings you selected earlier, generate elevator ride times that best suit these schedules.
+                            </p>
+                            
+                            <button class="buttonGeneric" id="ridegen" onclick="generateRides();">Ride Generator</button>
+                            
+                            <h3 class="ManualFindTitle ondarkContrast">Manually Find my Rides</h3>
+                            <p class="ondark">
+                                If you have a very rigid schedule and your elevator ride times needs to be very specific, please select this option. Our system will look through our database and find an elevator ride that suits you best.
+                            </p>
 
-                        <form action="checkout.html" method="post" id="startBooking" onsubmit="return false">
-                            <div class="grid">
-                                <div class="mainPageFormGridCol-1of2">
-                                    <input class="fieldHalf" type="text" name="departureDate" placeholder="Departure Date" required>
+                            <form action="checkout.html" method="post" id="startBooking" onsubmit="return false">
+                                <div class="grid">
+                                    <div class="mainPageFormGridCol-1of2">
+                                        <input class="fieldHalf" type="text" name="departureDate" placeholder="Departure Date" required>
+                                    </div>
+                                    <div class="mainPageFormGridCol-2of2">
+                                        <input class="fieldHalf" type="text" name="returnDate" placeholder="Return Date" required>
+                                    </div>
                                 </div>
-                                <div class="mainPageFormGridCol-2of2">
-                                    <input class="fieldHalf" type="text" name="returnDate" placeholder="Return Date" required>
-                                </div>
-                            </div>
-                            <button class="buttonGeneric" onclick="findRides(this)">Find Manually</button>
-                        </form>
+                                <button class="buttonGeneric" onclick="findRides(this)">Find Manually</button>
+                            </form>
+                        </div>
+
+                        <div class="col-1of3Main">
+                            <figure>
+                                <img src="img/OrbitalElevatorCloseUp.jpg" alt="The orbital elevator, up close in space" width="400" height="242">
+                                <figcaption class="ondark">
+                                    The orbital elevator, up close in space
+                                </figcaption>
+                            </figure>
+                        </div> <!-- ./col-1of3Main -->
                     </div>
+                </article>
 
-                    <div class="col-1of3Main">
-                        <figure>
-                            <img src="img/OrbitalElevatorCloseUp.jpg" alt="The orbital elevator, up close in space" width="400" height="242">
-                            <figcaption class="ondark">
-                                The orbital elevator, up close in space
-                            </figcaption>
-                        </figure>
-                    </div> <!-- ./col-1of3Main -->
-                </div>
-            </article>
+            </div>
 
-            <article class="featureContainer">
-                <span class="anchorLink" id="contactUs"></span>
-                <div class="grid">
-                    <div class="col-3of3">
-						<h2 class="ondarkContrast">Contact Us</h2>
 
-						<p class="ondark">
-							You can use this form to send us any questions or comments about Orbitar.
-						</p>
+            <div class="majorSection">
 
-						<p class="ondark">
-							Want to send feedback about a trip, or leave a review? Please fill out the <a href="feedback.html">feedback form</a> instead.
-						</p>
+                <article class="featureContainer">
+                    <span class="anchorLink" id="contactUs"></span>
+                    <div class="grid">
+                        <div class="col-3of3">
+    						<h2 class="ondarkContrast">Contact Us</h2>
 
-						<form action="contact-us-submitted.html" method="post" id="commentsForm">
-							<div class="grid">
-								
-									<div class="mainPageFormGridCol-1of2">
-										<input class="fieldHalf" type="text" name="departureDate" placeholder="First Name" required>
-									</div>
-									<div class="mainPageFormGridCol-2of2">
-										<input class="fieldHalf" type="text" name="returnDate" placeholder="Last Name" required>
-									</div>
-									<div class="mainPageFormGridCol-1of2">
-										<input class="fieldHalf" type="text" name="departureDate" placeholder="Email" required>
-									</div>
-									<div class="mainPageFormGridCol-2of2">
-										<input class="fieldHalf" type="text" name="returnDate" placeholder="Booking Confirmation # (If Applicable)">
-									</div>
+    						<p class="ondark">
+    							You can use this form to send us any questions or comments about Orbitar.
+    						</p>
 
-									<div class="mainPageFormGridFullWidth">
-										<textarea class="commentsTextareaFull" placeholder="Write your questions or comments here" required></textarea>
-									</div>
+    						<p class="ondark">
+    							Want to send feedback about a trip, or leave a review? Please fill out the <a href="feedback.html">feedback form</a> instead.
+    						</p>
 
-									<button class="buttonGeneric" type="submit">Send Questions / Comments</button>
-								
-							</div>
-						</form>
-					</div>
-				</div>
-			</article>
+    						<form action="contact-us-submitted.html" method="post" id="commentsForm">
+    							<div class="grid">
+    								
+    									<div class="mainPageFormGridCol-1of2">
+    										<input class="fieldHalf" type="text" name="departureDate" placeholder="First Name" required>
+    									</div>
+    									<div class="mainPageFormGridCol-2of2">
+    										<input class="fieldHalf" type="text" name="returnDate" placeholder="Last Name" required>
+    									</div>
+    									<div class="mainPageFormGridCol-1of2">
+    										<input class="fieldHalf" type="text" name="departureDate" placeholder="Email" required>
+    									</div>
+    									<div class="mainPageFormGridCol-2of2">
+    										<input class="fieldHalf" type="text" name="returnDate" placeholder="Booking Confirmation # (If Applicable)">
+    									</div>
+
+    									<div class="mainPageFormGridFullWidth">
+    										<textarea class="commentsTextareaFull" placeholder="Write your questions or comments here" required></textarea>
+    									</div>
+
+    									<button class="buttonGeneric" type="submit">Send Questions / Comments</button>
+    								
+    							</div>
+    						</form>
+    					</div>
+    				</div>
+    			</article>
+
+            </div>
 		</div>
 
         <footer>

@@ -41,53 +41,77 @@
         <!-- TO DO: remove this div, while also fixing a bug where the body is pushed ~50px down if this .everythingContainer is removed -->
         <div class="everythingContainer">
             <div id="bodyContainerCheckout">
-                <h2 class="ondark">Complete Bookings</h2>
-                <p class="ondark">
-                    Total cost of your booking: <strong>$6695.00</strong>
-                </p>
-                <ul class="ondark">
-                    <li>Elevator ride and return trip, departing at 6/12/2085 and departing at 6/19/2085: $5495.00</li>
-                    <li>Hotel booking &ndash; citizen vacation class room: $1186.00</li>
-                    <li>Orbital Telescope bookings &ndash; 6/13/2085 and 6/17/2085: $14.00</li>
-                </ul>
+                <h2 class="ondark">Complete Your Booking</h2>
+                
+                <h3 class="ondark">Your Booking Costs</h3>
+                <table class="bookingCosts">
+                    <tr>
+                        <th class="ondark bookingCostsDescColumn">Description</th>
+                        <th class="ondark bookingCostsAmountColumn">Cost</th>
+                    </tr>
+                    <tr>
+                        <td class="ondark bookingCostsDescColumn">Elevator ride and return trip: depart Earth at 6/12/2085 7:00am GMT and depart Space Station at 6/19/2085 12:00pm GMT</td>
+                        <td class="ondark bookingCostsAmountColumn">$5800.00</td>
+                    </tr>
+                    <tr>
+                        <td class="ondark bookingCostsDescColumn">Advanced Scientist Class Hotel Room (for duration of the trip)</td>
+                        <td class="ondark bookingCostsAmountColumn">$8400.00</td>
+                    </tr>
+                    <tr>
+                        <td class="ondark bookingCostsDescColumn">Orbital Telescope bookings: 6/13/2085 12:00pm&ndash;1:00pm, 6/16/2085 1:00am&ndash;5:00am</td>
+                        <td class="ondark bookingCostsAmountColumn">$750.00</td>
+                    </tr>
+                    <tr>
+                        <td class="ondark bookingCostsDescColumn">Particle Accelerator booking: 6/14/2085 9:00am&ndash;6/15/2085 9:00am</td>
+                        <td class="ondark bookingCostsAmountColumn">$5500.00</td>
+                    </tr>
+                    <tr>
+                        <td class="ondark bookingCostsDescColumn lastRow"><span class="fontDemi">Total Booking Cost:</span></td>
+                        <td class="ondark bookingCostsAmountColumn lastRow">$25,950</td>
+                    </tr>
+                </table>
+
+                <h3 class="ondark">Your Personal Information</h3>
                 <form action="reciept.html" method="post" id="startBooking">
                     <div class="grid">
                         <div class="mainPageFormGridCol-1of2">
 							<label for="FirstName" class="ondark">First Name:</label>
-                            <input class="fieldHalf" type="text" id="FirstName" name="FirstName" placeholder="First Name">
+                            <input class="fieldHalf" type="text" id="FirstName" name="FirstName">
                         </div>
                         <div class="mainPageFormGridCol-2of2">
 							<label for="LastName" class="ondark formLabel">Last Name:</label>
-                            <input class="fieldHalf" type="text" id="LastName" name="LastName" placeholder="Last Name">
+                            <input class="fieldHalf" type="text" id="LastName" name="LastName">
                         </div>
 						<label for="creditCard" class="ondark formLabel">Credit Card Number:</label>
-                        <input class="fieldHalf" type="text" id="creditCard" name="creditCard" placeholder="Credit Card Number">
+                        <input class="fieldHalf" type="text" id="creditCard" name="creditCard">
                         <label for="phoneNumber" class="ondark formLabel">Phone Number:</label>
-						<input class="fieldHalf" type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
+						<input class="fieldHalf" type="text" id="phoneNumber" name="phoneNumber">
                         <div class="mainPageFormGridCol-1of2">
                             <label for="streetNumber" class="ondark formLabel">Street Number:</label>
-							<input class="fieldHalf" type="number" id="streetNumber" name="streetNumber" placeholder="Street Number">
+							<input class="fieldHalf" type="number" id="streetNumber" name="streetNumber">
                         </div>
                         <div class="mainPageFormGridCol-2of2">
 							<label for="streetName" class="ondark formLabel">Street Name:</label>
-                            <input class="fieldHalf" type="text" id="streetName" name="streetName" placeholder="Street Name">
+                            <input class="fieldHalf" type="text" id="streetName" name="streetName">
                         </div>
                         <div class="mainPageFormGridCol-1of2">
 							<label for="state" class="ondark formLabel">State/Province:</label>
-                            <input class="fieldHalf" type="text" id="state" name="state" placeholder="State/Province">
+                            <input class="fieldHalf" type="text" id="state" name="state">
                         </div>
                         <div class="mainPageFormGridCol-2of2">
 							<label for="country" class="ondark formLabel">Country of Residence:</label>
-                            <input class="fieldHalf" type="text" id="country" name="country" placeholder="Country of Residence">
+                            <input class="fieldHalf" type="text" id="country" name="country">
                         </div>
-						<label for="email" class="ondark formLabel">e-mail address:</label>
-                        <input class="fieldHalf" type="text" id="email" name="email" placeholder="e-mail address">
+						<label for="email" class="ondark formLabel">E-mail address:</label>
+                        <input class="fieldHalf" type="text" id="email" name="email">
 						<label for="SIN" class="ondark formLabel">Social Insurance Number:</label>
-                        <input class="fieldHalf" type="number" id="SIN" name="SIN" placeholder="Social Insurance Number">
+                        <input class="fieldHalf" type="number" id="SIN" name="SIN">
 						<label for="institution" class="ondark formLabel">Institution (optional):</label>
-                        <input class="fieldHalf" type="text" id="institution" name="institution" placeholder="Institution (optional)">
+                        <input class="fieldHalf" type="text" id="institution" name="institution">
                     </div>
-                    <button class="buttonGenericOnDark hugRight">Complete Bookings</button>
+
+                    <button class="buttonGenericOnDark hugRight">Complete Your Booking</button>
+
                 </form>
             </div>
         </div>
