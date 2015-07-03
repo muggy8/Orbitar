@@ -24,14 +24,7 @@
                     </div> <!-- ./navBarLeft -->
                     <div id="navBarRight">
                         <ul class="dropDownContainer">
-                            <li class="buttonListElement">
-                                <a class="buttonNav dropDownButton" href="mainpage.html#aboutOrbitar">About</a>
-                                <!--
-                                <ul class="dropDownList">
-                                    <li></li>
-                                </ul>
-                                -->
-                            </li>
+                            <li><a class="buttonNav dropDownButton" href="mainpage.html#aboutOrbitar">About</a></li>
                             <li><a class="buttonNav dropDownButton" href="mainpage.html#bookingStart">Create / Modify Booking</a></li>
                             <li><a class="buttonNav dropDownButton" href="feedback.html">Feedback</a></li>
                         </ul>
@@ -45,19 +38,39 @@
             <div class="floatClear"></div>
         </nav>
 
-        <!-- TO DO: remove this div, while also fixing a bug where the body is pushed ~50px down if this .everythingContainer is removed -->
         <div class="everythingContainer">
             <div id="bodyContainerCheckout">
-                <h2 class="ondark">Complete Bookings</h2>
-                <p class="ondark">
-                    Total cost of your booking: <strong>$6695.00</strong>
-                </p>
-                <ul class="ondark">
-                    <li>Elevator ride and return trip, departing at 6/12/2085 and departing at 6/19/2085: $5495.00</li>
-                    <li>Hotel booking &ndash; citizen vacation class room: $1186.00</li>
-                    <li>Orbital Telescope bookings &ndash; 6/13/2085 and 6/17/2085: $14.00</li>
-                </ul>
-				<p class="ondark">Your confirmation number is <strong>48711-596</strong>. An email of this receipt has been sent to your inbox.</p>
+                <h2 class="ondark">Booking Complete</h2>
+
+                <h3 class="ondark">Your Booking Costs</h3>
+        
+                <table class="bookingCosts">
+                    <tr>
+                        <th class="ondark bookingCostsDescColumn">Description</th>
+                        <th class="ondark bookingCostsAmountColumn">Cost</th>
+                    </tr>
+                    <tr>
+                        <td class="ondark bookingCostsDescColumn">Elevator ride and return trip: depart Earth at 6/12/2085 7:00am GMT and depart Space Station at 6/19/2085 12:00pm GMT</td>
+                        <td class="ondark bookingCostsAmountColumn">$5800.00</td>
+                    </tr>
+                    <tr>
+                        <td class="ondark bookingCostsDescColumn">Advanced Scientist Class Hotel Room (for duration of the trip)</td>
+                        <td class="ondark bookingCostsAmountColumn">$8400.00</td>
+                    </tr>
+                    <tr>
+                        <td class="ondark bookingCostsDescColumn">Orbital Telescope bookings: 6/13/2085 12:00pm&ndash;1:00pm, 6/16/2085 1:00am&ndash;5:00am</td>
+                        <td class="ondark bookingCostsAmountColumn">$750.00</td>
+                    </tr>
+                    <tr>
+                        <td class="ondark bookingCostsDescColumn">Particle Accelerator booking: 6/14/2085 9:00am&ndash;6/15/2085 9:00am</td>
+                        <td class="ondark bookingCostsAmountColumn">$5500.00</td>
+                    </tr>
+                    <tr>
+                        <td class="ondark bookingCostsDescColumn lastRow"><span class="fontDemi">Total Booking Cost:</span></td>
+                        <td class="ondark bookingCostsAmountColumn lastRow">$25,950</td>
+                    </tr>
+                </table>
+				<p class="ondark">Your confirmation number is <strong>48711-596</strong>. An email copy of this receipt has been sent to your inbox. Thank you for your business!</p>
 				<a href="mainpage.html" class="buttonGenericOnDark">Back to Main</a>
             </div>
         </div>
