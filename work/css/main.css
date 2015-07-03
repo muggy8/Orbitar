@@ -261,6 +261,11 @@ p a {
   height: 8em;
 }
 
+/* add extra vertical spacing after the form */
+.mainPageFormGridFullWidth .commentsTextareaFull {
+    margin-bottom: 0.8em;
+}
+
 input {
     font-family: franklin_gothic_fsbook, sans-serif;
 }
@@ -308,6 +313,10 @@ h4 {
     font-weight: normal;
     font-size: 1.25rem;
     margin:0;
+}
+
+.col-2of3 h3 {
+    margin-top: 1.25em;
 }
 
 .ManualFindTitle{
