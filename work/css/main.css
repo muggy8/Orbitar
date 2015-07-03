@@ -259,6 +259,10 @@ input {
     font-family: franklin_gothic_fsbook, sans-serif;
 }
 
+.formLabel {
+  margin-top:0.5rem;
+}
+
 /* 
   TEXT AND VISUAL ELEMENTS -------------------
 */

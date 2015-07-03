@@ -7,6 +7,7 @@
         <title>Orbitar Style Guide</title>
 
         <link href="css/main.css" rel="stylesheet">
+        <link href="css/grid.css" rel="stylesheet">
         <link href="css/style-guide.css" rel="stylesheet">
         <link href="css/font-embeds.css" rel="stylesheet">
     </head>
@@ -67,86 +68,117 @@
                 <p>The nav bar is always at the top inside the banner.</p>
             </section>
 
-        <section>
-            <h2>In-text link</h2>
+            <section>
+                <h2>In-text link</h2>
 
-            <h3>CSS selectors</h3>
+                <h3>CSS selectors</h3>
 
-            <p>p a</p>
+                <p>p a</p>
 
-            <h3>Sample Code</h3>
+                <h3>Sample Code</h3>
 
-            <pre><code>
-&lt;p&gt;This is a link to &lt;a href="#"&gt;somewhere else on the page&lt;/a&gt; so you should click it.&lt;/p&gt;
-            </code></pre>
+                <pre><code>
+    &lt;p&gt;This is a link to &lt;a href="#"&gt;somewhere else on the page&lt;/a&gt; so you should click it.&lt;/p&gt;
+                </code></pre>
 
-            <h3>Rendered Element</h3>
+                <h3>Rendered Element</h3>
 
-            <p>This is a link to <a href="#">somewhere else on the page</a> so you should click it.</p>
+                <p>This is a link to <a href="#">somewhere else on the page</a> so you should click it.</p>
+
+                <h3>Additional Info:</h3>
+
+                <p>The links in a paragraph is italics and underlined. The colour of the links will always inherit the parent's colour</p>
+            </section>
+
+            <section>
+                <h2>Submit/Reset Buttons</h2>
+                
+                <h3>CSS selector</h3>
+                
+                <p>.buttonGeneric</p>
+                
+                <h3>Sample code:</h3>
+                
+                <pre><code>
+        &lt;button onclick="validateForm(this)" class="buttonGeneric"&gt;Generic Button&lt;/button&gt;
+                </code></pre>
+                
+                <h3>Rendered Element:</h3>
+                
+                <button onclick="alert('you have clicked the button')" class="buttonGeneric">Generic Button</button>
+                
+                <div class="blackBG">
+                    <h3>Buttons on darker background</h3>
+                    
+                    <h3>CSS selector</h3>
+                
+                    <p>.buttonGeneric</p>
+                    
+                    <h3>Sample code:</h3>
+                
+                    <pre><code>
+        &lt;button onclick="validateForm(this)" class="buttonGeneric"&gt;Generic Button&lt;/button&gt;
+                    </code></pre>
+                    
+                    <h3>Rendered Element:</h3>
+                    
+                    <button onclick="validateForm(this)" class="buttonGeneric">Generic Button</button>
+                </div>
+            </section>
+
+            <section>
+                <h2>Text Input Field</h2>
+                
+                <h3>CSS selector:</h3>
+                <p>
+                    .fieldHalf
+                </p>
+                
+                <h3>Sample code:</h3>
+                <pre><code>
+&lt;form action="reciept.html" method="post" id="startBooking"&gt;
+    &lt;div class="grid"&gt;
+        &lt;div class="mainPageFormGridCol-1of2"&gt;
+            &lt;label for="FirstName" class="ondark"&gt;First Name:&lt;/label&gt;
+            &lt;input class="fieldHalf" type="text" id="FirstName" name="FirstName"&gt;
+        &lt;/div&gt;
+        &lt;div class="mainPageFormGridCol-2of2"&gt;
+            &lt;label for="LastName" class="formLabel"&gt;Last Name:&lt;/label&gt;
+            &lt;input class="fieldHalf" type="text" id="LastName" name="LastName"&gt;
+        &lt;/div&gt;
+        &lt;label for="creditCard" class="formLabel"&gt;Credit Card Number:&lt;/label&gt;
+        &lt;input class="fieldHalf" type="text" id="creditCard" name="creditCard"&gt;
+
+        &lt;label for="comments" class="formLabel"&gt;Comments&lt;/label&gt;
+        &lt;textarea class="commentsTextareaFull" placeholder="* Write your questions or comments here" required&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+                </code></pre>
+                
+                <h3>Rendered Element:</h3>
+                <form action="reciept.html" method="post" id="startBooking">
+                    <div class="grid">
+                        <div class="mainPageFormGridCol-1of2">
+                            <label for="FirstName" class="ondark">First Name:</label>
+                            <input class="fieldHalf" type="text" id="FirstName" name="FirstName">
+                        </div>
+                        <div class="mainPageFormGridCol-2of2">
+                            <label for="LastName" class="formLabel">Last Name:</label>
+                            <input class="fieldHalf" type="text" id="LastName" name="LastName">
+                        </div>
+                        <label for="creditCard" class="formLabel">Credit Card Number:</label>
+                        <input class="fieldHalf" type="text" id="creditCard" name="creditCard">
+
+                        <label for="comments" class="formLabel">Comments</label>
+                        <textarea class="commentsTextareaFull" placeholder="* Write your questions or comments here" required></textarea>
+                    </div>
+                </form>
+            </section>
 
             <h3>Additional Info:</h3>
-
-            <p>The links in a paragraph is italics and underlined. The colour of the links will always inherit the parent's colour</p>
-      </section>
-
-      <section>
-        <h2>Submit/Reset Buttons</h2>
-        
-        <h3>CSS selector</h3>
-        
-        <p>.buttonGeneric</p>
-        
-        <h3>Sample code:</h3>
-        
-        <pre><code>
-&lt;button onclick="validateForm(this)" class="buttonGeneric"&gt;Generic Button&lt;/button&gt;
-        </code></pre>
-        
-        <h3>Rendered Element:</h3>
-        
-        <button onclick="alert('you have clicked the button')" class="buttonGeneric">Generic Button</button>
-        
-        <div class="blackBG">
-            <h3>Buttons on darker background</h3>
-            
-            <h3>CSS selector</h3>
-        
-            <p>.buttonGeneric</p>
-            
-            <h3>Sample code:</h3>
-        
-            <pre><code>
-&lt;button onclick="validateForm(this)" class="buttonGeneric"&gt;Generic Button&lt;/button&gt;
-            </code></pre>
-            
-            <h3>Rendered Element:</h3>
-            
-            <button onclick="validateForm(this)" class="buttonGeneric">Generic Button</button>
-        </div>
-      </section>
-
-      <section>
-        <h2>Text Input Field</h2>
-        
-        <h3>CSS selector:</h3>
-        <p>.fieldFull</p>
-        <p>.fieldHalfL</p>
-        <p>.fieldHalfR</p>
-        
-        <h3>Sample code:</h3>
-        <code>&lt;form action="action-page.php" method="post" id="newAccount"&gt;<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="fieldFull" type="text" name="username" placeholder="Username"&gt;&lt;br&gt;<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="fieldHalfL" type="password" name="pass1" placeholder="Password"&gt;<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="fieldHalfR" type="password" name="pass2" placeholder="Re-Type Password"&gt;<br>
-              &nbsp;&lt;/form&gt;</code>
-        
-        <h3>Rendered Element:</h3>
-        <form action="action_page.php" method="post" id="newAccount">
-            <input class="fieldFull" type="text" name="username" placeholder="Username"><br>
-            <input class="fieldHalfL" type="password" name="pass1" placeholder="Password">
-            <input class="fieldHalfR" type="password" name="pass2" placeholder="Re-Type Password">
-        </form>
-      </section>
+            <p>
+                The field width is set to 100% of whatever container it is in. Grids can be used to adjust the width.
+            </p>
 
     </section>
     <!-- // INTERACTIVE ELEMENTS SECTION -->

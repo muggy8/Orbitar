@@ -76,4 +76,5 @@ section code {
 /* preformatted code */
 section pre {
     font-size: 1.1rem;
+    white-space: pre-wrap; /* wrap text */
 }
