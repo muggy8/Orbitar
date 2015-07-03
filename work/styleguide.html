@@ -538,11 +538,11 @@
 
         </section>
         <section>
-            <h2>Product Listing</h2>
+            <h2>Regular Product Listing</h2>
             <p>Orbitar provides space transportation, accommodation, and research services, so this is more of a service listing.</p>
 
             <h3>Composition:</h3>
-            <p>The listing is contained within a 3-column grid. In desktop view, the text description section on the left side takes up two columns, while an image, its caption, and a series of buttons takes up the other one-third. It is responsive, so for mobile devices, it will collapse into a single-column view, with text and images stacked vertically.</p>
+            <p>The listing is contained within a 3-column grid. In desktop view, the text description section on the left side takes up two columns, while an image, its caption, and a series of buttons takes up the other one-third. It is responsive, so for mobile devices, it will collapse into a single-column view, with text and images stacked vertically. The View More Details / Hide Details button enables expanding and collapsing finer details to prevent overwhelming the user. (Please note that in the example below, the ability to hide the details has been disabled.)</p>
             
             <h3>Sample code for product listing</h3>
             <pre><code>
@@ -560,6 +560,8 @@
             &lt;p class="ondark"&gt;
                 To use the launch pad, users must be affiliated with a professional research or engeneering organization or be in the posession of a space launch permit.
             &lt;/p&gt;
+
+            &lt;button class="showHiddenContentButton""&gt;Hide Details&hellip;&lt;/button&gt;
 
             &lt;h3 class="ondarkContrast"&gt;Specifications&lt;/h3&gt;
             &lt;ul&gt;
@@ -588,7 +590,7 @@
 &lt;/article&gt;
             </code></pre>
                 
-            <h2>Rendered element:</h2>
+            <h3>Rendered element:</h3>
 
             <article class="featureContainer">
                 <div class="grid">
@@ -604,6 +606,8 @@
                         <p class="ondark">
                             To use the launch pad, users must be affiliated with a professional research or engeneering organization or be in the posession of a space launch permit.
                         </p>
+
+                        <button class="showHiddenContentButton">Hide Details&hellip;</button>
 
                         <h3 class="ondarkContrast">Specifications</h3>
                         <ul>
@@ -631,6 +635,327 @@
                 </div>
             </article>
         
+        </section>
+
+        <section>
+            <h2>3-Column Product Listing</h2>
+            <p>Used when it doesn't make as much sense to put three columns' worth of content in a horizontal product listing layout. Each column takes up 1/3 of the total space. (Please note that in the example below, the ability to hide the details has been disabled.)</p>
+
+            <h3>Sample Code</h3>
+            <pre><code>
+&lt;article class="featureContainer"&gt;
+    &lt;div class="grid"&gt;
+        &lt;div class="col-3of3"&gt;
+            &lt;h2 class="ondarkContrast"&gt;Hotel Rooms&lt;/h2&gt;
+            &lt;p class="ondark"&gt;
+                The Orbitar Space Station has a variety of rooms at an affordable price.
+            &lt;/p&gt;
+            &lt;p class="ondark"&gt;
+                Please select one (or more) of the hotel room types below. You will automatically be booked for the duration in which you arrive to and depart from the Orbitar Elevator to the Orbitar Space Station.
+            &lt;/p&gt;
+        &lt;/div&gt;
+        
+        &lt;div id="citizenVacationHotel" class="hotelGrid"&gt;
+            &lt;div class="col-1of3Service"&gt;
+                &lt;h3 class="ondarkContrast"&gt;Citizen Vacation Class Hotel Rooms&lt;/h3&gt;
+
+                &lt;div class="col-1of3ServiceFigure"&gt;
+                    &lt;div class="serviceFigure"&gt;
+                        &lt;figure&gt;
+                            &lt;img src="img/SpaceHotel1-VacationRoom.jpg" alt="A vacation class room"&gt;
+                            &lt;div class="listingButtonHolder"&gt;
+                                &lt;button class="buttonGeneric" onclick="showCallender()"&gt;Calender&lt;/button&gt;
+                                &lt;button class="buttonGeneric" onclick="addHotel('Citizen Vacation Class Hotel Room')"&gt;Add to Planner&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/figure&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="col-2of3ServiceDescription"&gt;
+                    &lt;div class="serviceDescription"&gt;
+                        &lt;p class="ondark"&gt;
+                            Citizen vacation class rooms provide a comfortable way for visitors who are vacationing at the space station to get some rest after a day of exploration. Experience floating into sleep in a unique, cylindrical room in zero gravity!
+                        &lt;/p&gt;
+                        &lt;p class="ondark"&gt;
+                            &lt;span class="fontDemi ondark"&gt;Cost: $550 per 24 hours&lt;/span&gt;
+                        &lt;/p&gt;
+
+                        &lt;button class="ondark showHiddenContentButton&gt;Hide Details&hellip;&lt;/button&gt;
+
+                        &lt;div class="show hiddenContent" id="vacationClassHotelHiddenContent"&gt;
+                            &lt;h4 class="ondarkContrast"&gt;Room Amenities and Specifications&lt;/h4&gt;
+                            &lt;ul class="ondark"&gt;
+                                &lt;li&gt;Cylindrical room with a large glass wall on one end&lt;/li&gt;
+                                &lt;li&gt;Float as you sleep: more comfortable than a bed!&lt;/li&gt;
+                                &lt;li&gt;1-4 person room capacity&lt;/li&gt;
+                                &lt;li&gt;Specialized ultra-lightweight suits provided so that collisions with other room guests and objects won't wake you up&lt;/li&gt;
+                                &lt;li&gt;Pressurized cabins and climate control provide a comfortable atmosphere&lt;/li&gt;
+                                &lt;li&gt;Private bathroom with shower stall&lt;/li&gt;
+                                &lt;li&gt;Entertainment suite with world television and high-speed internet&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;  &lt;!-- ./hiddenContent --&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div id="citizenScientistHotel" class="hotelGrid"&gt;
+            &lt;div class="col-1of3Service"&gt;
+                &lt;h3 class="ondarkContrast"&gt;Citizen Scientist Class Hotel Rooms&lt;/h3&gt;
+                
+                &lt;div class="col-1of3ServiceFigure"&gt;
+                    &lt;div class="serviceFigure"&gt;
+                        &lt;figure&gt;
+                            &lt;img src="img/SpaceHotel2-CitizenScientistRoom.jpg" alt="A medium sized room with hi-tech computers that are able to do complex calculations"&gt;
+                            &lt;div class="listingButtonHolder"&gt;
+                                &lt;button class="buttonGeneric" onclick="showCallender()"&gt;Calender&lt;/button&gt;
+                                &lt;button class="buttonGeneric" onclick="addHotel('Citizen Scientist Class Hotel Room')"&gt;Add to Planner&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/figure&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class="col-2of3ServiceDescription"&gt;
+                    &lt;div class="serviceDescription"&gt;
+                        &lt;p class="ondark"&gt;
+                            This is for the amateur scientist who wants to conduct experiments in the comfort of their own room without the need to be professionally affiliated with a company or research organization. We provide equipment for you to work with to expand your research in citizen scientist class rooms.
+                        &lt;/p&gt;
+
+                        &lt;p class="ondark"&gt;
+                            &lt;span class="fontDemi ondark"&gt;Cost: $750 per 24 hours&lt;/span&gt;
+                        &lt;/p&gt;
+
+                        &lt;button class="ondark showHiddenContentButton&gt;Hide Details&hellip;&lt;/button&gt;
+
+                        &lt;div class="show hiddenContent" id="citSciClassHotelHiddenContent"&gt;
+                            &lt;h4 class="ondarkContrast"&gt;Room Amenities and Specifications&lt;/h4&gt;
+                            &lt;ul class="ondark"&gt;
+                                &lt;li&gt;1-2 person room capacity&lt;/li&gt;
+                                &lt;li&gt;Equipment to perform basic astrochemistry and astrophysics experiments&lt;/li&gt;
+                                &lt;li&gt;Computers capable of performing complex calculations&lt;/li&gt;
+                                &lt;li&gt;Access real-time data about the space station&lt;/li&gt;
+                                &lt;li&gt;Strap yourself into a luxurious pull-down bed&lt;/li&gt;
+                                &lt;li&gt;Pressurized cabins and climate control provide a comfortable atmosphere&lt;/li&gt;
+                                &lt;li&gt;Private bathroom with shower stall&lt;/li&gt;
+                                &lt;li&gt;Ultra-high-speed internet&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;  &lt;!-- ./hiddenContent --&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div id="advancedScientistHotel" class="hotelGrid"&gt;
+            &lt;div class="col-1of3Service"&gt;
+                &lt;h3 class="ondarkContrast"&gt;Advanced Scientist Class Hotel Rooms&lt;/h3&gt;
+
+                &lt;div class="col-1of3ServiceFigure"&gt;
+                    &lt;div class="serviceFigure"&gt;
+                        &lt;figure&gt;
+                            &lt;img src="img/SpaceHotel3-AdvancedScientistRoom.jpg" alt="A large hotel room with highly specialized equipment for doing professional research and other experiments"&gt;
+                            &lt;div class="listingButtonHolder"&gt;
+                                &lt;button class="buttonGeneric" onclick="showCallender()"&gt;Calender&lt;/button&gt;
+                                &lt;button class="buttonGeneric" onclick="addHotel('Advanced Scientist Class Hotel Room')"&gt;Add to Planner&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/figure&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class="col-2of3ServiceDescription"&gt;
+                    &lt;div class="serviceDescription"&gt;
+                        &lt;p class="ondark"&gt;
+                            Advanced scientist class rooms are a great way for professional scientists to work on business and sleep in the comfort of a large, private room. We provide a variety of highly specialized equipment and technology that makes it easier to work with your data.
+                        &lt;/p&gt;
+
+                        &lt;p class="ondark"&gt;
+                            &lt;span class="fontDemi ondark"&gt;Cost: $1200 per 24 hours&lt;/span&gt;
+                        &lt;/p&gt;
+
+                        &lt;button class="ondark showHiddenContentButton&gt;Hide Details&hellip;&lt;/button&gt;
+
+                        &lt;div class="show hiddenContent" id="proSciClassHotelHiddenContent"&gt;
+                            &lt;h4 class="ondarkContrast"&gt;Room Amenities and Specifications&lt;/h4&gt;
+                            &lt;ul class="ondark"&gt;
+                                &lt;li&gt;1-3 person capacity&lt;/li&gt;
+                                &lt;li&gt;Equipment to perform advanced astrochemistry and astrophysics experiments&lt;/li&gt;
+                                &lt;li&gt;Suitable for confidential work; advanced security measures, including a fingerprint reader door access and reinforced doors and walls, to prevent unauthorized access&lt;/li&gt;
+                                &lt;li&gt;Adjust the microgravity in the room using a switch&lt;/li&gt;
+                                &lt;li&gt;Computers capable of performing complex calculations&lt;/li&gt;
+                                &lt;li&gt;Access real-time data about the space station&lt;/li&gt;
+                                &lt;li&gt;Strap yourself into a luxurious pull-down bed&lt;/li&gt;
+                                &lt;li&gt;Pressurized cabins and climate control provide a comfortable atmosphere&lt;/li&gt;
+                                &lt;li&gt;Private bathroom with shower stall&lt;/li&gt;
+                                &lt;li&gt;Ultra-high-speed internet&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;  &lt;!-- ./hiddenContent --&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/article&gt;
+            </code></pre>
+
+            <h3>Rendered Element</h3>
+            <article class="featureContainer">
+                <div class="grid">
+                    <div class="col-3of3">
+                        <h2 class="ondarkContrast">Hotel Rooms</h2>
+                        <p class="ondark">
+                            The Orbitar Space Station has a variety of rooms at an affordable price.
+                        </p>
+                        <p class="ondark">
+                            Please select one (or more) of the hotel room types below. You will automatically be booked for the duration in which you arrive to and depart from the Orbitar Elevator to the Orbitar Space Station.
+                        </p>
+                    </div>
+                    
+                    <div id="citizenVacationHotel" class="hotelGrid">
+                        <div class="col-1of3Service">
+                            <h3 class="ondarkContrast">Citizen Vacation Class Hotel Rooms</h3>
+
+                            <div class="col-1of3ServiceFigure">
+                                <div class="serviceFigure">
+                                    <figure>
+                                        <img src="img/SpaceHotel1-VacationRoom.jpg" alt="A vacation class room">
+                                        <div class="listingButtonHolder">
+                                            <button class="buttonGeneric" onclick="showCallender()">Calender</button>
+                                            <button class="buttonGeneric" onclick="addHotel('Citizen Vacation Class Hotel Room')">Add to Planner</button>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                            
+                            <div class="col-2of3ServiceDescription">
+                                <div class="serviceDescription">
+                                    <p class="ondark">
+                                        Citizen vacation class rooms provide a comfortable way for visitors who are vacationing at the space station to get some rest after a day of exploration. Experience floating into sleep in a unique, cylindrical room in zero gravity!
+                                    </p>
+                                    <p class="ondark">
+                                        <span class="fontDemi ondark">Cost: $550 per 24 hours</span>
+                                    </p>
+
+                                    <button class="ondark showHiddenContentButton">Hide Details&hellip;</button>
+
+                                    <div class="show hiddenContent" id="vacationClassHotelHiddenContent">
+                                        <h4 class="ondarkContrast">Room Amenities and Specifications</h4>
+                                        <ul class="ondark">
+                                            <li>Cylindrical room with a large glass wall on one end</li>
+                                            <li>Float as you sleep: more comfortable than a bed!</li>
+                                            <li>1-4 person room capacity</li>
+                                            <li>Specialized ultra-lightweight suits provided so that collisions with other room guests and objects won't wake you up</li>
+                                            <li>Pressurized cabins and climate control provide a comfortable atmosphere</li>
+                                            <li>Private bathroom with shower stall</li>
+                                            <li>Entertainment suite with world television and high-speed internet</li>
+                                        </ul>
+                                    </div>  <!-- ./hiddenContent -->
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="citizenScientistHotel" class="hotelGrid">
+                        <div class="col-1of3Service">
+                            <h3 class="ondarkContrast">Citizen Scientist Class Hotel Rooms</h3>
+                            
+                            <div class="col-1of3ServiceFigure">
+                                <div class="serviceFigure">
+                                    <figure>
+                                        <img src="img/SpaceHotel2-CitizenScientistRoom.jpg" alt="A medium sized room with hi-tech computers that are able to do complex calculations">
+                                        <div class="listingButtonHolder">
+                                            <button class="buttonGeneric" onclick="showCallender()">Calender</button>
+                                            <button class="buttonGeneric" onclick="addHotel('Citizen Scientist Class Hotel Room')">Add to Planner</button>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="col-2of3ServiceDescription">
+                                <div class="serviceDescription">
+                                    <p class="ondark">
+                                        This is for the amateur scientist who wants to conduct experiments in the comfort of their own room without the need to be professionally affiliated with a company or research organization. We provide equipment for you to work with to expand your research in citizen scientist class rooms.
+                                    </p>
+
+                                    <p class="ondark">
+                                        <span class="fontDemi ondark">Cost: $750 per 24 hours</span>
+                                    </p>
+
+                                    <button class="ondark showHiddenContentButton">Hide Details&hellip;</button>
+
+                                    <div class="show hiddenContent" id="citSciClassHotelHiddenContent">
+                                        <h4 class="ondarkContrast">Room Amenities and Specifications</h4>
+                                        <ul class="ondark">
+                                            <li>1-2 person room capacity</li>
+                                            <li>Equipment to perform basic astrochemistry and astrophysics experiments</li>
+                                            <li>Computers capable of performing complex calculations</li>
+                                            <li>Access real-time data about the space station</li>
+                                            <li>Strap yourself into a luxurious pull-down bed</li>
+                                            <li>Pressurized cabins and climate control provide a comfortable atmosphere</li>
+                                            <li>Private bathroom with shower stall</li>
+                                            <li>Ultra-high-speed internet</li>
+                                        </ul>
+                                    </div>  <!-- ./hiddenContent -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="advancedScientistHotel" class="hotelGrid">
+                        <div class="col-1of3Service">
+                            <h3 class="ondarkContrast">Advanced Scientist Class Hotel Rooms</h3>
+
+                            <div class="col-1of3ServiceFigure">
+                                <div class="serviceFigure">
+                                    <figure>
+                                        <img src="img/SpaceHotel3-AdvancedScientistRoom.jpg" alt="A large hotel room with highly specialized equipment for doing professional research and other experiments">
+                                        <div class="listingButtonHolder">
+                                            <button class="buttonGeneric" onclick="showCallender()">Calender</button>
+                                            <button class="buttonGeneric" onclick="addHotel('Advanced Scientist Class Hotel Room')">Add to Planner</button>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="col-2of3ServiceDescription">
+                                <div class="serviceDescription">
+                                    <p class="ondark">
+                                        Advanced scientist class rooms are a great way for professional scientists to work on business and sleep in the comfort of a large, private room. We provide a variety of highly specialized equipment and technology that makes it easier to work with your data.
+                                    </p>
+
+                                    <p class="ondark">
+                                        <span class="fontDemi ondark">Cost: $1200 per 24 hours</span>
+                                    </p>
+
+                                    <button class="ondark showHiddenContentButton">Hide Details&hellip;</button>
+
+                                    <div class="show hiddenContent" id="proSciClassHotelHiddenContent">
+                                        <h4 class="ondarkContrast">Room Amenities and Specifications</h4>
+                                        <ul class="ondark">
+                                            <li>1-3 person capacity</li>
+                                            <li>Equipment to perform advanced astrochemistry and astrophysics experiments</li>
+                                            <li>Suitable for confidential work; advanced security measures, including a fingerprint reader door access and reinforced doors and walls, to prevent unauthorized access</li>
+                                            <li>Adjust the microgravity in the room using a switch</li>
+                                            <li>Computers capable of performing complex calculations</li>
+                                            <li>Access real-time data about the space station</li>
+                                            <li>Strap yourself into a luxurious pull-down bed</li>
+                                            <li>Pressurized cabins and climate control provide a comfortable atmosphere</li>
+                                            <li>Private bathroom with shower stall</li>
+                                            <li>Ultra-high-speed internet</li>
+                                        </ul>
+                                    </div>  <!-- ./hiddenContent -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </article>
         </section>
 
     </section>
