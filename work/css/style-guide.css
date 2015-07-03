@@ -9,15 +9,28 @@
     padding: 1rem;
 }
 
+/* override the header CSS from the actual site */
+#navHeader {
+    position: static; /* in the actual site, position is fixed */
+}
+
 #centeredNavContainer {
     /* position is fixed in the actual site; we don't want it fixed at the top in the style guide */
     position: static;
-
+    display: block;
 }
 
 #navBar {
     width: 100%;
 
+}
+
+#navBarLeft {
+    margin-left: 5%;
+}
+
+#navBarRight {
+    margin-right: 5%;
 }
 
 .color-block{

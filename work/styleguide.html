@@ -405,7 +405,7 @@
     <!-- // TEXT ELEMENTS SECTION -->
     <section id="other_stuff">
       <section>
-        <h2>color scheme</h2>
+        <h2>Color Scheme</h2>
         
         <h3>Dark Blue</h3>
         <p>#1D1D99 or rgb(29,29,153)</p>
@@ -426,7 +426,7 @@
         <div class="dark-gray color-block"></div>
         
         <h3>Darker Gray</h3>
-        <p>#cfcfcf or rgb(207,207,207)</p>
+        <p>#CFCFCF or rgb(207,207,207)</p>
         
         <h3>Rendered Color</h3>
         <div class="light-gray color-block"></div>
@@ -435,48 +435,56 @@
     <!-- COMBINED ELEMENTS SECTION // -->
     <section id="combined_elements">
 
-      <section>
-        <h2>Main Navigation</h2>
-        
-        <h3>N/A</h3>
-        
-        <p>The main navigation for this website is always in the banner and can be accessed easily from there (see navigation button). There aren't other navigation buttons on the site as the site will react and change in shape in accordance to user clicks. There will be windows on the site which will expand and collaps when another window is clicked. this means that the user has access to all other parts of the site at any time</p>
-      </section>
+        <section>
+            <h2>Main Navigation</h2>
+            
+            <h3>CSS selectors</h3>
+            <p>#navHeader</p>
+
+            <p>
+                The header navigation bar is the primary method of accessing parts of the website. As our website is primarily a one-page site, many of the links will be anchor links to the rest of the same page if the user is accessing from the primary main page.
+            </p>
+            <p>
+                The navigation bar on the actual site has its position set as fixed, so it will always be at the top of the browser window / screen. For readability, the example below has its CSS overridden to position: static. In addition, the grid breakpoints that enable this nav bar to be responsive on the actual site causes it to behave slightly differently on this style guide's stylesheet.
+            </p>
+        </section>
       
-      <h3>Sample Code:</h3>
+        <h3>Sample Code:</h3>
       
-      <textarea rows="18" cols="100">
-<nav id="nav-header">
-    <div id="centeredNavContainer">
-        <div id="navBar">
-            <div id="navBarLeft">
-                <span id="siteName">Orbitar</span>
-            </div> <!-- ./navBarLeft -->
-            <div id="navBarRight">
-                <ul>
-                    <li><a class="buttonNav" href="#">Account</a></li>
-                    <li><a class="buttonNav" href="#">Community</a></li>
-                    <li><a class="buttonNav" href="#">Feedback</a></li>
-                </ul>
-            </div> <!-- ./navBarRight -->
-        </div> <!-- ./navBar -->
-    </div> <!-- ./centered-nav-container -->
-</nav>
-      </textarea>
+        <pre><code>
+&lt;nav id="navHeader"&gt; &lt;!-- banner --&gt;
+    &lt;div id="centeredNavContainer"&gt;
+        &lt;div id="navBar"&gt;
+            &lt;div id="navBarLeft"&gt;
+                &lt;span id="siteName"&gt;&lt;a href="mainpage.html"&gt;Orbitar&lt;/a&gt;&lt;/span&gt;
+            &lt;/div&gt; &lt;!-- ./navBarLeft --&gt;
+            &lt;div id="navBarRight"&gt;
+                &lt;ul class="dropDownContainer"&gt;
+                    &lt;!-- when any of these buttons are clicked, close the menu --&gt;
+                    &lt;li&gt;&lt;a class="buttonNav dropDownButton" href="#" &gt;About&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a class="buttonNav dropDownButton" href="#" &gt;Create / Modify Booking&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a class="buttonNav dropDownButton" href="#" &gt;Feedback&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt; &lt;!-- ./navBarRight --&gt;
+        &lt;/div&gt; &lt;!-- ./navBar --&gt;
+    &lt;/div&gt; &lt;!-- ./centered-nav-container --&gt;
+&lt;/nav&gt;
+      </pre></code>
         
         <h3>Rendered Element</h3>
         
-        <nav id="nav-header">
+        <nav id="navHeader"> <!-- banner -->
             <div id="centeredNavContainer">
                 <div id="navBar">
                     <div id="navBarLeft">
-                        <span id="siteName">Orbitar</span>
+                        <span id="siteName"><a href="mainpage.html">Orbitar</a></span>
                     </div> <!-- ./navBarLeft -->
                     <div id="navBarRight">
-                        <ul>
-                            <li><a class="buttonNav" href="#">Account</a></li>
-                            <li><a class="buttonNav" href="#">Community</a></li>
-                            <li><a class="buttonNav" href="#">Feedback</a></li>
+                        <ul class="dropDownContainer">
+                            <!-- when any of these buttons are clicked, close the menu -->
+                            <li><a class="buttonNav dropDownButton" href="#">About</a></li>
+                            <li><a class="buttonNav dropDownButton" href="#">Create / Modify Booking</a></li>
+                            <li><a class="buttonNav dropDownButton" href="#">Feedback</a></li>
                         </ul>
                     </div> <!-- ./navBarRight -->
                 </div> <!-- ./navBar -->
