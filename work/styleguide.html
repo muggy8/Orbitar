@@ -152,7 +152,7 @@
         &lt;input class="fieldHalf" type="text" id="creditCard" name="creditCard"&gt;
 
         &lt;label for="comments" class="formLabel"&gt;Comments&lt;/label&gt;
-        &lt;textarea class="commentsTextareaFull" placeholder="* Write your questions or comments here" required&gt;&lt;/textarea&gt;
+        &lt;textarea id="comments" placeholder="* Write your questions or comments here" required&gt;&lt;/textarea&gt;
     &lt;/div&gt;
 &lt;/form&gt;
                 </code></pre>
@@ -172,7 +172,7 @@
                         <input class="fieldHalf" type="text" id="creditCard" name="creditCard">
 
                         <label for="comments" class="formLabel">Comments</label>
-                        <textarea class="commentsTextareaFull" placeholder="Write your questions or comments here" required></textarea>
+                        <textarea id="comments" placeholder="Write your questions or comments here" required></textarea>
                     </div>
                 </form>
 
@@ -469,7 +469,7 @@
         &lt;/div&gt; &lt;!-- ./navBar --&gt;
     &lt;/div&gt; &lt;!-- ./centered-nav-container --&gt;
 &lt;/nav&gt;
-      </pre></code>
+        </code></pre>
         
         <h3>Rendered Element</h3>
         
@@ -495,97 +495,102 @@
 
       <section>
         <h2>Product Listing</h2>
-        
+        <p>Orbitar provides space transportation, accommodation, and research services, so this is more of a service listing.</p>
+
         <h3>Composition:</h3>
+        <p>The listing is contained within a 3-column grid. In desktop view, the text description section on the left side takes up two columns, while an image, its caption, and a series of buttons takes up the other one-third. It is responsive, so for mobile devices, it will collapse into a single-column view, with text and images stacked vertically.</p>
         
-        <p>the product listing consists of a div that contains everything within. inside the div at the top is an H3 naming the thing. Sfter that is a picture which can be enlarged, a paragraph that somewhat explains the service at question and finally a read more button and a buy now button.</p>
-        
-        <h3>Sample code for product listing (pro tip: inspect element and copy instead):</h3>
-        
-        <code>
-            &lt;div id="listingContainer"&gt;<br />
-            &lt;div id="listing1" class="listing"&gt;<br />
-                &lt;h3&gt;Particle Accelerator&lt;/h3&gt;<br />
-                &lt;img src="img/placeholder.png" width="368" height="258" alt="(╯°□°)╯︵ ┻━┻"&gt;<br />
-                &lt;div class="listingButtonHolder"&gt;<br />
-                    &lt;button onclick="biggify(this.parentElement.parentElement)" class="buttonGeneric"&gt;view details&lt;/button&gt;<br />
-                    &lt;button onclick="validateForm(this)" class="buttonGeneric"&gt;book&lt;/button&gt;<br />
-                &lt;/div&gt;<br />
-                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at auctor lectus. In gravida bibendum posuere. Vivamus placerat nibh in nisl lacinia, sed eleifend urna dictum. Nunc iaculis mollis sagittis. Proin vel ultrices est. Duis posuere elementum sapien. Morbi euismod vehicula rutrum. Donec vitae arcu quis risus lacinia tristique vel at elit. Suspendisse euismod vitae dui ac molestie. Donec ac tortor felis. Nunc maximus libero ut elit dapibus, at tristique erat convallis.&lt;/p&gt;<br />
-                <br />
-            &lt;/div&gt;<br />
-            <br />
-            &lt;div id="listing2" class="listing"&gt;<br />
-                &lt;h3&gt;Chemistry Lab&lt;/h3&gt;<br />
-                &lt;img src="img/placeholder.png" width="368" height="258" alt="(╯°□°)╯︵ ┻━┻"&gt;<br />
-                &lt;div class="listingButtonHolder"&gt;<br />
-                    &lt;button onclick="biggify(this.parentElement.parentElement)" class="buttonGeneric"&gt;view details&lt;/button&gt;<br />
-                    &lt;button onclick="validateForm(this)" class="buttonGeneric"&gt;book&lt;/button&gt;<br />
-                &lt;/div&gt;<br />
-                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at auctor lectus. In gravida bibendum posuere. Vivamus placerat nibh in nisl lacinia, sed eleifend urna dictum. Nunc iaculis mollis sagittis. Proin vel ultrices est. Duis posuere elementum sapien. Morbi euismod vehicula rutrum. Donec vitae arcu quis risus lacinia tristique vel at elit. Suspendisse euismod vitae dui ac molestie. Donec ac tortor felis. Nunc maximus libero ut elit dapibus, at tristique erat convallis.&lt;/p&gt;<br />
-                <br />
-            &lt;/div&gt;<br />
-            <br />
-            &lt;div id="listing3" class="listing"&gt;<br />
-                &lt;h3&gt;Engine Room&lt;/h3&gt;<br />
-                &lt;img src="img/placeholder.png" width="368" height="258" alt="(╯°□°)╯︵ ┻━┻"&gt;<br />
-                &lt;div class="listingButtonHolder"&gt;<br />
-                    &lt;button onclick="biggify(this.parentElement.parentElement)" class="buttonGeneric"&gt;view details&lt;/button&gt;<br />
-                    &lt;button onclick="validateForm(this)" class="buttonGeneric"&gt;book&lt;/button&gt;<br />
-                &lt;/div&gt;<br />
-                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at auctor lectus. In gravida bibendum posuere. Vivamus placerat nibh in nisl lacinia, sed eleifend urna dictum. Nunc iaculis mollis sagittis. Proin vel ultrices est. Duis posuere elementum sapien. Morbi euismod vehicula rutrum. Donec vitae arcu quis risus lacinia tristique vel at elit. Suspendisse euismod vitae dui ac molestie. Donec ac tortor felis. Nunc maximus libero ut elit dapibus, at tristique erat convallis.&lt;/p&gt;<br />
-                <br />
-            &lt;/div&gt;<br />
-        &lt;/div&gt;
-        </code>
+        <h3>Sample code for product listing</h3>
+        <pre><code>
+&lt;article class="featureContainer"&gt;
+    &lt;div class="grid"&gt;
+        &lt;div class="col-2of3"&gt;
+            &lt;h2 class="ondarkContrast"&gt;Launch Pad&lt;/h2&gt;
+            
+            &lt;p class="ondark"&gt;
+                Our launch pad on board the space station allows scientists to launch and dock small space probes, satellites, and manned capsules. Its state of the art technology design allows for multiple launches per day. Bookings may be made while booking the trip, or while at the space station.
+            &lt;/p&gt;
+
+            &lt;p class="ondark fontDemi"&gt;Operational cost: $4600 per 24 hours&lt;/p&gt;
+
+            &lt;p class="ondark"&gt;
+                To use the launch pad, users must be affiliated with a professional research or engeneering organization or be in the posession of a space launch permit.
+            &lt;/p&gt;
+
+            &lt;h3 class="ondarkContrast"&gt;Specifications&lt;/h3&gt;
+            &lt;ul&gt;
+                &lt;li class="ondark"&gt;Room size: 25m wide x 7.5 meters tall x 30 meters deep&lt;/li&gt;
+                &lt;li class="ondark"&gt;Non-pressurized (space suit required)&lt;/li&gt;
+                &lt;li class="ondark"&gt;12 mechanical arms up to 15 meters long each&lt;/li&gt;
+                &lt;li class="ondark"&gt;Observation deck for visitors to observe work within the pad&lt;/li&gt;
+                &lt;li class="ondark"&gt;Unintended space drift protecting system&lt;/li&gt;
+                &lt;li class="ondark"&gt;Unmanned rescue pods&lt;/li&gt;
+                &lt;li class="ondark"&gt;Space launch support system&lt;/li&gt;
+                &lt;li class="ondark"&gt;Space vehicle return guidance system&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt; &lt;!-- ./col-2of3 --&gt;
+
+        &lt;div class="col-1of3Main"&gt;
+            &lt;figure&gt;
+                &lt;img src="img/LaunchPad.jpg" alt="Photo of the launch pad: hole in the middle of the space station to allow for ships to enter and leave"&gt;
+                &lt;div class="listingButtonHolder"&gt;
+                    &lt;button class="buttonGeneric"&gt;Calender&lt;/button&gt;
+                    &lt;button class="buttonGeneric"&gt;Add to Planner&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;figcaption class="ondark"&gt;Space dock / launch pad&lt;/figcaption&gt;
+            &lt;/figure&gt;
+        &lt;/div&gt; &lt;!-- ./col-1of3Main --&gt;
+    &lt;/div&gt;
+&lt;/article&gt;
+        </code></pre>
             
         <h2>Rendered element:</h2>
 
+        <article class="featureContainer">
+            <div class="grid">
+                <div class="col-2of3">
+                    <h2 class="ondarkContrast">Launch Pad</h2>
+                    
+                    <p class="ondark">
+                        Our launch pad on board the space station allows scientists to launch and dock small space probes, satellites, and manned capsules. Its state of the art technology design allows for multiple launches per day. Bookings may be made while booking the trip, or while at the space station.
+                    </p>
 
+                    <p class="ondark fontDemi">Operational cost: $4600 per 24 hours</p>
+
+                    <p class="ondark">
+                        To use the launch pad, users must be affiliated with a professional research or engeneering organization or be in the posession of a space launch permit.
+                    </p>
+
+                    <h3 class="ondarkContrast">Specifications</h3>
+                    <ul>
+                        <li class="ondark">Room size: 25m wide x 7.5 meters tall x 30 meters deep</li>
+                        <li class="ondark">Non-pressurized (space suit required)</li>
+                        <li class="ondark">12 mechanical arms up to 15 meters long each</li>
+                        <li class="ondark">Observation deck for visitors to observe work within the pad</li>
+                        <li class="ondark">Unintended space drift protecting system</li>
+                        <li class="ondark">Unmanned rescue pods</li>
+                        <li class="ondark">Space launch support system</li>
+                        <li class="ondark">Space vehicle return guidance system</li>
+                    </ul>
+                </div> <!-- ./col-2of3 -->
+
+                <div class="col-1of3Main">
+                    <figure>
+                        <img src="img/LaunchPad.jpg" alt="Photo of the launch pad: hole in the middle of the space station to allow for ships to enter and leave">
+                        <div class="listingButtonHolder">
+                            <button class="buttonGeneric">Calender</button>
+                            <button class="buttonGeneric">Add to Planner</button>
+                        </div>
+                        <figcaption class="ondark">Space dock / launch pad</figcaption>
+                    </figure>
+                </div> <!-- ./col-1of3Main -->
+            </div>
+        </article>
         
-        <div id="listingContainer">
-            <div id="listing1" class="listing">
-                <h3>Particle Accelerator</h3>
-                <img src="img/placeholder.png" width="368" height="258" alt="(╯°□°)╯︵ ┻━┻">
-                <div class="listingButtonHolder">
-                    <button onclick="biggify(this.parentElement.parentElement)" class="buttonGeneric">view details</button>
-                    <button onclick="validateForm(this)" class="buttonGeneric">book</button>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at auctor lectus. In gravida bibendum posuere. Vivamus placerat nibh in nisl lacinia, sed eleifend urna dictum. Nunc iaculis mollis sagittis. Proin vel ultrices est. Duis posuere elementum sapien. Morbi euismod vehicula rutrum. Donec vitae arcu quis risus lacinia tristique vel at elit. Suspendisse euismod vitae dui ac molestie. Donec ac tortor felis. Nunc maximus libero ut elit dapibus, at tristique erat convallis.</p>
-                
-            </div>
-            
-            <div id="listing2" class="listing">
-                <h3>Chemistry Lab</h3>
-                <img src="img/placeholder.png" width="368" height="258" alt="(╯°□°)╯︵ ┻━┻">
-                <div class="listingButtonHolder">
-                    <button onclick="biggify(this.parentElement.parentElement)" class="buttonGeneric">view details</button>
-                    <button onclick="validateForm(this)" class="buttonGeneric">book</button>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at auctor lectus. In gravida bibendum posuere. Vivamus placerat nibh in nisl lacinia, sed eleifend urna dictum. Nunc iaculis mollis sagittis. Proin vel ultrices est. Duis posuere elementum sapien. Morbi euismod vehicula rutrum. Donec vitae arcu quis risus lacinia tristique vel at elit. Suspendisse euismod vitae dui ac molestie. Donec ac tortor felis. Nunc maximus libero ut elit dapibus, at tristique erat convallis.</p>
-                
-            </div>
-            
-            <div id="listing3" class="listing">
-                <h3>Engine Room</h3>
-                <img src="img/placeholder.png" width="368" height="258" alt="(╯°□°)╯︵ ┻━┻">
-                <div class="listingButtonHolder">
-                    <button onclick="biggify(this.parentElement.parentElement)" class="buttonGeneric">view details</button>
-                    <button onclick="validateForm(this)" class="buttonGeneric">book</button>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at auctor lectus. In gravida bibendum posuere. Vivamus placerat nibh in nisl lacinia, sed eleifend urna dictum. Nunc iaculis mollis sagittis. Proin vel ultrices est. Duis posuere elementum sapien. Morbi euismod vehicula rutrum. Donec vitae arcu quis risus lacinia tristique vel at elit. Suspendisse euismod vitae dui ac molestie. Donec ac tortor felis. Nunc maximus libero ut elit dapibus, at tristique erat convallis.</p>
-                
-            </div>
-        </div>
       </section>
 
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
-    <script>
-        function biggify(ele){
-            console.log(ele);
-        }
-    </script>
 
   </body>
 </html>
