@@ -34,36 +34,38 @@ function scrollCheck(){
 $(document).ready(function(){
 
     manageMenu();
-    var calender = document.getElementById("callender");
-    
-    var month = document.createElement("h3");
-    month.innerHTML = "June";
-    calender.appendChild(month);
-    
-    for (var i = 1; i <= 30; i++){
-        var day = document.createElement("div");
-        day.innerHTML = i;
-        day.className = "callenderDay";
-        day.setAttribute("onclick", "dayUpdate()");
-        calender.appendChild(day);
-    }
-    
-    var cancleBtn = document.createElement("button");
-    cancleBtn.className = "buttonGeneric absoluteBottomRight";
-    cancleBtn.innerHTML = "Cancel";
-    cancleBtn.setAttribute("onclick", "dayUpdate()");
-    calender.appendChild(cancleBtn);
-    
-    callender.className = "hide";
+	if (location.href.indexOf("mainpage.html") > -1){
+		var calender = document.getElementById("callender");
+		
+		var month = document.createElement("h3");
+		month.innerHTML = "June";
+		calender.appendChild(month);
+		
+		for (var i = 1; i <= 30; i++){
+			var day = document.createElement("div");
+			day.innerHTML = i;
+			day.className = "callenderDay";
+			day.setAttribute("onclick", "dayUpdate()");
+			calender.appendChild(day);
+		}
+		
+		var cancleBtn = document.createElement("button");
+		cancleBtn.className = "buttonGeneric absoluteBottomRight";
+		cancleBtn.innerHTML = "Cancel";
+		cancleBtn.setAttribute("onclick", "dayUpdate()");
+		calender.appendChild(cancleBtn);
+		
+		callender.className = "hide";
 
-    // For content sections that are supposed to be hidden, they are shown by default for browsers
-    // that don't support JavaScript. Since the JS code is running, hide the sections when the
-    // page loads.
-    if ($(".hiddenContent").hasClass("show")) {
-        $(".hiddenContent").removeClass("show");
-        $(".hiddenContent").addClass("hide");
-    }
-    scrollCheck();
+		// For content sections that are supposed to be hidden, they are shown by default for browsers
+		// that don't support JavaScript. Since the JS code is running, hide the sections when the
+		// page loads.
+		if ($(".hiddenContent").hasClass("show")) {
+			$(".hiddenContent").removeClass("show");
+			$(".hiddenContent").addClass("hide");
+		}
+		scrollCheck();
+	}
 });
 
 $( window ).resize(function() {
@@ -74,20 +76,24 @@ function manageMenu(){
     if (window.matchMedia("(min-width: 39.5rem)").matches) {
         // viewport is more than 35 rems wide
         $(".dropDownContainer").detach().appendTo('#navBarRight');
-        $("#scheduler").detach().appendTo('.everythingContainer');
-        var scheduler = document.getElementById("scheduler")
-        if (scheduler.className.indexOf(" schedulerInMenu") > -1){
-            scheduler.className = scheduler.className.replace(" schedulerInMenu", ""); 
-        }
+		if (location.href.indexOf("mainpage.html") > -1){
+			$("#scheduler").detach().appendTo('.everythingContainer');
+			var scheduler = document.getElementById("scheduler")
+			if (scheduler.className.indexOf(" schedulerInMenu") > -1){
+				scheduler.className = scheduler.className.replace(" schedulerInMenu", ""); 
+			}
+		}
     }
     else{
         // viewport is less than 35 rems wide
         $(".dropDownContainer").detach().appendTo('#fullscreenMenuContainer');
-        $("#scheduler").detach().appendTo('#fullscreenMenuContainer');
-        var scheduler = document.getElementById("scheduler");
-        if (scheduler.className.indexOf(" schedulerInMenu") == -1){
-            scheduler.className += " schedulerInMenu"; 
-        }
+		if (location.href.indexOf("mainpage.html") > -1){
+			$("#scheduler").detach().appendTo('#fullscreenMenuContainer');
+			var scheduler = document.getElementById("scheduler");
+			if (scheduler.className.indexOf(" schedulerInMenu") == -1){
+				scheduler.className += " schedulerInMenu"; 
+			}
+		}
     }
 }
 
