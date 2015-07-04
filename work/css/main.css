@@ -402,6 +402,7 @@ ol li{
   position: absolute;
   left: calc(22rem + 5%);
   top: 4rem;
+  z-index:+5
 }
 
 #youMidCool{
@@ -819,6 +820,23 @@ ol li{
     left: -webkit-calc(50% - 732px);
     left: -o-calc(50% - 732px);
     left: calc(50% - 732px);
+}
+
+@media(max-height: 35rem){
+	#cablePusher{
+		height:10rem;
+	}
+	
+	#cableCart{
+		top: 10rem;
+	}
+	
+	#basePad{
+		top:4rem;
+	}
+	#spacePad{
+		top: 75rem;
+	}
 }
 
 .scheduler{
