@@ -128,6 +128,7 @@ function addEvent(ele){
     entry. id="item" + elementCounter;
     entry.innerHTML = attractionSelected + ": Feb/15/2088 <br> &nbsp;&nbsp;&nbsp;&nbsp;@1:00AM CST <br> &nbsp;&nbsp;&nbsp;&nbsp;duration: 22 hours" + " <a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
     list.appendChild(entry);
+	menuFlash()
     elementCounter ++;
 }
 
@@ -148,6 +149,7 @@ function addHotel(eleName){
     entry. id="item" + elementCounter;
     entry.innerHTML = eleName + ": Feb/15/2088 <br> &nbsp;&nbsp;&nbsp;&nbsp;@1:00AM CST <br> &nbsp;&nbsp;&nbsp;&nbsp;duration: 22 hours" + " <a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
     list.appendChild(entry);
+	menuFlash()
     elementCounter ++;
 }
 
@@ -181,7 +183,14 @@ function generateRides(){
         entry2. id="rideUp";
         entry2.innerHTML = "Decent: Feb/18/2088 <br> &nbsp;&nbsp;&nbsp;&nbsp;@9:05AM CST <br> &nbsp;&nbsp;&nbsp;&nbsp;duration: 12 hours <a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
         list.appendChild(entry2);
+		menuFlash();
     }
+}
+
+var flashIntervle;
+var flashTimes = 0;
+function menuFlash(){
+	console.log("menu flashed");
 }
 
 function nuke(ele, event){//remove the element from the UL in the planner
@@ -310,6 +319,7 @@ function addToPlanner(ele, e){
         li.innerHTML = tripType + ": " + ele.innerHTML.replace("@", "<br> &nbsp;&nbsp;&nbsp;&nbsp;@") + " CST " + "<br> &nbsp;&nbsp;&nbsp;&nbsp;duration: 12 hours <a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
         li.id=ele.innerHTML;
         list.appendChild(li);
+		menuFlash();
     }
 }
 
