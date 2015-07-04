@@ -128,7 +128,8 @@ function addEvent(ele){
     entry. id="item" + elementCounter;
     entry.innerHTML = attractionSelected + ": Feb/15/2088 <br> &nbsp;&nbsp;&nbsp;&nbsp;@1:00AM CST <br> &nbsp;&nbsp;&nbsp;&nbsp;duration: 22 hours" + " <a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
     list.appendChild(entry);
-	menuFlash()
+	menuFlash();
+	flashIntervle = setInterval(menuFlash, 500);
     elementCounter ++;
 }
 
@@ -149,7 +150,8 @@ function addHotel(eleName){
     entry. id="item" + elementCounter;
     entry.innerHTML = eleName + ": Feb/15/2088 <br> &nbsp;&nbsp;&nbsp;&nbsp;@1:00AM CST <br> &nbsp;&nbsp;&nbsp;&nbsp;duration: 22 hours" + " <a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
     list.appendChild(entry);
-	menuFlash()
+	menuFlash();
+	flashIntervle = setInterval(menuFlash, 500);
     elementCounter ++;
 }
 
@@ -184,13 +186,27 @@ function generateRides(){
         entry2.innerHTML = "Decent: Feb/18/2088 <br> &nbsp;&nbsp;&nbsp;&nbsp;@9:05AM CST <br> &nbsp;&nbsp;&nbsp;&nbsp;duration: 12 hours <a href=\"#\" onclick=\"nuke(this, event)\">remove</a>";
         list.appendChild(entry2);
 		menuFlash();
+		flashIntervle = setInterval(menuFlash, 500);
     }
 }
 
 var flashIntervle;
 var flashTimes = 0;
+var flashAmount = 3;
 function menuFlash(){
 	console.log("menu flashed");
+	var menu = document.getElementById("menuButton");
+	//menu.className= menu.className + " menuButtonFlashUp"; 
+	menu.setAttribute("style", "background-color: rgb(44, 44, 230)");
+	setTimeout(function(){
+		//menu.className = menu.className.replace(" menuButtonFlashUp", ""); 
+		menu.setAttribute("style", "");
+		flashTimes++;
+		if (flashTimes == flashAmount){
+			clearInterval(flashIntervle);
+			flashTimes = 0;
+		}
+	}, 250);
 }
 
 function nuke(ele, event){//remove the element from the UL in the planner
@@ -320,6 +336,7 @@ function addToPlanner(ele, e){
         li.id=ele.innerHTML;
         list.appendChild(li);
 		menuFlash();
+		flashIntervle = setInterval(menuFlash, 500);
     }
 }
 

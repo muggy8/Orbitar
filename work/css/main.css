@@ -651,6 +651,10 @@ ol li{
     #menuButton:hover {
       background-color: rgb(44, 44, 230);
     }
+	
+	.menuButtonFlashUp{
+		background-color: rgb(44, 44, 230);
+	}
 
     #fullscreenMenuContainer {
         visibility: hidden;
