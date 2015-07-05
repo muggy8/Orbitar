@@ -979,11 +979,12 @@ ol li{
   display:block; 
   bottom:auto; 
   top:0;
-  height:60%;
   overflow-y:auto;
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
+  min-height: 0;
+  height: calc(80% - 7.2rem);
 }
 
 /*
