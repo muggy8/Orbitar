@@ -680,6 +680,7 @@ ol li{
 
 }
 
+/* text and interactive elements for very small screens */
 @media (max-width: 23rem) {
     #siteName {
         font-size: 1.5rem;
@@ -694,6 +695,12 @@ ol li{
         padding-top: 0.3rem;
         padding-bottom: 0.6rem;
     }
+
+    .buttonGeneric, .buttonGeneric:visited, .buttonGeneric:active, 
+      .buttonGenericOnDark, .buttonGenericOnDark:visited, .buttonGeneric:active {
+        font-size:1.05rem;
+    }
+
 }
 
 /* After floating to the right, this sets the order of the menu items in the correct order */
