@@ -749,9 +749,10 @@ ol li{
   background-repeat: no-repeat;
 }
 
-@media(max-width: 117.3rem){ 
+@media(max-width: 120.5rem){ 
   .earthBG{
-    background-size: 117.3rem; /* effectively full height green */
+    /* shrink the background so that the second bubble fits right above Earth's edge cutoff */
+    background-size: 120.5rem;
   }
 }
 
