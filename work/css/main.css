@@ -298,8 +298,8 @@ input {
   color: #ffffff;
   font-weight: normal;
   font-size: 2.5rem;
-  margin-top: 1rem;
 }
+
 
 #siteName a, #siteName a:visited {
     color: #ffffff;
@@ -671,12 +671,29 @@ ol li{
         width: 100%;
         margin-top: 3.5em;
         padding-left: 1.5em;
+        clear: both;
     }
 
     .expand {
       visibility: visible;
     }
 
+}
+
+@media (max-width: 23rem) {
+    #siteName {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+    }
+
+    #menuButton, #menuButton:visited, #menuButton:active {
+        font-size: 1.2rem;
+    }
+
+    #centeredNavContainer {
+        padding-top: 0.3rem;
+        padding-bottom: 0.6rem;
+    }
 }
 
 /* After floating to the right, this sets the order of the menu items in the correct order */
